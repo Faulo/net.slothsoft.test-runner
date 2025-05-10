@@ -1,0 +1,160 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Slothsoft.TestRunner
+  name: Slothsoft.TestRunner
+  href: api/Slothsoft.TestRunner.html
+  commentId: N:Slothsoft.TestRunner
+  fullName: Slothsoft.TestRunner
+  nameWithType: Slothsoft.TestRunner
+- uid: Slothsoft.TestRunner.GameObjectExtensions
+  name: GameObjectExtensions
+  href: api/Slothsoft.TestRunner.GameObjectExtensions.html
+  commentId: T:Slothsoft.TestRunner.GameObjectExtensions
+  fullName: Slothsoft.TestRunner.GameObjectExtensions
+  nameWithType: GameObjectExtensions
+- uid: Slothsoft.TestRunner.GameObjectExtensions.AddSubstitute*
+  name: AddSubstitute
+  href: api/Slothsoft.TestRunner.GameObjectExtensions.html#Slothsoft_TestRunner_GameObjectExtensions_AddSubstitute_
+  commentId: Overload:Slothsoft.TestRunner.GameObjectExtensions.AddSubstitute
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.GameObjectExtensions.AddSubstitute
+  nameWithType: GameObjectExtensions.AddSubstitute
+- uid: Slothsoft.TestRunner.GameObjectExtensions.AddSubstitute``1(GameObject)
+  name: AddSubstitute<T>(GameObject)
+  href: api/Slothsoft.TestRunner.GameObjectExtensions.html#Slothsoft_TestRunner_GameObjectExtensions_AddSubstitute__1_GameObject_
+  commentId: M:Slothsoft.TestRunner.GameObjectExtensions.AddSubstitute``1(GameObject)
+  name.vb: AddSubstitute(Of T)(GameObject)
+  fullName: Slothsoft.TestRunner.GameObjectExtensions.AddSubstitute<T>(GameObject)
+  fullName.vb: Slothsoft.TestRunner.GameObjectExtensions.AddSubstitute(Of T)(GameObject)
+  nameWithType: GameObjectExtensions.AddSubstitute<T>(GameObject)
+  nameWithType.vb: GameObjectExtensions.AddSubstitute(Of T)(GameObject)
+- uid: Slothsoft.TestRunner.TestGameObject
+  name: TestGameObject
+  href: api/Slothsoft.TestRunner.TestGameObject.html
+  commentId: T:Slothsoft.TestRunner.TestGameObject
+  fullName: Slothsoft.TestRunner.TestGameObject
+  nameWithType: TestGameObject
+- uid: Slothsoft.TestRunner.TestGameObject.#ctor(Action{GameObject})
+  name: TestGameObject(Action<GameObject>)
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject__ctor_Action_GameObject__
+  commentId: M:Slothsoft.TestRunner.TestGameObject.#ctor(Action{GameObject})
+  name.vb: TestGameObject(Action(Of GameObject))
+  fullName: Slothsoft.TestRunner.TestGameObject.TestGameObject(Action<GameObject>)
+  fullName.vb: Slothsoft.TestRunner.TestGameObject.TestGameObject(Action(Of GameObject))
+  nameWithType: TestGameObject.TestGameObject(Action<GameObject>)
+  nameWithType.vb: TestGameObject.TestGameObject(Action(Of GameObject))
+- uid: Slothsoft.TestRunner.TestGameObject.#ctor(System.String)
+  name: TestGameObject(String)
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject__ctor_System_String_
+  commentId: M:Slothsoft.TestRunner.TestGameObject.#ctor(System.String)
+  fullName: Slothsoft.TestRunner.TestGameObject.TestGameObject(System.String)
+  nameWithType: TestGameObject.TestGameObject(String)
+- uid: Slothsoft.TestRunner.TestGameObject.#ctor*
+  name: TestGameObject
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject__ctor_
+  commentId: Overload:Slothsoft.TestRunner.TestGameObject.#ctor
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestGameObject.TestGameObject
+  nameWithType: TestGameObject.TestGameObject
+- uid: Slothsoft.TestRunner.TestGameObject.Dispose
+  name: Dispose()
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject_Dispose
+  commentId: M:Slothsoft.TestRunner.TestGameObject.Dispose
+  fullName: Slothsoft.TestRunner.TestGameObject.Dispose()
+  nameWithType: TestGameObject.Dispose()
+- uid: Slothsoft.TestRunner.TestGameObject.Dispose*
+  name: Dispose
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject_Dispose_
+  commentId: Overload:Slothsoft.TestRunner.TestGameObject.Dispose
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestGameObject.Dispose
+  nameWithType: TestGameObject.Dispose
+- uid: Slothsoft.TestRunner.TestGameObject.Finalize
+  name: Finalize()
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject_Finalize
+  commentId: M:Slothsoft.TestRunner.TestGameObject.Finalize
+  fullName: Slothsoft.TestRunner.TestGameObject.Finalize()
+  nameWithType: TestGameObject.Finalize()
+- uid: Slothsoft.TestRunner.TestGameObject.Finalize*
+  name: Finalize
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject_Finalize_
+  commentId: Overload:Slothsoft.TestRunner.TestGameObject.Finalize
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestGameObject.Finalize
+  nameWithType: TestGameObject.Finalize
+- uid: Slothsoft.TestRunner.TestGameObject.gameObject
+  name: gameObject
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject_gameObject
+  commentId: F:Slothsoft.TestRunner.TestGameObject.gameObject
+  fullName: Slothsoft.TestRunner.TestGameObject.gameObject
+  nameWithType: TestGameObject.gameObject
+- uid: Slothsoft.TestRunner.TestGameObject.name
+  name: name
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject_name
+  commentId: F:Slothsoft.TestRunner.TestGameObject.name
+  fullName: Slothsoft.TestRunner.TestGameObject.name
+  nameWithType: TestGameObject.name
+- uid: Slothsoft.TestRunner.TestGameObject.transform
+  name: transform
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject_transform
+  commentId: F:Slothsoft.TestRunner.TestGameObject.transform
+  fullName: Slothsoft.TestRunner.TestGameObject.transform
+  nameWithType: TestGameObject.transform
+- uid: Slothsoft.TestRunner.TestGameObject`1
+  name: TestGameObject<TSuT>
+  href: api/Slothsoft.TestRunner.TestGameObject-1.html
+  commentId: T:Slothsoft.TestRunner.TestGameObject`1
+  name.vb: TestGameObject(Of TSuT)
+  fullName: Slothsoft.TestRunner.TestGameObject<TSuT>
+  fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT)
+  nameWithType: TestGameObject<TSuT>
+  nameWithType.vb: TestGameObject(Of TSuT)
+- uid: Slothsoft.TestRunner.TestGameObject`1.#ctor(Action{GameObject})
+  name: TestGameObject(Action<GameObject>)
+  href: api/Slothsoft.TestRunner.TestGameObject-1.html#Slothsoft_TestRunner_TestGameObject_1__ctor_Action_GameObject__
+  commentId: M:Slothsoft.TestRunner.TestGameObject`1.#ctor(Action{GameObject})
+  name.vb: TestGameObject(Action(Of GameObject))
+  fullName: Slothsoft.TestRunner.TestGameObject<TSuT>.TestGameObject(Action<GameObject>)
+  fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT).TestGameObject(Action(Of GameObject))
+  nameWithType: TestGameObject<TSuT>.TestGameObject(Action<GameObject>)
+  nameWithType.vb: TestGameObject(Of TSuT).TestGameObject(Action(Of GameObject))
+- uid: Slothsoft.TestRunner.TestGameObject`1.#ctor*
+  name: TestGameObject
+  href: api/Slothsoft.TestRunner.TestGameObject-1.html#Slothsoft_TestRunner_TestGameObject_1__ctor_
+  commentId: Overload:Slothsoft.TestRunner.TestGameObject`1.#ctor
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestGameObject<TSuT>.TestGameObject
+  fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT).TestGameObject
+  nameWithType: TestGameObject<TSuT>.TestGameObject
+  nameWithType.vb: TestGameObject(Of TSuT).TestGameObject
+- uid: Slothsoft.TestRunner.TestGameObject`1.sut
+  name: sut
+  href: api/Slothsoft.TestRunner.TestGameObject-1.html#Slothsoft_TestRunner_TestGameObject_1_sut
+  commentId: F:Slothsoft.TestRunner.TestGameObject`1.sut
+  fullName: Slothsoft.TestRunner.TestGameObject<TSuT>.sut
+  fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT).sut
+  nameWithType: TestGameObject<TSuT>.sut
+  nameWithType.vb: TestGameObject(Of TSuT).sut
+- uid: Slothsoft.TestRunner.WaitUtils
+  name: WaitUtils
+  href: api/Slothsoft.TestRunner.WaitUtils.html
+  commentId: T:Slothsoft.TestRunner.WaitUtils
+  fullName: Slothsoft.TestRunner.WaitUtils
+  nameWithType: WaitUtils
+- uid: Slothsoft.TestRunner.WaitUtils.WaitFor(Func{System.Boolean},System.String,System.Single)
+  name: WaitFor(Func<Boolean>, String, Single)
+  href: api/Slothsoft.TestRunner.WaitUtils.html#Slothsoft_TestRunner_WaitUtils_WaitFor_Func_System_Boolean__System_String_System_Single_
+  commentId: M:Slothsoft.TestRunner.WaitUtils.WaitFor(Func{System.Boolean},System.String,System.Single)
+  name.vb: WaitFor(Func(Of Boolean), String, Single)
+  fullName: Slothsoft.TestRunner.WaitUtils.WaitFor(Func<System.Boolean>, System.String, System.Single)
+  fullName.vb: Slothsoft.TestRunner.WaitUtils.WaitFor(Func(Of System.Boolean), System.String, System.Single)
+  nameWithType: WaitUtils.WaitFor(Func<Boolean>, String, Single)
+  nameWithType.vb: WaitUtils.WaitFor(Func(Of Boolean), String, Single)
+- uid: Slothsoft.TestRunner.WaitUtils.WaitFor*
+  name: WaitFor
+  href: api/Slothsoft.TestRunner.WaitUtils.html#Slothsoft_TestRunner_WaitUtils_WaitFor_
+  commentId: Overload:Slothsoft.TestRunner.WaitUtils.WaitFor
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.WaitUtils.WaitFor
+  nameWithType: WaitUtils.WaitFor
