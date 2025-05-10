@@ -1,12 +1,12 @@
 {
   "name": "net.slothsoft.test-runner",
   "version": "1.0.0",
-  "unity": "2022.3",
+  "unity": "6000.0",
   "displayName": "Slothsoft's Test Runner",
   "dependencies": {
-    "com.unity.test-framework": "1.4.6",
+    "com.unity.test-framework": "1.5.1",
     "net.tnrd.nsubstitute": "5.1.0",
-    "net.slothsoft.unity-extensions": "3.1.0"
+    "net.slothsoft.unity-extensions": "4.0.0"
   },
   "keywords": []
 }
