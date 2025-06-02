@@ -35,13 +35,13 @@ references:
   commentId: T:Slothsoft.TestRunner.TestGameObject
   fullName: Slothsoft.TestRunner.TestGameObject
   nameWithType: TestGameObject
-- uid: Slothsoft.TestRunner.TestGameObject.#ctor(Action{GameObject})
+- uid: Slothsoft.TestRunner.TestGameObject.#ctor(System.Action{GameObject})
   name: TestGameObject(Action<GameObject>)
-  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject__ctor_Action_GameObject__
-  commentId: M:Slothsoft.TestRunner.TestGameObject.#ctor(Action{GameObject})
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject__ctor_System_Action_GameObject__
+  commentId: M:Slothsoft.TestRunner.TestGameObject.#ctor(System.Action{GameObject})
   name.vb: TestGameObject(Action(Of GameObject))
-  fullName: Slothsoft.TestRunner.TestGameObject.TestGameObject(Action<GameObject>)
-  fullName.vb: Slothsoft.TestRunner.TestGameObject.TestGameObject(Action(Of GameObject))
+  fullName: Slothsoft.TestRunner.TestGameObject.TestGameObject(System.Action<GameObject>)
+  fullName.vb: Slothsoft.TestRunner.TestGameObject.TestGameObject(System.Action(Of GameObject))
   nameWithType: TestGameObject.TestGameObject(Action<GameObject>)
   nameWithType.vb: TestGameObject.TestGameObject(Action(Of GameObject))
 - uid: Slothsoft.TestRunner.TestGameObject.#ctor(System.String)
@@ -110,13 +110,13 @@ references:
   fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT)
   nameWithType: TestGameObject<TSuT>
   nameWithType.vb: TestGameObject(Of TSuT)
-- uid: Slothsoft.TestRunner.TestGameObject`1.#ctor(Action{GameObject})
+- uid: Slothsoft.TestRunner.TestGameObject`1.#ctor(System.Action{GameObject})
   name: TestGameObject(Action<GameObject>)
-  href: api/Slothsoft.TestRunner.TestGameObject-1.html#Slothsoft_TestRunner_TestGameObject_1__ctor_Action_GameObject__
-  commentId: M:Slothsoft.TestRunner.TestGameObject`1.#ctor(Action{GameObject})
+  href: api/Slothsoft.TestRunner.TestGameObject-1.html#Slothsoft_TestRunner_TestGameObject_1__ctor_System_Action_GameObject__
+  commentId: M:Slothsoft.TestRunner.TestGameObject`1.#ctor(System.Action{GameObject})
   name.vb: TestGameObject(Action(Of GameObject))
-  fullName: Slothsoft.TestRunner.TestGameObject<TSuT>.TestGameObject(Action<GameObject>)
-  fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT).TestGameObject(Action(Of GameObject))
+  fullName: Slothsoft.TestRunner.TestGameObject<TSuT>.TestGameObject(System.Action<GameObject>)
+  fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT).TestGameObject(System.Action(Of GameObject))
   nameWithType: TestGameObject<TSuT>.TestGameObject(Action<GameObject>)
   nameWithType.vb: TestGameObject(Of TSuT).TestGameObject(Action(Of GameObject))
 - uid: Slothsoft.TestRunner.TestGameObject`1.#ctor*
@@ -136,19 +136,134 @@ references:
   fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT).sut
   nameWithType: TestGameObject<TSuT>.sut
   nameWithType.vb: TestGameObject(Of TSuT).sut
+- uid: Slothsoft.TestRunner.TestObjectStore
+  name: TestObjectStore
+  href: api/Slothsoft.TestRunner.TestObjectStore.html
+  commentId: T:Slothsoft.TestRunner.TestObjectStore
+  fullName: Slothsoft.TestRunner.TestObjectStore
+  nameWithType: TestObjectStore
+- uid: Slothsoft.TestRunner.TestObjectStore.#ctor
+  name: TestObjectStore()
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore__ctor
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.#ctor
+  fullName: Slothsoft.TestRunner.TestObjectStore.TestObjectStore()
+  nameWithType: TestObjectStore.TestObjectStore()
+- uid: Slothsoft.TestRunner.TestObjectStore.#ctor(System.Boolean)
+  name: TestObjectStore(Boolean)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore__ctor_System_Boolean_
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.#ctor(System.Boolean)
+  fullName: Slothsoft.TestRunner.TestObjectStore.TestObjectStore(System.Boolean)
+  nameWithType: TestObjectStore.TestObjectStore(Boolean)
+- uid: Slothsoft.TestRunner.TestObjectStore.#ctor*
+  name: TestObjectStore
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore__ctor_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.#ctor
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.TestObjectStore
+  nameWithType: TestObjectStore.TestObjectStore
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String,System.Nullable{Vector3},System.Nullable{Quaternion})
+  name: CreateGameObject(String, Nullable<Vector3>, Nullable<Quaternion>)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateGameObject_System_String_System_Nullable_Vector3__System_Nullable_Quaternion__
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String,System.Nullable{Vector3},System.Nullable{Quaternion})
+  name.vb: CreateGameObject(String, Nullable(Of Vector3), Nullable(Of Quaternion))
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String, System.Nullable<Vector3>, System.Nullable<Quaternion>)
+  fullName.vb: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String, System.Nullable(Of Vector3), System.Nullable(Of Quaternion))
+  nameWithType: TestObjectStore.CreateGameObject(String, Nullable<Vector3>, Nullable<Quaternion>)
+  nameWithType.vb: TestObjectStore.CreateGameObject(String, Nullable(Of Vector3), Nullable(Of Quaternion))
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateGameObject*
+  name: CreateGameObject
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateGameObject_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.CreateGameObject
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateGameObject
+  nameWithType: TestObjectStore.CreateGameObject
+- uid: Slothsoft.TestRunner.TestObjectStore.CreatePrimitive(PrimitiveType,System.Nullable{Vector3},System.Nullable{Quaternion})
+  name: CreatePrimitive(PrimitiveType, Nullable<Vector3>, Nullable<Quaternion>)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreatePrimitive_PrimitiveType_System_Nullable_Vector3__System_Nullable_Quaternion__
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreatePrimitive(PrimitiveType,System.Nullable{Vector3},System.Nullable{Quaternion})
+  name.vb: CreatePrimitive(PrimitiveType, Nullable(Of Vector3), Nullable(Of Quaternion))
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreatePrimitive(PrimitiveType, System.Nullable<Vector3>, System.Nullable<Quaternion>)
+  fullName.vb: Slothsoft.TestRunner.TestObjectStore.CreatePrimitive(PrimitiveType, System.Nullable(Of Vector3), System.Nullable(Of Quaternion))
+  nameWithType: TestObjectStore.CreatePrimitive(PrimitiveType, Nullable<Vector3>, Nullable<Quaternion>)
+  nameWithType.vb: TestObjectStore.CreatePrimitive(PrimitiveType, Nullable(Of Vector3), Nullable(Of Quaternion))
+- uid: Slothsoft.TestRunner.TestObjectStore.CreatePrimitive*
+  name: CreatePrimitive
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreatePrimitive_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.CreatePrimitive
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreatePrimitive
+  nameWithType: TestObjectStore.CreatePrimitive
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject*
+  name: CreateScriptableObject
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateScriptableObject_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject
+  nameWithType: TestObjectStore.CreateScriptableObject
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject``1(System.String)
+  name: CreateScriptableObject<T>(String)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateScriptableObject__1_System_String_
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject``1(System.String)
+  name.vb: CreateScriptableObject(Of T)(String)
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject<T>(System.String)
+  fullName.vb: Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject(Of T)(System.String)
+  nameWithType: TestObjectStore.CreateScriptableObject<T>(String)
+  nameWithType.vb: TestObjectStore.CreateScriptableObject(Of T)(String)
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateUnityObject*
+  name: CreateUnityObject
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateUnityObject_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.CreateUnityObject
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateUnityObject
+  nameWithType: TestObjectStore.CreateUnityObject
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateUnityObject``1(System.String)
+  name: CreateUnityObject<T>(String)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateUnityObject__1_System_String_
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreateUnityObject``1(System.String)
+  name.vb: CreateUnityObject(Of T)(String)
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateUnityObject<T>(System.String)
+  fullName.vb: Slothsoft.TestRunner.TestObjectStore.CreateUnityObject(Of T)(System.String)
+  nameWithType: TestObjectStore.CreateUnityObject<T>(String)
+  nameWithType.vb: TestObjectStore.CreateUnityObject(Of T)(String)
+- uid: Slothsoft.TestRunner.TestObjectStore.Dispose
+  name: Dispose()
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_Dispose
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.Dispose
+  fullName: Slothsoft.TestRunner.TestObjectStore.Dispose()
+  nameWithType: TestObjectStore.Dispose()
+- uid: Slothsoft.TestRunner.TestObjectStore.Dispose*
+  name: Dispose
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_Dispose_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.Dispose
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.Dispose
+  nameWithType: TestObjectStore.Dispose
+- uid: Slothsoft.TestRunner.TestObjectStore.Finalize
+  name: Finalize()
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_Finalize
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.Finalize
+  fullName: Slothsoft.TestRunner.TestObjectStore.Finalize()
+  nameWithType: TestObjectStore.Finalize()
+- uid: Slothsoft.TestRunner.TestObjectStore.Finalize*
+  name: Finalize
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_Finalize_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.Finalize
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.Finalize
+  nameWithType: TestObjectStore.Finalize
 - uid: Slothsoft.TestRunner.WaitUtils
   name: WaitUtils
   href: api/Slothsoft.TestRunner.WaitUtils.html
   commentId: T:Slothsoft.TestRunner.WaitUtils
   fullName: Slothsoft.TestRunner.WaitUtils
   nameWithType: WaitUtils
-- uid: Slothsoft.TestRunner.WaitUtils.WaitFor(Func{System.Boolean},System.String,System.Single)
+- uid: Slothsoft.TestRunner.WaitUtils.WaitFor(System.Func{System.Boolean},System.String,System.Single)
   name: WaitFor(Func<Boolean>, String, Single)
-  href: api/Slothsoft.TestRunner.WaitUtils.html#Slothsoft_TestRunner_WaitUtils_WaitFor_Func_System_Boolean__System_String_System_Single_
-  commentId: M:Slothsoft.TestRunner.WaitUtils.WaitFor(Func{System.Boolean},System.String,System.Single)
+  href: api/Slothsoft.TestRunner.WaitUtils.html#Slothsoft_TestRunner_WaitUtils_WaitFor_System_Func_System_Boolean__System_String_System_Single_
+  commentId: M:Slothsoft.TestRunner.WaitUtils.WaitFor(System.Func{System.Boolean},System.String,System.Single)
   name.vb: WaitFor(Func(Of Boolean), String, Single)
-  fullName: Slothsoft.TestRunner.WaitUtils.WaitFor(Func<System.Boolean>, System.String, System.Single)
-  fullName.vb: Slothsoft.TestRunner.WaitUtils.WaitFor(Func(Of System.Boolean), System.String, System.Single)
+  fullName: Slothsoft.TestRunner.WaitUtils.WaitFor(System.Func<System.Boolean>, System.String, System.Single)
+  fullName.vb: Slothsoft.TestRunner.WaitUtils.WaitFor(System.Func(Of System.Boolean), System.String, System.Single)
   nameWithType: WaitUtils.WaitFor(Func<Boolean>, String, Single)
   nameWithType.vb: WaitUtils.WaitFor(Func(Of Boolean), String, Single)
 - uid: Slothsoft.TestRunner.WaitUtils.WaitFor*

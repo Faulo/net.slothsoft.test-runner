@@ -21,7 +21,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.TestGameObject-1.html",
-          "hash": "/x2bWNWoRWM1f4bMo48glw=="
+          "hash": "XW80oISlgc/tJx73wPg9KA=="
         }
       },
       "is_incremental": false,
@@ -33,7 +33,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.TestGameObject.html",
-          "hash": "xMzN675mRNEOCXT57/y8cA=="
+          "hash": "MxAMICWYK18dqD7kmjOiWA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.TestObjectStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.TestObjectStore.html",
+          "hash": "mFl0D/QByXPiEj/Q8rjx4w=="
         }
       },
       "is_incremental": false,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.WaitUtils.html",
-          "hash": "Y9wZPs17SuJliH+1uRpquQ=="
+          "hash": "1Q2yFFQ/iZ6/H5ntpM8pvA=="
         }
       },
       "is_incremental": false,
@@ -57,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.html",
-          "hash": "D4SfjdQWos7leIo7+GQAAA=="
+          "hash": "N1uhABudM8mv1DxzH+QSYw=="
         }
       },
       "is_incremental": false,
@@ -81,7 +93,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "E2uvtEOMZ33/4cA1BFDRvg=="
+          "hash": "bbcwL4OTkt2E4b/iOPsXZg=="
         }
       },
       "is_incremental": false,
@@ -132,7 +144,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 5,
+          "total_file_count": 6,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

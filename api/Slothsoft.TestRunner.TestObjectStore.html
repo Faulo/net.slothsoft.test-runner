@@ -5,10 +5,10 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class TestGameObject
+    <title>Class TestObjectStore
    </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class TestGameObject
+    <meta name="title" content="Class TestObjectStore
    ">
     <meta name="generator" content="docfx 2.56.7.0">
     
@@ -68,18 +68,17 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="Slothsoft.TestRunner.TestGameObject">
+            <article class="content wrap" id="_content" data-uid="Slothsoft.TestRunner.TestObjectStore">
   
   
-  <h1 id="Slothsoft_TestRunner_TestGameObject" data-uid="Slothsoft.TestRunner.TestGameObject" class="text-break">Class TestGameObject
+  <h1 id="Slothsoft_TestRunner_TestObjectStore" data-uid="Slothsoft.TestRunner.TestObjectStore" class="text-break">Class TestObjectStore
   </h1>
   <div class="markdown level0 summary"></div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">TestGameObject</span></div>
-      <div class="level2"><a class="xref" href="Slothsoft.TestRunner.TestGameObject-1.html">TestGameObject&lt;TSuT&gt;</a></div>
+    <div class="level1"><span class="xref">TestObjectStore</span></div>
   </div>
   <div classs="implements">
     <h5>Implements</h5>
@@ -111,21 +110,31 @@
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="Slothsoft.TestRunner.html">Slothsoft.TestRunner</a></h6>
   <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
-  <h5 id="Slothsoft_TestRunner_TestGameObject_syntax">Syntax</h5>
+  <h5 id="Slothsoft_TestRunner_TestObjectStore_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class TestGameObject : IDisposable</code></pre>
+    <pre><code class="lang-csharp hljs">public class TestObjectStore : IDisposable</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="Slothsoft_TestRunner_TestGameObject__ctor_" data-uid="Slothsoft.TestRunner.TestGameObject.#ctor*"></a>
-  <h4 id="Slothsoft_TestRunner_TestGameObject__ctor_System_Action_GameObject__" data-uid="Slothsoft.TestRunner.TestGameObject.#ctor(System.Action{GameObject})">TestGameObject(Action&lt;GameObject&gt;)</h4>
+  <a id="Slothsoft_TestRunner_TestObjectStore__ctor_" data-uid="Slothsoft.TestRunner.TestObjectStore.#ctor*"></a>
+  <h4 id="Slothsoft_TestRunner_TestObjectStore__ctor" data-uid="Slothsoft.TestRunner.TestObjectStore.#ctor">TestObjectStore()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public TestGameObject(Action&lt;GameObject&gt; setup = null)</code></pre>
+    <pre><code class="lang-csharp hljs">public TestObjectStore()</code></pre>
+  </div>
+  
+  
+  <a id="Slothsoft_TestRunner_TestObjectStore__ctor_" data-uid="Slothsoft.TestRunner.TestObjectStore.#ctor*"></a>
+  <h4 id="Slothsoft_TestRunner_TestObjectStore__ctor_System_Boolean_" data-uid="Slothsoft.TestRunner.TestObjectStore.#ctor(System.Boolean)">TestObjectStore(Boolean)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public TestObjectStore(bool destroyImmediately)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -138,21 +147,128 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.Action</span>&lt;<span class="xref">GameObject</span>&gt;</td>
-        <td><span class="parametername">setup</span></td>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">destroyImmediately</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Slothsoft_TestRunner_TestObjectStore_CreateGameObject_" data-uid="Slothsoft.TestRunner.TestObjectStore.CreateGameObject*"></a>
+  <h4 id="Slothsoft_TestRunner_TestObjectStore_CreateGameObject_System_String_System_Nullable_Vector3__System_Nullable_Quaternion__" data-uid="Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String,System.Nullable{Vector3},System.Nullable{Quaternion})">CreateGameObject(String, Nullable&lt;Vector3&gt;, Nullable&lt;Quaternion&gt;)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GameObject CreateGameObject(string name = null, Vector3? position = default(Vector3? ), Quaternion? rotation = default(Quaternion? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Quaternion</span>&gt;</td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <a id="Slothsoft_TestRunner_TestGameObject__ctor_" data-uid="Slothsoft.TestRunner.TestGameObject.#ctor*"></a>
-  <h4 id="Slothsoft_TestRunner_TestGameObject__ctor_System_String_" data-uid="Slothsoft.TestRunner.TestGameObject.#ctor(System.String)">TestGameObject(String)</h4>
+  <a id="Slothsoft_TestRunner_TestObjectStore_CreatePrimitive_" data-uid="Slothsoft.TestRunner.TestObjectStore.CreatePrimitive*"></a>
+  <h4 id="Slothsoft_TestRunner_TestObjectStore_CreatePrimitive_PrimitiveType_System_Nullable_Vector3__System_Nullable_Quaternion__" data-uid="Slothsoft.TestRunner.TestObjectStore.CreatePrimitive(PrimitiveType,System.Nullable{Vector3},System.Nullable{Quaternion})">CreatePrimitive(PrimitiveType, Nullable&lt;Vector3&gt;, Nullable&lt;Quaternion&gt;)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected TestGameObject(string name)</code></pre>
+    <pre><code class="lang-csharp hljs">public GameObject CreatePrimitive(PrimitiveType type, Vector3? position = default(Vector3? ), Quaternion? rotation = default(Quaternion? ))</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">PrimitiveType</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Vector3</span>&gt;</td>
+        <td><span class="parametername">position</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">Quaternion</span>&gt;</td>
+        <td><span class="parametername">rotation</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_TestObjectStore_CreateScriptableObject_" data-uid="Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject*"></a>
+  <h4 id="Slothsoft_TestRunner_TestObjectStore_CreateScriptableObject__1_System_String_" data-uid="Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject``1(System.String)">CreateScriptableObject&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T CreateScriptableObject&lt;T&gt;(string name = null)
+    where T : ScriptableObject</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -171,18 +287,7 @@
       </tr>
     </tbody>
   </table>
-  <h3 id="fields">Fields
-  </h3>
-  
-  
-  <h4 id="Slothsoft_TestRunner_TestGameObject_gameObject" data-uid="Slothsoft.TestRunner.TestGameObject.gameObject">gameObject</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly GameObject gameObject</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -192,45 +297,55 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">GameObject</span></td>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
   
   
-  <h4 id="Slothsoft_TestRunner_TestGameObject_name" data-uid="Slothsoft.TestRunner.TestGameObject.name">name</h4>
+  <a id="Slothsoft_TestRunner_TestObjectStore_CreateUnityObject_" data-uid="Slothsoft.TestRunner.TestObjectStore.CreateUnityObject*"></a>
+  <h4 id="Slothsoft_TestRunner_TestObjectStore_CreateUnityObject__1_System_String_" data-uid="Slothsoft.TestRunner.TestObjectStore.CreateUnityObject``1(System.String)">CreateUnityObject&lt;T&gt;(String)</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">protected readonly string name</code></pre>
+    <pre><code class="lang-csharp hljs">public T CreateUnityObject&lt;T&gt;(string name = null)
+    where T : UnityEngine.Object, new()</code></pre>
   </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
         <th>Type</th>
+        <th>Name</th>
         <th>Description</th>
       </tr>
     </thead>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">name</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  
-  
-  <h4 id="Slothsoft_TestRunner_TestGameObject_transform" data-uid="Slothsoft.TestRunner.TestGameObject.transform">transform</h4>
-  <div class="markdown level1 summary"></div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public readonly Transform transform</code></pre>
-  </div>
-  <h5 class="fieldValue">Field Value</h5>
+  <h5 class="returns">Returns</h5>
   <table class="table table-bordered table-striped table-condensed">
     <thead>
       <tr>
@@ -240,18 +355,32 @@
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">Transform</span></td>
+        <td><span class="xref">T</span></td>
         <td></td>
       </tr>
     </tbody>
   </table>
-  <h3 id="methods">Methods
-  </h3>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
   
   
-  <a id="Slothsoft_TestRunner_TestGameObject_Dispose_" data-uid="Slothsoft.TestRunner.TestGameObject.Dispose*"></a>
-  <h4 id="Slothsoft_TestRunner_TestGameObject_Dispose" data-uid="Slothsoft.TestRunner.TestGameObject.Dispose">Dispose()</h4>
-  <div class="markdown level1 summary"></div>
+  <a id="Slothsoft_TestRunner_TestObjectStore_Dispose_" data-uid="Slothsoft.TestRunner.TestObjectStore.Dispose*"></a>
+  <h4 id="Slothsoft_TestRunner_TestObjectStore_Dispose" data-uid="Slothsoft.TestRunner.TestObjectStore.Dispose">Dispose()</h4>
+  <div class="markdown level1 summary"><p>Destroys all objects created by this instance.</p>
+</div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
@@ -259,8 +388,8 @@
   </div>
   
   
-  <a id="Slothsoft_TestRunner_TestGameObject_Finalize_" data-uid="Slothsoft.TestRunner.TestGameObject.Finalize*"></a>
-  <h4 id="Slothsoft_TestRunner_TestGameObject_Finalize" data-uid="Slothsoft.TestRunner.TestGameObject.Finalize">Finalize()</h4>
+  <a id="Slothsoft_TestRunner_TestObjectStore_Finalize_" data-uid="Slothsoft.TestRunner.TestObjectStore.Finalize*"></a>
+  <h4 id="Slothsoft_TestRunner_TestObjectStore_Finalize" data-uid="Slothsoft.TestRunner.TestObjectStore.Finalize">Finalize()</h4>
   <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
