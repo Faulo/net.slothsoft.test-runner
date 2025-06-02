@@ -88,5 +88,18 @@ namespace Slothsoft.TestRunner {
 
             instances.Clear();
         }
+
+        public void Register(UnityObject toBeDisposed) {
+            switch (toBeDisposed) {
+                case null:
+                    break;
+                case Component { gameObject: GameObject obj }:
+                    instances.Add(obj);
+                    break;
+                default:
+                    instances.Add(toBeDisposed);
+                    break;
+            }
+        }
     }
 }
