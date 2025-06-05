@@ -177,6 +177,22 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.TestObjectStore.CreateGameObject
   nameWithType: TestObjectStore.CreateGameObject
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateGameObjectFromPrefab(GameObject,System.String,System.Nullable{Vector3},System.Nullable{Quaternion},Transform)
+  name: CreateGameObjectFromPrefab(GameObject, String, Nullable<Vector3>, Nullable<Quaternion>, Transform)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateGameObjectFromPrefab_GameObject_System_String_System_Nullable_Vector3__System_Nullable_Quaternion__Transform_
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreateGameObjectFromPrefab(GameObject,System.String,System.Nullable{Vector3},System.Nullable{Quaternion},Transform)
+  name.vb: CreateGameObjectFromPrefab(GameObject, String, Nullable(Of Vector3), Nullable(Of Quaternion), Transform)
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateGameObjectFromPrefab(GameObject, System.String, System.Nullable<Vector3>, System.Nullable<Quaternion>, Transform)
+  fullName.vb: Slothsoft.TestRunner.TestObjectStore.CreateGameObjectFromPrefab(GameObject, System.String, System.Nullable(Of Vector3), System.Nullable(Of Quaternion), Transform)
+  nameWithType: TestObjectStore.CreateGameObjectFromPrefab(GameObject, String, Nullable<Vector3>, Nullable<Quaternion>, Transform)
+  nameWithType.vb: TestObjectStore.CreateGameObjectFromPrefab(GameObject, String, Nullable(Of Vector3), Nullable(Of Quaternion), Transform)
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateGameObjectFromPrefab*
+  name: CreateGameObjectFromPrefab
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateGameObjectFromPrefab_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.CreateGameObjectFromPrefab
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateGameObjectFromPrefab
+  nameWithType: TestObjectStore.CreateGameObjectFromPrefab
 - uid: Slothsoft.TestRunner.TestObjectStore.CreatePrimitive(PrimitiveType,System.Nullable{Vector3},System.Nullable{Quaternion})
   name: CreatePrimitive(PrimitiveType, Nullable<Vector3>, Nullable<Quaternion>)
   href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreatePrimitive_PrimitiveType_System_Nullable_Vector3__System_Nullable_Quaternion__
@@ -193,6 +209,22 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.TestObjectStore.CreatePrimitive
   nameWithType: TestObjectStore.CreatePrimitive
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateRenderTexture(RenderTextureDescriptor@)
+  name: CreateRenderTexture(RenderTextureDescriptor)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateRenderTexture_RenderTextureDescriptor__
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreateRenderTexture(RenderTextureDescriptor@)
+  name.vb: CreateRenderTexture(ByRef RenderTextureDescriptor)
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateRenderTexture(RenderTextureDescriptor)
+  fullName.vb: Slothsoft.TestRunner.TestObjectStore.CreateRenderTexture(ByRef RenderTextureDescriptor)
+  nameWithType: TestObjectStore.CreateRenderTexture(RenderTextureDescriptor)
+  nameWithType.vb: TestObjectStore.CreateRenderTexture(ByRef RenderTextureDescriptor)
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateRenderTexture*
+  name: CreateRenderTexture
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateRenderTexture_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.CreateRenderTexture
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateRenderTexture
+  nameWithType: TestObjectStore.CreateRenderTexture
 - uid: Slothsoft.TestRunner.TestObjectStore.CreateScriptableObject*
   name: CreateScriptableObject
   href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateScriptableObject_
