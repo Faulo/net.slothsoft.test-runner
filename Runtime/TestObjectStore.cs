@@ -7,6 +7,7 @@ using UnityObject = UnityEngine.Object;
 namespace Slothsoft.TestRunner {
     public class TestObjectStore : IDisposable {
         readonly List<UnityObject> instances = new();
+
         readonly bool destroyImmediately;
 
         public TestObjectStore() : this(!Application.isPlaying) {
@@ -57,6 +58,28 @@ namespace Slothsoft.TestRunner {
             return instance;
         }
 
+        public GameObject CreateGameObjectFromPrefab(GameObject prefab, string name = default, Vector3? position = default, Quaternion? rotation = default, Transform parent = null) {
+            var instance = parent
+                ? UnityObject.Instantiate(prefab, parent)
+                : UnityObject.Instantiate(prefab);
+
+            if (!string.IsNullOrEmpty(name)) {
+                instance.name = name;
+            }
+
+            if (position.HasValue) {
+                instance.transform.position = position.Value;
+            }
+
+            if (rotation.HasValue) {
+                instance.transform.rotation = rotation.Value;
+            }
+
+            instances.Add(instance);
+
+            return instance;
+        }
+
         public GameObject CreatePrimitive(PrimitiveType type, Vector3? position = default, Quaternion? rotation = default) {
             var instance = GameObject.CreatePrimitive(type);
             if (position.HasValue) {
@@ -72,12 +95,22 @@ namespace Slothsoft.TestRunner {
             return instance;
         }
 
+        public RenderTexture CreateRenderTexture(in RenderTextureDescriptor descriptor) {
+            var instance = new RenderTexture(descriptor);
+            instances.Add(instance);
+            return instance;
+        }
+
         /// <summary>
         /// Destroys all objects created by this instance.
         /// </summary>
         public void Dispose() {
             foreach (var instance in instances) {
                 if (instance) {
+                    if (instance is RenderTexture rt) {
+                        rt.Release();
+                    }
+
                     if (destroyImmediately) {
                         UnityObject.DestroyImmediate(instance);
                     } else {
