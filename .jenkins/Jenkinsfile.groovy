@@ -11,6 +11,7 @@ pipeline {
 			steps {
 				script {
 					env.UNITY_EMPTY_MANIFEST = new File(env.UNITY_EMPTY_MANIFEST).canonicalPath
+					echo "Using empty manifest file '$UNITY_EMPTY_MANIFEST'"
 				}
 			}
 		}
