@@ -1,0 +1,11 @@
+{
+  "scopedRegistries": [
+    {
+      "name": "OpenUPM",
+      "url": "https://package.openupm.com",
+      "scopes": [
+        "net.tnrd.nsubstitute"
+      ]
+    }
+  ]
+}
