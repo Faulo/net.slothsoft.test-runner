@@ -1,9 +1,13 @@
 {
+  "dependencies": {
+    "net.slothsoft.unity-extensions": "4.0.0"
+  },
   "scopedRegistries": [
     {
       "name": "OpenUPM",
       "url": "https://package.openupm.com",
       "scopes": [
+	    "net.slothsoft",
         "net.tnrd.nsubstitute"
       ]
     }
