@@ -1,13 +1,21 @@
 {
   "name": "net.slothsoft.test-runner",
-  "version": "1.0.0",
+  "version": "1.0.0-pre.0",
   "unity": "6000.0",
+  "unityRelease": "44f1",
   "displayName": "Slothsoft's Test Runner",
   "dependencies": {
     "com.unity.test-framework": "1.5.1",
-    "net.tnrd.nsubstitute": "5.1.0",
-    "net.slothsoft.unity-extensions": "4.0.0"
+    "net.tnrd.nsubstitute": "5.1.0"
   },
-  "keywords": [],
-  "unityRelease": "44f1"
+  "repository": {
+    "url": "https://github.com/Faulo/net.slothsoft.test-runner.git",
+    "type": "git"
+  },
+  "author": {
+    "name": "Daniel Schulz",
+    "email": "info.slothsoft@gmail.com",
+    "url": "http://slothsoft.net/"
+  },
+  "keywords": []
 }
