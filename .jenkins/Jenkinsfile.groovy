@@ -7,6 +7,13 @@ pipeline {
 		UNITY_EMPTY_MANIFEST = '.jenkins/manifest.json'
 	}
 	stages {
+		stage('Init') {
+			steps {
+				script {
+					env.UNITY_EMPTY_MANIFEST = new File(env.UNITY_EMPTY_MANIFEST).canonicalPath
+				}
+			}
+		}
 		stage('Linux') {
 			steps {
 				script {
