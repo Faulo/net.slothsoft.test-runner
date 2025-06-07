@@ -8,5 +8,6 @@
     "net.tnrd.nsubstitute": "5.1.0",
     "net.slothsoft.unity-extensions": "4.0.0"
   },
-  "keywords": []
+  "keywords": [],
+  "unityRelease": "44f1"
 }
