@@ -15,15 +15,22 @@ pipeline {
 						PACKAGE_LOCATION = ''
 						UNITY_NODE = 'unity && linux'
 
-						// which Unity Test Runner modes to execute
+						// Assert that CHANGELOG.md has been updated.
+						TEST_CHANGELOG : '1',
+						CHANGELOG_LOCATION : 'CHANGELOG.md',
+
+						// Assert Unity's Test Runner tests.
+						TEST_UNITY : '1',
 						TEST_MODES = 'EditMode PlayMode'
 
-						// verify that code is formatted
+						// Assert that the C# code of the package matches the .editorconfig.
 						TEST_FORMATTING = '1'
 						EDITORCONFIG_LOCATION = '.jenkins/.editorconfig'
 
-						// which platforms to deploy to
-						DEPLOY_TO_VERDACCIO = '0'
+						// Deploy the package to a Verdaccio server.
+						DEPLOY_TO_VERDACCIO : '0',
+						VERDACCIO_URL : 'http://verdaccio',
+						VERDACCIO_CREDENTIALS : 'Slothsoft-Verdaccio',
 					}
 				}
 			}
@@ -36,15 +43,22 @@ pipeline {
 						PACKAGE_LOCATION = ''
 						UNITY_NODE = 'unity && windows'
 
-						// which Unity Test Runner modes to execute
+						// Assert that CHANGELOG.md has been updated.
+						TEST_CHANGELOG : '1',
+						CHANGELOG_LOCATION : 'CHANGELOG.md',
+
+						// Assert Unity's Test Runner tests.
+						TEST_UNITY : '1',
 						TEST_MODES = 'EditMode PlayMode'
 
-						// verify that code is formatted
+						// Assert that the C# code of the package matches the .editorconfig.
 						TEST_FORMATTING = '1'
 						EDITORCONFIG_LOCATION = '.jenkins/.editorconfig'
 
-						// which platforms to deploy to
-						DEPLOY_TO_VERDACCIO = '0'
+						// Deploy the package to a Verdaccio server.
+						DEPLOY_TO_VERDACCIO = '1'
+						VERDACCIO_URL : 'http://verdaccio',
+						VERDACCIO_CREDENTIALS : 'Slothsoft-Verdaccio',
 					}
 				}
 			}
