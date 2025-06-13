@@ -4,12 +4,6 @@
   },
   "scopedRegistries": [
     {
-      "name": "Slothsoft",
-      "url": "http://packages.slothsoft.net",
-      "scopes": [
-      ]
-    },
-    {
       "name": "OpenUPM",
       "url": "https://package.openupm.com",
       "scopes": [
