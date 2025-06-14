@@ -1,15 +1,20 @@
 {
   "name": "net.slothsoft.test-runner",
-  "version": "1.0.0-pre.0",
+  "displayName": "Slothsoft's Test Runner",
+  "version": "1.0.0-pre.1",
+  "description": "",
   "unity": "6000.0",
   "unityRelease": "44f1",
-  "displayName": "Slothsoft's Test Runner",
+  "keywords": [],
+  "license": "MIT",
+  "changelogUrl": "https://faulo.github.io/net.slothsoft.test-runner/",
+  "documentationUrl": "https://faulo.github.io/net.slothsoft.test-runner/",
   "dependencies": {
     "com.unity.test-framework": "1.5.1",
     "net.tnrd.nsubstitute": "5.1.0"
   },
   "repository": {
-    "url": "https://github.com/Faulo/net.slothsoft.test-runner.git",
+    "url": "git+https://github.com/Faulo/net.slothsoft.test-runner.git",
     "type": "git"
   },
   "author": {
@@ -17,5 +22,6 @@
     "email": "info.slothsoft@gmail.com",
     "url": "http://slothsoft.net/"
   },
-  "keywords": []
+  "type": "library",
+  "hideInEditor": false
 }
