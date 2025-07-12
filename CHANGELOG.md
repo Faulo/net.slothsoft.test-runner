@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [1.0.0-pre.2] - 2025-07-13
+
+### Added
+- Added Slothsoft's UnityExtensions to dependencies.
+
+
 ## [1.0.0-pre.1] - 2025-06-11
 
 ### Added
