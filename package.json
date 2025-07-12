@@ -2,7 +2,6 @@
   "name": "net.slothsoft.test-runner",
   "displayName": "Slothsoft's Test Runner",
   "version": "1.0.0-pre.1",
-  "description": "",
   "unity": "6000.0",
   "unityRelease": "44f1",
   "keywords": [],
@@ -10,6 +9,7 @@
   "changelogUrl": "https://faulo.github.io/net.slothsoft.test-runner/",
   "documentationUrl": "https://faulo.github.io/net.slothsoft.test-runner/",
   "dependencies": {
+    "net.slothsoft.unity-extensions": "4.0.0",
     "com.unity.test-framework": "1.5.1",
     "net.tnrd.nsubstitute": "5.1.0"
   },
