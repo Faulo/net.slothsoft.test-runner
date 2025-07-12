@@ -283,12 +283,12 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.TestObjectStore.Finalize
   nameWithType: TestObjectStore.Finalize
-- uid: Slothsoft.TestRunner.TestObjectStore.Register(UnityObject)
-  name: Register(UnityObject)
-  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_Register_UnityObject_
-  commentId: M:Slothsoft.TestRunner.TestObjectStore.Register(UnityObject)
-  fullName: Slothsoft.TestRunner.TestObjectStore.Register(UnityObject)
-  nameWithType: TestObjectStore.Register(UnityObject)
+- uid: Slothsoft.TestRunner.TestObjectStore.Register(UnityEngine.Object)
+  name: Register(UnityEngine.Object)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_Register_UnityEngine_Object_
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.Register(UnityEngine.Object)
+  fullName: Slothsoft.TestRunner.TestObjectStore.Register(UnityEngine.Object)
+  nameWithType: TestObjectStore.Register(UnityEngine.Object)
 - uid: Slothsoft.TestRunner.TestObjectStore.Register*
   name: Register
   href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_Register_
