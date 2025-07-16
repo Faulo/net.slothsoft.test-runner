@@ -161,15 +161,15 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.TestObjectStore.TestObjectStore
   nameWithType: TestObjectStore.TestObjectStore
-- uid: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String,System.Nullable{Vector3},System.Nullable{Quaternion})
-  name: CreateGameObject(String, Nullable<Vector3>, Nullable<Quaternion>)
-  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateGameObject_System_String_System_Nullable_Vector3__System_Nullable_Quaternion__
-  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String,System.Nullable{Vector3},System.Nullable{Quaternion})
-  name.vb: CreateGameObject(String, Nullable(Of Vector3), Nullable(Of Quaternion))
-  fullName: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String, System.Nullable<Vector3>, System.Nullable<Quaternion>)
-  fullName.vb: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String, System.Nullable(Of Vector3), System.Nullable(Of Quaternion))
-  nameWithType: TestObjectStore.CreateGameObject(String, Nullable<Vector3>, Nullable<Quaternion>)
-  nameWithType.vb: TestObjectStore.CreateGameObject(String, Nullable(Of Vector3), Nullable(Of Quaternion))
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String,System.Nullable{Vector3},System.Nullable{Quaternion},Transform)
+  name: CreateGameObject(String, Nullable<Vector3>, Nullable<Quaternion>, Transform)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateGameObject_System_String_System_Nullable_Vector3__System_Nullable_Quaternion__Transform_
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String,System.Nullable{Vector3},System.Nullable{Quaternion},Transform)
+  name.vb: CreateGameObject(String, Nullable(Of Vector3), Nullable(Of Quaternion), Transform)
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String, System.Nullable<Vector3>, System.Nullable<Quaternion>, Transform)
+  fullName.vb: Slothsoft.TestRunner.TestObjectStore.CreateGameObject(System.String, System.Nullable(Of Vector3), System.Nullable(Of Quaternion), Transform)
+  nameWithType: TestObjectStore.CreateGameObject(String, Nullable<Vector3>, Nullable<Quaternion>, Transform)
+  nameWithType.vb: TestObjectStore.CreateGameObject(String, Nullable(Of Vector3), Nullable(Of Quaternion), Transform)
 - uid: Slothsoft.TestRunner.TestObjectStore.CreateGameObject*
   name: CreateGameObject
   href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateGameObject_
