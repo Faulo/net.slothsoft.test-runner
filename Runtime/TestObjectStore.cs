@@ -40,10 +40,14 @@ namespace Slothsoft.TestRunner {
             return instance;
         }
 
-        public GameObject CreateGameObject(string name = default, Vector3? position = default, Quaternion? rotation = default) {
+        public GameObject CreateGameObject(string name = default, Vector3? position = default, Quaternion? rotation = default, Transform parent = null) {
             GameObject instance = string.IsNullOrEmpty(name)
                 ? new()
                 : new(name);
+
+            if (parent) {
+                instance.transform.parent = parent;
+            }
 
             if (position.HasValue) {
                 instance.transform.position = position.Value;
