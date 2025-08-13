@@ -4,7 +4,7 @@ using UnityEditor;
 
 namespace Slothsoft.TestRunner.Editor {
     static class DirectoryValidation {
-        [Validate(IncludeTests = true)]
+        [Validate(includeTestAssets = true)]
         public static void PreventEmptyDirectories(DefaultAsset asset, IAssetValidator validator) {
             if (validator.CurrentAssetPath is not string assetPath) {
                 return;

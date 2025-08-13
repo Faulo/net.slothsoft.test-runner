@@ -45,12 +45,12 @@ namespace Slothsoft.TestRunner.Editor {
                 yield break;
             }
 
-            if (AssetValidationHelper.HasUploadedShadersRecently) {
+            if (AssetUtils.hasUploadedShadersRecently) {
                 Assert.Ignore("Uploaded shaders recently, skipping upload.");
                 yield break;
             }
 
-            AssetValidationHelper.HasUploadedShadersRecently = true;
+            AssetUtils.hasUploadedShadersRecently = true;
 
             yield return RequestAndWait_Co(CacheServer.UploadShaderCache);
         }

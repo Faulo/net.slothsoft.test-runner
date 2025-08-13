@@ -11,7 +11,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
     [TestMustExpectAllLogs(false)]
-    class AssetValidationBaseTests {
+    class SerializedAssetValidationTests {
         internal sealed class StubAsset : ScriptableObject {
             [SerializeField]
             internal StubAsset assetField;

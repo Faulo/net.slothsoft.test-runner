@@ -7,7 +7,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Slothsoft.TestRunner.Editor {
-    sealed class AssetDependencyExplorer : EditorWindow {
+    sealed class DependencyExplorerWindow : EditorWindow {
         const string WINDOW_TITLE = "Asset Dependency Explorer";
         const string MENU_ITEM = "Assets/" + WINDOW_TITLE;
 
@@ -19,7 +19,7 @@ namespace Slothsoft.TestRunner.Editor {
 
         [MenuItem(MENU_ITEM, false, 20)]
         public static void FindReferences() {
-            var window = GetWindow<AssetDependencyExplorer>(WINDOW_TITLE);
+            var window = GetWindow<DependencyExplorerWindow>(WINDOW_TITLE);
 
             if (window.element is not null) {
                 window.UpdateTarget();

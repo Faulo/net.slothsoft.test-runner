@@ -31,13 +31,13 @@ namespace Slothsoft.TestRunner.Editor {
         MethodInfo lastContext = default;
 
         /// <inheritdoc/>
-        public UnityObject CurrentAsset => CurrentAssetInfos.Asset;
+        public UnityObject CurrentAsset => CurrentAssetInfos.asset;
 
         /// <inheritdoc/>
-        public string CurrentAssetPath => CurrentAssetInfos.AssetPath;
+        public string CurrentAssetPath => CurrentAssetInfos.assetPath;
 
         /// <inheritdoc/>
-        public bool CurrentAssetIsTestAsset => CurrentAssetInfos.IsTestAsset;
+        public bool CurrentAssetIsTestAsset => CurrentAssetInfos.isTestAsset;
 
         AssetInfo CurrentAssetInfos => currentAssetInfos.Peek();
 
@@ -59,7 +59,7 @@ namespace Slothsoft.TestRunner.Editor {
                 lastContext = CurrentContext;
                 lastAssetInfo = CurrentAssetInfos;
                 if (lastContext is not null) {
-                    message = $"# {lastContext.DeclaringType.Name} > {lastContext.Name} for: {GetName(lastAssetInfo.Asset)}{Environment.NewLine}{message}";
+                    message = $"# {lastContext.DeclaringType.Name} > {lastContext.Name} for: {GetName(lastAssetInfo.asset)}{Environment.NewLine}{message}";
                 }
             }
 
@@ -210,9 +210,9 @@ namespace Slothsoft.TestRunner.Editor {
             }
 
             AssetInfo info = new() {
-                Asset = asset,
-                AssetPath = assetPath,
-                IsTestAsset = IsInTests
+                asset = asset,
+                assetPath = assetPath,
+                isTestAsset = IsInTests
             };
 
             currentAssetInfos.Push(info);
@@ -270,7 +270,7 @@ namespace Slothsoft.TestRunner.Editor {
         }
 
         void InvokeValidators(AssetInfo info) {
-            var type = info.Asset.GetType();
+            var type = info.asset.GetType();
 
             if (!validators.TryGetValue(type, out var validates)) {
                 validates = validators[type] = FindValidators(type)
@@ -279,8 +279,8 @@ namespace Slothsoft.TestRunner.Editor {
 
             foreach ((var method, var attribute) in validates.Where(validate => validate.attribute.CanValidate(info))) {
                 object[] args = method.GetParameters().Length == 1
-                    ? new object[] { info.Asset }
-                    : new object[] { info.Asset, this };
+                    ? new object[] { info.asset }
+                    : new object[] { info.asset, this };
 
                 currentContexts.Push(method);
 

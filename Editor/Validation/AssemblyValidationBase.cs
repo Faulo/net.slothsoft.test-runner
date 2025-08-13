@@ -6,7 +6,7 @@ using NUnit.Framework;
 
 namespace Slothsoft.TestRunner.Editor {
     public abstract class AssemblyValidationBase<T> where T : IAssemblySource, new() {
-        public static IEnumerable<string> AllAssemblyNames {
+        public static IEnumerable<string> allAssemblyNames {
             get {
                 SortedSet<string> allAssemblyNames = new(new T().GetAssemblyNames(), StringComparer.InvariantCultureIgnoreCase);
 
@@ -19,7 +19,7 @@ namespace Slothsoft.TestRunner.Editor {
         }
 
         [Test]
-        public void CheckFormatting([ValueSource(nameof(AllAssemblyNames))] string assemblyName) {
+        public void VerifyFormatting([ValueSource(nameof(allAssemblyNames))] string assemblyName) {
             if (string.IsNullOrEmpty(assemblyName)) {
                 Assert.Ignore("No assemblies to check.");
                 return;
@@ -28,7 +28,7 @@ namespace Slothsoft.TestRunner.Editor {
             string projectFile = $"{assemblyName}.csproj";
 
             if (!File.Exists(projectFile)) {
-                Assert.Ignore($"Project file '{projectFile}' not found.");
+                Assert.Inconclusive($"Project file '{projectFile}' not found.");
                 return;
             }
 

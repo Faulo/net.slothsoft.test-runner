@@ -11,9 +11,11 @@ using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
 namespace Slothsoft.TestRunner.Editor {
-    public static class AssetUtils {
+    static class AssetUtils {
         const string ASSET_IS_WIP = "WIP";
         const string ASSET_IS_DEPRECATED = "DEPRECATED";
+
+        internal static bool hasUploadedShadersRecently = false;
 
         /// <summary>
         /// Determines whether an asset is a "work in progress".
