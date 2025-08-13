@@ -81,7 +81,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
             Assert.That(actual, Is.Not.Empty);
         }
 
-        [TestCase("Packages/" + AssemblyInfo.ID + "/Tests/EditMode/AssetUtilsTests.cs")]
+        [TestCase("Packages/" + AssemblyInfo.ID + "/Tests/EditMode/AssemblyInfo.cs")]
         public void GiveMonoScript_WhenFindAssetsOfType_ThenReturnMainAsset(string assetPath) {
             string expected = AssetDatabase.AssetPathToGUID(assetPath);
 
@@ -92,7 +92,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
             Assert.That(actual, Does.Contain(expected));
         }
 
-        [TestCase("Packages/" + AssemblyInfo.ID + "/Tests/EditMode/AssetUtilsTests.cs")]
+        [TestCase("Packages/" + AssemblyInfo.ID + "/Tests/EditMode/AssemblyInfo.cs")]
         public void GiveMonoScript_WhenFindAndLoadAssetsOfType_ThenReturnMainAsset(string assetPath) {
             var expected = AssetDatabase.LoadMainAssetAtPath(assetPath);
 
