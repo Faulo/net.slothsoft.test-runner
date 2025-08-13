@@ -840,15 +840,6 @@ references:
   fullName.vb: Slothsoft.TestRunner.Editor.ReflectionUtils.FindMethodsWithAttribute(Of T)()
   nameWithType: ReflectionUtils.FindMethodsWithAttribute<T>()
   nameWithType.vb: ReflectionUtils.FindMethodsWithAttribute(Of T)()
-- uid: Slothsoft.TestRunner.Editor.ReflectionUtils.FindMethodsWithAttribute``1(System.Reflection.BindingFlags)
-  name: FindMethodsWithAttribute<T>(BindingFlags)
-  href: api/Slothsoft.TestRunner.Editor.ReflectionUtils.html#Slothsoft_TestRunner_Editor_ReflectionUtils_FindMethodsWithAttribute__1_System_Reflection_BindingFlags_
-  commentId: M:Slothsoft.TestRunner.Editor.ReflectionUtils.FindMethodsWithAttribute``1(System.Reflection.BindingFlags)
-  name.vb: FindMethodsWithAttribute(Of T)(BindingFlags)
-  fullName: Slothsoft.TestRunner.Editor.ReflectionUtils.FindMethodsWithAttribute<T>(System.Reflection.BindingFlags)
-  fullName.vb: Slothsoft.TestRunner.Editor.ReflectionUtils.FindMethodsWithAttribute(Of T)(System.Reflection.BindingFlags)
-  nameWithType: ReflectionUtils.FindMethodsWithAttribute<T>(BindingFlags)
-  nameWithType.vb: ReflectionUtils.FindMethodsWithAttribute(Of T)(BindingFlags)
 - uid: Slothsoft.TestRunner.Editor.ValidateAttribute
   name: ValidateAttribute
   href: api/Slothsoft.TestRunner.Editor.ValidateAttribute.html
