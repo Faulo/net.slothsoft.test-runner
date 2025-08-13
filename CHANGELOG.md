@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [1.0.0-pre.3] - 2025-08-13
+
+### Added
+- Added Asset Dependency Explorer.
+- Added \[Validate\] attribute.
+
+
 ## [1.0.0-pre.2] - 2025-07-13
 
 ### Added
