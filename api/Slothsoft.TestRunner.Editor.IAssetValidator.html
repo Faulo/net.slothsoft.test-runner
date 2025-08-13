@@ -1,0 +1,776 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IAssetValidator
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IAssetValidator
+   ">
+    <meta name="generator" content="docfx 2.56.7.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator">
+  
+  
+  <h1 id="Slothsoft_TestRunner_Editor_IAssetValidator" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator" class="text-break">Interface IAssetValidator
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Slothsoft.TestRunner.Editor.html">Slothsoft.TestRunner.Editor</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Slothsoft_TestRunner_Editor_IAssetValidator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IAssetValidator</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_CurrentAsset_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CurrentAsset*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_CurrentAsset" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CurrentAsset">CurrentAsset</h4>
+  <div class="markdown level1 summary"><p>The asset currently processed by <a class="xref" href="Slothsoft.TestRunner.Editor.IAssetValidator.html#Slothsoft_TestRunner_Editor_IAssetValidator_ValidateAsset_UnityObject_">ValidateAsset(UnityObject)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">UnityObject CurrentAsset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_CurrentAssetIsTestAsset_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CurrentAssetIsTestAsset*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_CurrentAssetIsTestAsset" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CurrentAssetIsTestAsset">CurrentAssetIsTestAsset</h4>
+  <div class="markdown level1 summary"><p>Whether or not the asset currently processed by <a class="xref" href="Slothsoft.TestRunner.Editor.IAssetValidator.html#Slothsoft_TestRunner_Editor_IAssetValidator_ValidateAsset_UnityObject_">ValidateAsset(UnityObject)</a> resides in a &quot;Tests&quot; folder.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CurrentAssetIsTestAsset { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_CurrentAssetPath_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CurrentAssetPath*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_CurrentAssetPath" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CurrentAssetPath">CurrentAssetPath</h4>
+  <div class="markdown level1 summary"><p>The asset path of the asset currently processed by <a class="xref" href="Slothsoft.TestRunner.Editor.IAssetValidator.html#Slothsoft_TestRunner_Editor_IAssetValidator_ValidateAsset_UnityObject_">ValidateAsset(UnityObject)</a>, or null if the current asset has not been saved to disk.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string CurrentAssetPath { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_CurrentScene_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CurrentScene*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_CurrentScene" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CurrentScene">CurrentScene</h4>
+  <div class="markdown level1 summary"><p>The latest scene loaded via <a class="xref" href="Slothsoft.TestRunner.Editor.IAssetValidator.html#Slothsoft_TestRunner_Editor_IAssetValidator_OpenScene_System_String_">OpenScene(String)</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">Scene CurrentScene { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Scene</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertAssetPath_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertAssetPath*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertAssetPath_System_String_System_String_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertAssetPath(System.String,System.String)">AssertAssetPath(String, String)</h4>
+  <div class="markdown level1 summary"><p>Verify that <code data-dev-comment-type="paramref" class="paramref">assetPath</code> is part of the dependency hierarchy of the current package. Print <code data-dev-comment-type="paramref" class="paramref">message</code> if not.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AssertAssetPath(string assetPath, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">assetPath</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertDoesNotHaveComponent_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertDoesNotHaveComponent*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertDoesNotHaveComponent__1_GameObject_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertDoesNotHaveComponent``1(GameObject)">AssertDoesNotHaveComponent&lt;T&gt;(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Attempt to retrieve a component of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> from <code data-dev-comment-type="paramref" class="paramref">obj</code>, and fail on success.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AssertDoesNotHaveComponent&lt;T&gt;(GameObject obj)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertFail_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertFail*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertFail_System_String_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertFail(System.String)">AssertFail(String)</h4>
+  <div class="markdown level1 summary"><p>Same as <see cref="!:Assert.Fail(string)"></see>, but appends the message to the list of errors instead of aborting immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AssertFail(string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertFalse_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertFalse*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertFalse_System_Boolean_System_String_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertFalse(System.Boolean,System.String)">AssertFalse(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Same as <see cref="!:Assert.IsFalse(bool, string)"></see>, but appends the message to the list of errors instead of aborting immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AssertFalse(bool assertion, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">assertion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertHasComponent_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertHasComponent*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertHasComponent__1_GameObject_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertHasComponent``1(GameObject)">AssertHasComponent&lt;T&gt;(GameObject)</h4>
+  <div class="markdown level1 summary"><p>Attempt to retrieve a component of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> from <code data-dev-comment-type="paramref" class="paramref">obj</code>, and fail on failure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AssertHasComponent&lt;T&gt;(GameObject obj)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the component was found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertHasComponent_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertHasComponent*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertHasComponent__1_GameObject___0__" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertHasComponent``1(GameObject,``0@)">AssertHasComponent&lt;T&gt;(GameObject, out T)</h4>
+  <div class="markdown level1 summary"><p>Attempt to retrieve a component of type <code data-dev-comment-type="typeparamref" class="typeparamref">T</code> from <code data-dev-comment-type="paramref" class="paramref">obj</code>, and fail on failure.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool AssertHasComponent&lt;T&gt;(GameObject obj, out T component)
+    where T : class</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">component</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if the component was found and written to <code data-dev-comment-type="paramref" class="paramref">component</code>.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertThat_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertThat*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertThat_System_Object_IResolveConstraint_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertThat(System.Object,IResolveConstraint)">AssertThat(Object, IResolveConstraint)</h4>
+  <div class="markdown level1 summary"><p>Same as <see cref="!:Assert.That&lt;TActual>(TActual, IResolveConstraint)"></see>, but appends the message to the list of errors instead of aborting immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AssertThat(object actual, IResolveConstraint constraint)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IResolveConstraint</span></td>
+        <td><span class="parametername">constraint</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertThat_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertThat*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertThat_System_Object_IResolveConstraint_System_String_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertThat(System.Object,IResolveConstraint,System.String)">AssertThat(Object, IResolveConstraint, String)</h4>
+  <div class="markdown level1 summary"><p>Same as <see cref="!:Assert.That&lt;TActual>(TActual, IResolveConstraint, string, object[])"></see>, but appends the message to the list of errors instead of aborting immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AssertThat(object actual, IResolveConstraint constraint, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">actual</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">IResolveConstraint</span></td>
+        <td><span class="parametername">constraint</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertTrue_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertTrue*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_AssertTrue_System_Boolean_System_String_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.AssertTrue(System.Boolean,System.String)">AssertTrue(Boolean, String)</h4>
+  <div class="markdown level1 summary"><p>Same as <see cref="!:Assert.IsTrue(bool, string)"></see>, but appends the message to the list of errors instead of aborting immediately.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AssertTrue(bool assertion, string message)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><span class="parametername">assertion</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">message</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_CanOpenScene_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CanOpenScene*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_CanOpenScene_System_String_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CanOpenScene(System.String)">CanOpenScene(String)</h4>
+  <div class="markdown level1 summary"><p>Determine whether or not <a class="xref" href="Slothsoft.TestRunner.Editor.IAssetValidator.html#Slothsoft_TestRunner_Editor_IAssetValidator_OpenScene_System_String_">OpenScene(String)</a> will succeed.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool CanOpenScene(string scenePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scenePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_CloseScene_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CloseScene*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_CloseScene" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.CloseScene">CloseScene()</h4>
+  <div class="markdown level1 summary"><p>Close <a class="xref" href="Slothsoft.TestRunner.Editor.IAssetValidator.html#Slothsoft_TestRunner_Editor_IAssetValidator_CurrentScene">CurrentScene</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void CloseScene()</code></pre>
+  </div>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_GetName_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.GetName*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_GetName_UnityObject_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.GetName(UnityObject)">GetName(UnityObject)</h4>
+  <div class="markdown level1 summary"><p>Create a human-readable name for <code data-dev-comment-type="paramref" class="paramref">target</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetName(UnityObject target)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityObject</span></td>
+        <td><span class="parametername">target</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_OpenScene_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.OpenScene*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_OpenScene_System_String_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.OpenScene(System.String)">OpenScene(String)</h4>
+  <div class="markdown level1 summary"><p>Load the scene at <code data-dev-comment-type="paramref" class="paramref">scenePath</code> and set <a class="xref" href="Slothsoft.TestRunner.Editor.IAssetValidator.html#Slothsoft_TestRunner_Editor_IAssetValidator_CurrentScene">CurrentScene</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void OpenScene(string scenePath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">scenePath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_ValidateAsset_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.ValidateAsset*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_ValidateAsset_System_String_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.ValidateAsset(System.String)">ValidateAsset(String)</h4>
+  <div class="markdown level1 summary"><p>Perform a full validation of the asset at <code data-dev-comment-type="paramref" class="paramref">assetPath</code>, using all applicable <a class="xref" href="Slothsoft.TestRunner.Editor.ValidateAttribute.html">ValidateAttribute</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateAsset(string assetPath)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">assetPath</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="Slothsoft_TestRunner_Editor_IAssetValidator_ValidateAsset_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.ValidateAsset*"></a>
+  <h4 id="Slothsoft_TestRunner_Editor_IAssetValidator_ValidateAsset_UnityObject_" data-uid="Slothsoft.TestRunner.Editor.IAssetValidator.ValidateAsset(UnityObject)">ValidateAsset(UnityObject)</h4>
+  <div class="markdown level1 summary"><p>Perform a full validation of <code data-dev-comment-type="paramref" class="paramref">asset</code>, using all applicable <a class="xref" href="Slothsoft.TestRunner.Editor.ValidateAttribute.html">ValidateAttribute</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ValidateAsset(UnityObject asset)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityObject</span></td>
+        <td><span class="parametername">asset</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

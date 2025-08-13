@@ -5,6 +5,162 @@
   "files": [
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.AssemblyValidationBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.AssemblyValidationBase-1.html",
+          "hash": "VFmC/mA8UC29nY3hqtZ8kQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.AssetSourceBase.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.AssetSourceBase.html",
+          "hash": "+0SU6xtiikQesM77OtLgaw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.AssetUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.AssetUtils.html",
+          "hash": "IcolvDHU30EtdHwXgSVH+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.AssetValidationBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.AssetValidationBase-1.html",
+          "hash": "iUSK+OGxNxv0+WHfXJsLYg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.DependencyValidationBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.DependencyValidationBase-1.html",
+          "hash": "kVeAGshsrU+6keF2cBehAQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.IAssemblySource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.IAssemblySource.html",
+          "hash": "4GgWMIyRep7sNyOmF7hCGQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.IAssetSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.IAssetSource.html",
+          "hash": "xkFP2/A3uo9JzmjbS0R78Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.IAssetValidator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.IAssetValidator.html",
+          "hash": "4LucQCvjB3pD6gJu7zafgQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.IPackageSource.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.IPackageSource.html",
+          "hash": "Fc19a9+tj+ElLV8V10/y1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.ReflectionUtils.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.ReflectionUtils.html",
+          "hash": "gimXpsrAqBlStJbeTXlyBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.ValidateAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.ValidateAttribute.html",
+          "hash": "OGJ5t3Foz+9ylt0eTwl20w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.ValidateWithNameAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.ValidateWithNameAttribute.html",
+          "hash": "FEFJXP0AOTmJL8AXP5D7eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.html",
+          "hash": "CVTJdWfpl9za3YFg8iFWoQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Slothsoft.TestRunner.GameObjectExtensions.yml",
       "output": {
         ".html": {
@@ -45,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.TestObjectStore.html",
-          "hash": "iCRL4X0CZ8Zu66gJHGIH2w=="
+          "hash": "TS/0K2MqbEQxQZZLozjIPg=="
         }
       },
       "is_incremental": false,
@@ -57,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.WaitUtils.html",
-          "hash": "tlZ/jtclh5R/z0ivfPpL7g=="
+          "hash": "1Q2yFFQ/iZ6/H5ntpM8pvA=="
         }
       },
       "is_incremental": false,
@@ -93,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "bbcwL4OTkt2E4b/iOPsXZg=="
+          "hash": "1fRmULdKatKXUJ1qmBrCSA=="
         }
       },
       "is_incremental": false,
@@ -144,7 +300,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 6,
+          "total_file_count": 19,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
