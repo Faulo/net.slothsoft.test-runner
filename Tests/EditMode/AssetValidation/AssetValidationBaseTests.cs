@@ -14,9 +14,9 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
     class AssetValidationBaseTests {
         internal sealed class StubAsset : ScriptableObject {
             [SerializeField]
-            internal StubAsset AssetField;
+            internal StubAsset assetField;
             [SerializeField]
-            internal Material[] MaterialField;
+            internal Material[] materialField;
         }
 
         AssetValidator sut;
@@ -62,7 +62,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         [Test]
         public void GivenAssetWithReference_WhenAssert_ThenPass() {
             var asset = CreateAsset("test");
-            asset.AssetField = CreateAsset("child");
+            asset.assetField = CreateAsset("child");
 
             SerializedAssetValidation.ValidateSerializedProperties(asset, sut);
 
@@ -72,8 +72,8 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         [Test]
         public void GivenAssetWithMissingReference_WhenAssert_ThenFail() {
             var asset = CreateAsset("test");
-            asset.AssetField = CreateAsset("child");
-            UnityObject.DestroyImmediate(asset.AssetField);
+            asset.assetField = CreateAsset("child");
+            UnityObject.DestroyImmediate(asset.assetField);
 
             SerializedAssetValidation.ValidateSerializedProperties(asset, sut);
 
@@ -81,7 +81,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
                 new ExceptionTypeConstraint(typeof(AssertionException))
                     .And
                     .Message
-                    .Contains($"{typeof(StubAsset).Name} '{asset.name}' references a missing {typeof(StubAsset).Name} in property '{nameof(StubAsset.AssetField)}'!"),
+                    .Contains($"{typeof(StubAsset).Name} '{asset.name}' references a missing {typeof(StubAsset).Name} in property '{nameof(StubAsset.assetField)}'!"),
                 () => sut.AssertFailNow()
             );
         }
@@ -89,8 +89,8 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         [Test]
         public void GivenAssetWithMissingMaterial_WhenAssert_ThenFail() {
             var asset = CreateAsset("test");
-            asset.MaterialField = new[] { new Material(Shader.Find("Diffuse")) };
-            UnityObject.DestroyImmediate(asset.MaterialField[0]);
+            asset.materialField = new[] { new Material(Shader.Find("Diffuse")) };
+            UnityObject.DestroyImmediate(asset.materialField[0]);
 
             SerializedAssetValidation.ValidateSerializedProperties(asset, sut);
 
@@ -98,7 +98,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
                 new ExceptionTypeConstraint(typeof(AssertionException))
                     .And
                     .Message
-                    .Contains($"{typeof(StubAsset).Name} '{asset.name}' references a missing {typeof(Material).Name} in property '{nameof(StubAsset.MaterialField)}.Array.data[0]'!"),
+                    .Contains($"{typeof(StubAsset).Name} '{asset.name}' references a missing {typeof(Material).Name} in property '{nameof(StubAsset.materialField)}.Array.data[0]'!"),
                 () => sut.AssertFailNow()
             );
         }
@@ -107,7 +107,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         public void GivenSerializedPropertyWithoutReference_WhenAssert_ThenPass() {
             var asset = CreateAsset("test");
 
-            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
+            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.assetField));
 
             SerializedAssetValidation.ValidateSerializedProperty(property, sut);
             sut.AssertFailNow();
@@ -116,9 +116,9 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         [Test]
         public void GivenSerializedPropertyWithReference_WhenAssert_ThenPass() {
             var asset = CreateAsset("test");
-            asset.AssetField = CreateAsset("child");
+            asset.assetField = CreateAsset("child");
 
-            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
+            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.assetField));
 
             SerializedAssetValidation.ValidateSerializedProperty(property, sut);
 
@@ -128,10 +128,10 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         [Test]
         public void GivenSerializedPropertyWithMissingReference_WhenAssert_ThenFail() {
             var asset = CreateAsset("test");
-            asset.AssetField = CreateAsset("child");
-            UnityObject.DestroyImmediate(asset.AssetField);
+            asset.assetField = CreateAsset("child");
+            UnityObject.DestroyImmediate(asset.assetField);
 
-            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
+            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.assetField));
 
             SerializedAssetValidation.ValidateSerializedProperty(property, sut);
 
@@ -139,7 +139,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
                 new ExceptionTypeConstraint(typeof(AssertionException))
                     .And
                     .Message
-                    .Contains($"{typeof(StubAsset).Name} '{asset.name}' references a missing {typeof(StubAsset).Name} in property '{nameof(StubAsset.AssetField)}'!"),
+                    .Contains($"{typeof(StubAsset).Name} '{asset.name}' references a missing {typeof(StubAsset).Name} in property '{nameof(StubAsset.assetField)}'!"),
                 () => sut.AssertFailNow()
             );
         }
@@ -147,10 +147,10 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         [Test]
         public void GivenSerializedPropertyWithMissingMaterial_WhenAssert_ThenFail() {
             var asset = CreateAsset("test");
-            asset.MaterialField = new[] { new Material(Shader.Find("Diffuse")) };
-            UnityObject.DestroyImmediate(asset.MaterialField[0]);
+            asset.materialField = new[] { new Material(Shader.Find("Diffuse")) };
+            UnityObject.DestroyImmediate(asset.materialField[0]);
 
-            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.MaterialField)).GetArrayElementAtIndex(0);
+            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.materialField)).GetArrayElementAtIndex(0);
 
             SerializedAssetValidation.ValidateSerializedProperty(property, sut);
 
@@ -158,7 +158,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
                 new ExceptionTypeConstraint(typeof(AssertionException))
                     .And
                     .Message
-                    .Contains($"{typeof(StubAsset).Name} '{asset.name}' references a missing {typeof(Material).Name} in property '{nameof(StubAsset.MaterialField)}.Array.data[0]'!"),
+                    .Contains($"{typeof(StubAsset).Name} '{asset.name}' references a missing {typeof(Material).Name} in property '{nameof(StubAsset.materialField)}.Array.data[0]'!"),
                 () => sut.AssertFailNow()
             );
         }
