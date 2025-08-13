@@ -12,26 +12,15 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         public static readonly string[] UtilitiesDirectDependencies = new[] {
             "Library",
-            "Packages/com.unity.editorcoroutines",
-            "Packages/com.unity.mathematics",
-            "Packages/com.unity.modules.animation",
-            "Packages/com.unity.modules.audio",
-            "Packages/com.unity.modules.uielements",
-            "Packages/com.unity.nuget.newtonsoft-json",
-            "Packages/com.unity.shadergraph",
+            "Packages/net.slothsoft.unity-extensions",
             "Packages/com.unity.test-framework",
-            "Packages/com.unity.ugui",
-            "Packages/com.unity.ui",
-            "Packages/de.ulisses-spiele.core.utilities",
             "Packages/net.tnrd.nsubstitute",
+            "Packages/com.unity.editorcoroutines",
             "Resources",
         };
 
         public static readonly string[] UtilitiesIndirectDependencies = new[] {
-            "Packages/com.unity.burst",
-            "Packages/com.unity.modules.physics",
-            "Packages/com.unity.collections",
-            "Packages/com.unity.ext.nunit",
+            "com.unity.ide.visualstudio",
         };
 
         [TestCase(AssemblyInfo.ID)]

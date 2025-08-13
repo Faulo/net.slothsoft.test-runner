@@ -7,7 +7,7 @@ using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.Rendering;
 
-namespace Ulisses.HeXXen1733.VFX.Editor {
+namespace Slothsoft.TestRunner.Editor {
     static class ShaderValidation {
         static readonly MethodInfo OpenCompiledShaderMethod = typeof(ShaderUtil).GetMethod("OpenCompiledShader", BindingFlags.NonPublic | BindingFlags.Static);
 
@@ -60,44 +60,6 @@ namespace Ulisses.HeXXen1733.VFX.Editor {
                     case ShaderCompilerMessageSeverity.Error:
                         validator.AssertFail($"{message.file}:{message.line}{Environment.NewLine}[{message.severity}] {message.message}{Environment.NewLine}{message.messageDetails}");
                         break;
-                }
-            }
-        }
-
-        // [Validate]
-        // This looks like it should be a more precise version of CompileShader, but the keywords used don't line up with the ones that OpenCompiledShader uses.
-        // Also, sometimes ShaderUtil.GetPassKeywords reports a PassIdentifier as invalid for no apparent reason.
-        // Code is kept here for future research purposes.
-        public static void CompileShaderVariants(Shader shader, IAssetValidator validator) {
-            var data = ShaderUtil.GetShaderData(shader);
-
-            foreach (var platform in ActiveCompilePlatforms) {
-                var platformKeywords = ShaderUtil.GetShaderPlatformKeywordsForBuildTarget(platform, ActiveCompileTarget);
-
-                for (int subShaderId = 0; subShaderId < data.SubshaderCount; subShaderId++) {
-                    var subShader = data.GetSubshader(subShaderId);
-                    for (int passId = 0; passId < subShader.PassCount; passId++) {
-                        var pass = subShader.GetPass(passId);
-                        PassIdentifier id = new((uint)subShaderId, (uint)passId);
-
-                        for (int typeId = (int)ShaderType.Vertex; typeId < (int)ShaderType.Count; typeId++) {
-                            var type = (ShaderType)typeId;
-                            if (!pass.HasShaderStage(type)) {
-                                continue;
-                            }
-
-                            string[] shaderKeywords = ShaderUtil.GetPassKeywords(shader, id, type, platform)
-                                .Where(k => k is { type: ShaderKeywordType.UserDefined, isOverridable: true })
-                                .Select(k => k.name)
-                                .ToArray();
-
-                            var info = pass.CompileVariant(type, shaderKeywords, platform, ActiveCompileTarget, platformKeywords, (GraphicsTier)(-1), false);
-
-                            validator.AssertTrue(info.Success, $"Failed to compile {validator.GetName(shader)} variant: Subshader {subShaderId}, Pass {passId}, Type {type}, Platform {platform}, Target {ActiveCompileTarget}");
-
-                            ReportToValidator(info.Messages, validator);
-                        }
-                    }
                 }
             }
         }

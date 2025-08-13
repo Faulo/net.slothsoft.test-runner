@@ -28,18 +28,6 @@ namespace Slothsoft.TestRunner.Editor {
         readonly IPackageResolver allResolver = new PackageResolver(false);
         readonly IPackageResolver directResolver = new PackageResolver(true);
 
-#if ULISSES_CORE_LOGGING
-        [OneTimeSetUp]
-        public void SetUpLog() {
-            Ulisses.Core.Logging.Log.SetGlobalLogLevel(Ulisses.Core.Logging.ELogTypes.ErrorOrWorse);
-        }
-
-        [OneTimeTearDown]
-        public void TearDownLog() {
-            Ulisses.Core.Logging.Log.ResetAllLogLevels();
-        }
-#endif
-
         [UnityTest]
         public IEnumerator UploadAssetsToCacheServer() {
             if (!AssetDatabase.IsConnectedToCacheServer()) {
