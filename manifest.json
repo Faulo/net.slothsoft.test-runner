@@ -5,11 +5,11 @@
   "files": [
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.AssemblyValidationBase-1.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.AssemblyValidationBase-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.AssemblyValidationBase-1.html",
-          "hash": "VlBkpP+JGAArloEBoZ8WAQ=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.AssemblyValidationBase-1.html",
+          "hash": "XgVfj4tpnf+FBFjW5zx86g=="
         }
       },
       "is_incremental": false,
@@ -17,11 +17,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.AssetValidationBase-1.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.AssetValidationBase-1.html",
-          "hash": "iUSK+OGxNxv0+WHfXJsLYg=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html",
+          "hash": "YNTFEbckvRfa2jTUIadQ7g=="
         }
       },
       "is_incremental": false,
@@ -29,11 +29,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.DependencyValidationBase-1.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.DependencyValidationBase-1.html",
-          "hash": "kVeAGshsrU+6keF2cBehAQ=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html",
+          "hash": "pA6F08fD7+nBUtMYGNXZmw=="
         }
       },
       "is_incremental": false,
@@ -41,11 +41,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.IAssemblySource.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.IAssemblySource.html",
-          "hash": "NKcjsiP2WoNvYlRoLniAjg=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html",
+          "hash": "j4XbvLnVe5NZkptzoj4rUw=="
         }
       },
       "is_incremental": false,
@@ -53,11 +53,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.IAssetSource.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IAssetSource.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.IAssetSource.html",
-          "hash": "xkFP2/A3uo9JzmjbS0R78Q=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IAssetSource.html",
+          "hash": "OLz7M/ow7wAyJI2ghbu/gg=="
         }
       },
       "is_incremental": false,
@@ -65,11 +65,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.IAssetValidator.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.IAssetValidator.html",
-          "hash": "4LucQCvjB3pD6gJu7zafgQ=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html",
+          "hash": "ipAmJQSkfhuQQFLGcmRqsQ=="
         }
       },
       "is_incremental": false,
@@ -77,11 +77,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.IPackageSource.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IPackageSource.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.IPackageSource.html",
-          "hash": "Fc19a9+tj+ElLV8V10/y1A=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IPackageSource.html",
+          "hash": "RL8/BzVd1sSxt/TRcJBApA=="
         }
       },
       "is_incremental": false,
@@ -89,11 +89,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.ValidateAttribute.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.ValidateAttribute.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.ValidateAttribute.html",
-          "hash": "rD7P/ItvAR0+/qQk0wn4EQ=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.ValidateAttribute.html",
+          "hash": "xbHdfq2c0u12Nte2Mk4HTQ=="
         }
       },
       "is_incremental": false,
@@ -101,11 +101,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.yml",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.yml",
       "output": {
         ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.html",
-          "hash": "TWN/LiJfhTJm+mHLUNJczg=="
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.html",
+          "hash": "wwlz9YjHYK8uImUSMH/8WQ=="
         }
       },
       "is_incremental": false,
@@ -201,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "C0UJu3aiNdkfVkxp4Z6K+w=="
+          "hash": "wc7VObtWKhyilnTMn9SBrg=="
         }
       },
       "is_incremental": false,
