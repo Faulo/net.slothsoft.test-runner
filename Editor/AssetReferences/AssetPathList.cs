@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor;
+using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace Slothsoft.TestRunner.Editor {
@@ -15,7 +17,7 @@ namespace Slothsoft.TestRunner.Editor {
             set {
                 assetPaths.Clear();
                 assetPaths.AddRange(value.OrderBy(p => p));
-                view.RefreshItems();
+                view.Rebuild();
             }
         }
 
@@ -25,9 +27,26 @@ namespace Slothsoft.TestRunner.Editor {
 
         internal AssetPathList(string title, string tooltip) {
             view.makeItem = () => {
-                VisualElement root = new();
+                var root = new VisualElement {
+                    pickingMode = PickingMode.Position,
+                };
+                root.style.flexDirection = FlexDirection.Row;
+                root.style.alignItems = Align.Center;
+                root.style.alignContent = Align.FlexStart;
+                root.style.paddingLeft = 4;
+                root.style.paddingRight = 4;
+                root.style.height = EditorGUIUtility.singleLineHeight;
 
-                Label label = new();
+                var icon = new Image {
+                    scaleMode = ScaleMode.ScaleAndCrop,
+                };
+                icon.style.width = EditorGUIUtility.singleLineHeight;
+                icon.style.height = EditorGUIUtility.singleLineHeight;
+                icon.style.marginRight = 4;
+                icon.style.flexShrink = 0;
+                root.Add(icon);
+
+                var label = new Label();
                 root.Add(label);
 
                 root.RegisterCallback<ClickEvent>(evt => {
@@ -45,31 +64,41 @@ namespace Slothsoft.TestRunner.Editor {
             };
 
             view.bindItem = (root, index) => {
-                root.userData = assetPaths[index];
-                root.Q<Label>().text = assetPaths[index];
+                string path = assetPaths[index];
+                root.userData = path;
+
+                root.Q<Label>().text = path;
+
+                var icon = AssetDatabase.GetCachedIcon(path);
+                if (!icon) {
+                    icon = EditorGUIUtility.IconContent("TextAsset Icon").image;
+                }
+
+                root.Q<Image>().image = icon;
+                root.tooltip = path;
             };
 
             view.itemsSource = assetPaths;
             view.selectionType = SelectionType.Multiple;
             view.selectionChanged += OnSelectionChanges;
 
-            Label label = new(title) {
+            var header = new Label(title) {
                 tooltip = tooltip,
             };
-            label.AddToClassList("h2");
-            Add(label);
+            header.AddToClassList("h2");
+            Add(header);
 
             Add(view);
         }
 
         void OnSelectionChanges(IEnumerable<object> selection) {
-            string[] assetPaths = selection
+            string[] selected = selection
                 .OfType<string>()
                 .Where(s => !string.IsNullOrEmpty(s))
                 .ToArray();
 
-            if (assetPaths.Length > 0) {
-                onAssetsSelected.Invoke(assetPaths);
+            if (selected.Length > 0) {
+                onAssetsSelected?.Invoke(selected);
             }
         }
 

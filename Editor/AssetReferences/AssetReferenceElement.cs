@@ -5,7 +5,7 @@ using UnityEngine.UIElements;
 using UnityObject = UnityEngine.Object;
 
 namespace Slothsoft.TestRunner.Editor {
-    sealed class AssetReferenceElement : ScrollView {
+    sealed class AssetReferenceElement : VisualElement {
 
         readonly ObjectField assetField = new("Target Asset") {
             allowSceneObjects = true,
@@ -14,7 +14,8 @@ namespace Slothsoft.TestRunner.Editor {
             isReadOnly = true,
         };
 
-        readonly GroupBox dependencies = new();
+        readonly GroupBox input = new();
+        readonly VisualElement dependencies = new();
         readonly AssetPathList dependingAssetView = new("Upstream Assets", "List of all assets that reference 'Target Asset'.");
         readonly AssetPathList dependentAssetView = new("Downstream Assets", "List of all assets that 'Target Asset' references.");
 
@@ -73,7 +74,6 @@ namespace Slothsoft.TestRunner.Editor {
         public AssetReferenceElement() {
             assetField.RegisterValueChangedCallback(OnChange);
 
-            dependingAssetView.style.width = Length.Percent(50);
             dependingAssetView.onAssetSubmitted += SetAssetPath;
             dependingAssetView.onAssetSubmitted += _ => ClearSelections();
             dependingAssetView.onAssetsSelected += SelectAssetPaths;
@@ -91,15 +91,28 @@ namespace Slothsoft.TestRunner.Editor {
                     dependingAssetView.ClearSelection();
                 }
             };
-            dependentAssetView.style.width = Length.Percent(50);
 
             dependencies.contentContainer.style.flexDirection = FlexDirection.Row;
-            dependencies.Add(dependingAssetView);
-            dependencies.Add(dependentAssetView);
+            dependencies.contentContainer.style.flexGrow = 1;
 
-            Add(assetField);
-            Add(pathField);
+            var box = new VisualElement();
+            box.style.width = Length.Percent(50);
+            box.Add(dependingAssetView);
+            dependencies.Add(box);
 
+            var vr = new VisualElement();
+            vr.AddToClassList("vr");
+            dependencies.Add(vr);
+
+            box = new VisualElement();
+            box.style.width = Length.Percent(50);
+            box.Add(dependentAssetView);
+            dependencies.Add(box);
+
+            input.Add(assetField);
+            input.Add(pathField);
+
+            Add(input);
             var hr = new VisualElement();
             hr.AddToClassList("hr");
             Add(hr);
