@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
@@ -59,7 +60,7 @@ namespace Slothsoft.TestRunner.Editor {
             }
         }
 
-        void SelectAssetPaths(string[] assetPaths) {
+        void SelectAssetPaths(IReadOnlyList<string> assetPaths) {
             var assets = assetPaths
                 .Select(AssetDatabase.LoadMainAssetAtPath)
                 .Where(o => o)
@@ -77,45 +78,29 @@ namespace Slothsoft.TestRunner.Editor {
             dependingAssetView.onAssetSubmitted += SetAssetPath;
             dependingAssetView.onAssetSubmitted += _ => ClearSelections();
             dependingAssetView.onAssetsSelected += SelectAssetPaths;
-            dependingAssetView.onAssetsSelected += assetPaths => {
-                if (assetPaths.Length > 0) {
-                    dependentAssetView.ClearSelection();
-                }
-            };
+            dependingAssetView.onAssetsSelected += _ => dependentAssetView.ClearSelection();
 
             dependentAssetView.onAssetSubmitted += SetAssetPath;
             dependentAssetView.onAssetSubmitted += _ => ClearSelections();
             dependentAssetView.onAssetsSelected += SelectAssetPaths;
-            dependentAssetView.onAssetsSelected += assetPaths => {
-                if (assetPaths.Length > 0) {
-                    dependingAssetView.ClearSelection();
-                }
-            };
+            dependentAssetView.onAssetsSelected += _ => dependingAssetView.ClearSelection();
 
             dependencies.contentContainer.style.flexDirection = FlexDirection.Row;
             dependencies.contentContainer.style.flexGrow = 1;
 
-            var box = new VisualElement();
-            box.style.width = Length.Percent(50);
-            box.Add(dependingAssetView);
-            dependencies.Add(box);
+            dependingAssetView.style.width = Length.Percent(50);
+            dependencies.Add(dependingAssetView);
 
-            var vr = new VisualElement();
-            vr.AddToClassList("vr");
-            dependencies.Add(vr);
+            dependencies.Add(new VerticalRule());
 
-            box = new VisualElement();
-            box.style.width = Length.Percent(50);
-            box.Add(dependentAssetView);
-            dependencies.Add(box);
+            dependentAssetView.style.width = Length.Percent(50);
+            dependencies.Add(dependentAssetView);
 
             input.Add(assetField);
             input.Add(pathField);
 
             Add(input);
-            var hr = new VisualElement();
-            hr.AddToClassList("hr");
-            Add(hr);
+            Add(new HorizontalRule());
             Add(dependencies);
         }
 

@@ -8,7 +8,7 @@ using UnityEngine.UIElements;
 namespace Slothsoft.TestRunner.Editor {
     sealed class AssetPathList : VisualElement {
         public event Action<string> onAssetSubmitted;
-        public event Action<string[]> onAssetsSelected;
+        public event Action<IReadOnlyList<string>> onAssetsSelected;
 
         readonly ListView view = new();
         readonly List<string> assetPaths = new();
@@ -81,6 +81,7 @@ namespace Slothsoft.TestRunner.Editor {
             view.itemsSource = assetPaths;
             view.selectionType = SelectionType.Multiple;
             view.selectionChanged += OnSelectionChanges;
+            view.horizontalScrollingEnabled = true;
 
             var header = new Label(title) {
                 tooltip = tooltip,
@@ -92,12 +93,12 @@ namespace Slothsoft.TestRunner.Editor {
         }
 
         void OnSelectionChanges(IEnumerable<object> selection) {
-            string[] selected = selection
+            var selected = selection
                 .OfType<string>()
                 .Where(s => !string.IsNullOrEmpty(s))
-                .ToArray();
+                .ToList();
 
-            if (selected.Length > 0) {
+            if (selected.Count > 0) {
                 onAssetsSelected?.Invoke(selected);
             }
         }
