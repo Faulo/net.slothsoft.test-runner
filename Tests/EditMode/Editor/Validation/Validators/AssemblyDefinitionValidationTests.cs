@@ -1,9 +1,8 @@
 using NUnit.Framework;
-using Slothsoft.TestRunner.Editor;
 using UnityEditor;
 using UnityEditorInternal;
 
-namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidators {
+namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     [TestFixture]
     [TestOf(typeof(AssemblyDefinitionValidation))]
     sealed class AssemblyDefinitionValidationTests {

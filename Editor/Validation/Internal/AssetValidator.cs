@@ -1,4 +1,8 @@
-﻿using System;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
+using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,7 +20,7 @@ using UnityEngine.TestTools;
 using PackageInfo = UnityEditor.PackageManager.PackageInfo;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     sealed class AssetValidator : IAssetValidator, IDisposable {
         internal IReadOnlyList<string> ValidAssetPaths = Array.Empty<string>();
 

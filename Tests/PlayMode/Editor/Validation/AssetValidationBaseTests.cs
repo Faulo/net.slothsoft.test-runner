@@ -1,12 +1,13 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 using NUnit.Framework.Constraints;
-using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
+namespace Slothsoft.TestRunner.Editor.Validation {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
     [TestMustExpectAllLogs(false)]

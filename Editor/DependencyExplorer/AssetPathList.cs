@@ -1,11 +1,15 @@
-﻿using System;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.DependencyExplorer {
     sealed class AssetPathList : VisualElement {
         public event Action<string> onAssetSubmitted;
         public event Action<IReadOnlyList<string>> onAssetsSelected;

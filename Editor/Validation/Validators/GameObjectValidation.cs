@@ -1,9 +1,13 @@
-﻿using System;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using System;
 using System.Text.RegularExpressions;
 using UnityEditor;
 using UnityEngine;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     static class GameObjectValidation {
         [Validate]
         public static void ValidateGameObjectHierarchy(GameObject prefab, IAssetValidator validator) {

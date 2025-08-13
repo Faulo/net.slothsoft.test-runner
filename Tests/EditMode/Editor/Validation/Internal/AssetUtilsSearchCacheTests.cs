@@ -1,9 +1,8 @@
 using NUnit.Framework;
-using Slothsoft.TestRunner.Editor;
 using UnityEngine.TestTools;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Tests.EditMode {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     [TestFixture]
     [TestOf(typeof(AssetUtils))]
     [TestMustExpectAllLogs(true)]

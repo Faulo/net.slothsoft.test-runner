@@ -1,10 +1,14 @@
-﻿using System;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using NUnit.Framework;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation {
     public abstract class AssemblyValidationBase<T> where T : IAssemblySource, new() {
         public static IEnumerable<string> allAssemblyNames {
             get {

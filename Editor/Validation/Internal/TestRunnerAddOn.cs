@@ -1,3 +1,7 @@
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +13,7 @@ using UnityEditor.TestTools.TestRunner;
 using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
 #if UNITY_INCLUDE_TESTS
     static class TestRunnerAddOn {
         class AddOn {

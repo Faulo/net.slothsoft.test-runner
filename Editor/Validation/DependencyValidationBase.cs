@@ -1,10 +1,14 @@
-﻿using System;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using UnityEngine.TestTools;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation {
     [TestMustExpectAllLogs(false)]
     public abstract class DependencyValidationBase<T> where T : IPackageSource, new() {
         public static IEnumerable<string> AllPackageIds {

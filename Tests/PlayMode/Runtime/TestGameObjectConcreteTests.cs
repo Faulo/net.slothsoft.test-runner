@@ -3,22 +3,19 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Slothsoft.TestRunner.Tests.PlayMode {
+namespace Slothsoft.TestRunner.Runtime {
     [TestFixture]
-    [TestOf(typeof(TestGameObject<TestComponent>))]
-    sealed class TestGameObjectGenericTestsEditMode : TestGameObjectGenericTests {
+    [TestOf(typeof(TestGameObject))]
+    sealed class TestGameObjectConcreteTestsEditMode : TestGameObjectConcreteTests {
     }
 
     [TestFixture]
-    [TestOf(typeof(TestGameObject<TestComponent>))]
-    sealed class TestGameObjectGenericTestsPlayMode : TestGameObjectGenericTests {
+    [TestOf(typeof(TestGameObject))]
+    sealed class TestGameObjectConcreteTestsPlayMode : TestGameObjectConcreteTests {
     }
 
-    abstract class TestGameObjectGenericTests {
-        protected class TestComponent : MonoBehaviour {
-        }
-
-        TestGameObject<TestComponent> sut;
+    abstract class TestGameObjectConcreteTests {
+        TestGameObject sut;
 
         [UnitySetUp]
         public IEnumerator SetUp() {
@@ -58,7 +55,7 @@ namespace Slothsoft.TestRunner.Tests.PlayMode {
         [Test]
         public void TestGameObjectGetsNamed() {
             using (sut = new()) {
-                Assert.AreEqual("TestGameObject<TestComponent>", sut.gameObject.name);
+                Assert.AreEqual("TestGameObject", sut.gameObject.name);
             }
         }
 
@@ -70,27 +67,6 @@ namespace Slothsoft.TestRunner.Tests.PlayMode {
 
             yield return null;
             Assert.IsFalse(sut.gameObject);
-        }
-
-        [UnityTest]
-        public IEnumerator TestComponentGetsAdded_Co() {
-            using (sut = new()) {
-                Assert.IsTrue(sut.sut);
-                Assert.AreEqual(sut.gameObject, sut.sut.gameObject);
-                yield return null;
-                Assert.IsTrue(sut.sut);
-                Assert.AreEqual(sut.gameObject, sut.sut.gameObject);
-            }
-        }
-
-        [UnityTest]
-        public IEnumerator TestComponentGetsDestroyed_Co() {
-            using (sut = new()) {
-                yield return null;
-            }
-
-            yield return null;
-            Assert.IsFalse(sut.sut);
         }
 
         [Test]
@@ -106,13 +82,6 @@ namespace Slothsoft.TestRunner.Tests.PlayMode {
             GameObject obj = default;
             using (sut = new(value => obj = value)) {
                 Assert.AreEqual(sut.gameObject, obj);
-            }
-        }
-
-        [Test]
-        public void TestSetupGetsCalledBeforeAddComponent() {
-            using (sut = new(obj => Assert.IsFalse(obj.GetComponent<TestComponent>()))) {
-                Assert.Pass();
             }
         }
     }

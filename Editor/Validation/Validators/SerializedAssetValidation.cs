@@ -1,8 +1,12 @@
-﻿using System;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using System;
 using UnityEditor;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     static class SerializedAssetValidation {
         [Validate]
         public static void ValidateSerializedProperties(UnityObject asset, IAssetValidator validator) {

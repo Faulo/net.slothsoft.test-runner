@@ -2,9 +2,8 @@ using System;
 using System.Linq;
 using System.Reflection;
 using NUnit.Framework;
-using Slothsoft.TestRunner.Editor;
 
-namespace Slothsoft.TestRunner.Tests.EditMode {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     [TestFixture]
     [TestOf(typeof(ReflectionUtils))]
     sealed class ReflectionUtilsTests {

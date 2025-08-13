@@ -2,14 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
-using Slothsoft.TestRunner.Editor;
 using UnityEditor;
 using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.TestTools;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Tests.EditMode {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     [TestFixture]
     [TestOf(typeof(AssetUtils))]
     [TestMustExpectAllLogs(false)]

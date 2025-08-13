@@ -1,3 +1,7 @@
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
 using System.Collections;
 using System.Diagnostics;
 using System.Linq;
@@ -6,7 +10,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.DependencyExplorer {
     sealed class DependencyExplorerWindow : EditorWindow {
         const string WINDOW_TITLE = "Asset Dependency Explorer";
         const string MENU_ITEM = "Assets/" + WINDOW_TITLE;

@@ -1,7 +1,11 @@
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
 using System;
 using UnityEditor;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     static class SceneValidation {
         [Validate]
         public static void ValidateScene(SceneAsset scene, IAssetValidator validator) {

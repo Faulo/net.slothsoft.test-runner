@@ -1,11 +1,15 @@
-﻿using System.Collections.Generic;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
+using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.DependencyExplorer {
     sealed class AssetReferenceElement : VisualElement {
 
         readonly ObjectField assetField = new("Target Asset") {

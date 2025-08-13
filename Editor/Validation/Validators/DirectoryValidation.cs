@@ -1,8 +1,12 @@
-﻿using System.IO;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using System.IO;
 using NUnit.Framework;
 using UnityEditor;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     static class DirectoryValidation {
         [Validate(includeTestAssets = true)]
         public static void PreventEmptyDirectories(DefaultAsset asset, IAssetValidator validator) {

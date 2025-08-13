@@ -3,7 +3,7 @@ using NUnit.Framework;
 using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Tests.PlayMode {
+namespace Slothsoft.TestRunner.Runtime {
     abstract class AbstractTestBehaviour : MonoBehaviour, ITestInterface {
         public abstract void Print(string message);
     }

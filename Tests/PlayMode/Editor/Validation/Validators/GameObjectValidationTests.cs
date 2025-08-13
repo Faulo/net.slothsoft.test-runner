@@ -1,10 +1,9 @@
 using System;
 using NSubstitute;
 using NUnit.Framework;
-using Slothsoft.TestRunner.Editor;
 using UnityEngine;
 
-namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidators {
+namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     [TestFixture]
     [TestOf(typeof(GameObjectValidation))]
     sealed class GameObjectValidationTests {

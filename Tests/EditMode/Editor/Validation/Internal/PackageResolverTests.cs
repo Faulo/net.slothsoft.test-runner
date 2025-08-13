@@ -1,8 +1,7 @@
 using System.Linq;
 using NUnit.Framework;
-using Slothsoft.TestRunner.Editor;
 
-namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     [TestFixture]
     [TestOf(typeof(PackageResolver))]
     sealed class PackageResolverTests {

@@ -1,6 +1,10 @@
-﻿using UnityObject = UnityEngine.Object;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
+using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     record AssetInfo {
         internal UnityObject asset { get; set; }
         internal string assetPath { get; set; }

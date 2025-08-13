@@ -1,10 +1,14 @@
-﻿using NUnit.Framework;
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
+using NUnit.Framework;
 using NUnit.Framework.Constraints;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation {
     public interface IAssetValidator {
         /// <summary>
         /// Same as <see cref="Assert.Fail(string)"/>, but appends the message to the list of errors instead of aborting immediately.

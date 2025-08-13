@@ -1,7 +1,7 @@
 using NUnit.Framework;
 using UnityEngine;
 
-namespace Slothsoft.TestRunner.Tests.PlayMode {
+namespace Slothsoft.TestRunner.Runtime {
     [TestFixture]
     [TestOf(typeof(TimeScaler))]
     sealed class TimeScalerTests {

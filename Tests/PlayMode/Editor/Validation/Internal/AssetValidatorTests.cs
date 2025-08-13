@@ -1,11 +1,11 @@
 using System.Collections.Generic;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
-using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
 using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
     class AssetValidatorTests {

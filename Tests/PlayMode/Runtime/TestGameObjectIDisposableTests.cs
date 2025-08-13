@@ -5,7 +5,7 @@ using NUnit.Framework.Internal;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Slothsoft.TestRunner.Tests.PlayMode {
+namespace Slothsoft.TestRunner.Runtime {
     [TestFixture]
     [TestOf(typeof(TestGameObject<TestComponent>))]
     sealed class TestGameObjectIDisposableTests {

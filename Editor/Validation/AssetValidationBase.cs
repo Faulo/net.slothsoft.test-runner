@@ -1,3 +1,7 @@
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -8,7 +12,7 @@ using UnityEditor;
 using UnityEngine;
 using UnityEngine.TestTools;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation {
     [TestMustExpectAllLogs(false)]
     public abstract class AssetValidationBase<T> where T : IAssetSource, new() {
         public static bool UnloadUnusedAssets = false;

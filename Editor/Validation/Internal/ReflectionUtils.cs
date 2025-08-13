@@ -1,10 +1,14 @@
+using Slothsoft.TestRunner.Editor;
+using Slothsoft.TestRunner.Editor.DependencyExplorer;
+using Slothsoft.TestRunner.Editor.Validation;
+using Slothsoft.TestRunner.Editor.Validation.Validators;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using UnityEditor;
 
-namespace Slothsoft.TestRunner.Editor {
+namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     static class ReflectionUtils {
         /// <summary>
         /// Returns all methods in the current Unity Editor domain that are decorated with the specified attribute <typeparamref name="T"/>.
