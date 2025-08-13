@@ -1,0 +1,21 @@
+{
+    "name": "Slothsoft.TestRunner.Editor",
+    "rootNamespace": "",
+    "references": [
+        "UnityEditor.UI",
+        "UnityEngine.UI",
+        "Slothsoft.TestRunner",
+        "Unity.EditorCoroutines.Editor"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": false,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

@@ -11,7 +11,8 @@
   "dependencies": {
     "net.slothsoft.unity-extensions": "4.1.0",
     "com.unity.test-framework": "1.5.1",
-    "net.tnrd.nsubstitute": "5.1.0"
+    "net.tnrd.nsubstitute": "5.1.0",
+    "com.unity.editorcoroutines": "1.0.0"
   },
   "repository": {
     "url": "git+https://github.com/Faulo/net.slothsoft.test-runner.git",

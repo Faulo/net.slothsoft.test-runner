@@ -1,0 +1,57 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.IO;
+using NUnit.Framework;
+
+namespace Slothsoft.TestRunner.Editor {
+    public abstract class AssemblyValidationBase<T> where T : IAssemblySource, new() {
+        public static IEnumerable<string> AllAssemblyNames {
+            get {
+                SortedSet<string> allAssemblyNames = new(new T().GetAssemblyNames(), StringComparer.InvariantCultureIgnoreCase);
+
+                if (allAssemblyNames.Count == 0) {
+                    allAssemblyNames.Add(string.Empty);
+                }
+
+                return allAssemblyNames;
+            }
+        }
+
+        [Test]
+        public void CheckFormatting([ValueSource(nameof(AllAssemblyNames))] string assemblyName) {
+            if (string.IsNullOrEmpty(assemblyName)) {
+                Assert.Ignore("No assemblies to check.");
+                return;
+            }
+
+            string projectFile = $"{assemblyName}.csproj";
+
+            if (!File.Exists(projectFile)) {
+                Assert.Ignore($"Project file '{projectFile}' not found.");
+                return;
+            }
+
+            ProcessStartInfo startInfo = new() {
+                FileName = "dotnet",
+                RedirectStandardOutput = true,
+                RedirectStandardError = true,
+                UseShellExecute = false,
+                CreateNoWindow = true
+            };
+
+            startInfo.ArgumentList.Add("format");
+            startInfo.ArgumentList.Add(projectFile);
+            startInfo.ArgumentList.Add("--verify-no-changes");
+            startInfo.ArgumentList.Add("--no-restore");
+
+            using Process process = new() { StartInfo = startInfo };
+            process.Start();
+            process.WaitForExit();
+
+            string error = process.StandardError.ReadToEnd();
+
+            Assert.That(process.ExitCode, Is.EqualTo(0), error);
+        }
+    }
+}

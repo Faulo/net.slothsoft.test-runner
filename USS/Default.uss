@@ -1,0 +1,43 @@
+.link {
+	border-color: transparent;
+	background-color: transparent;
+}
+
+.link::enabled {
+	color: #4C7EFF;
+	cursor: link;
+}
+
+.good {
+	-unity-font-style: bold;
+	color: rgb(32, 224, 64);
+}
+
+.bad {
+	-unity-font-style: bold;
+	color: rgb(224, 64, 32);
+}
+
+.mid {
+	-unity-font-style: bold;
+	color: rgb(64, 200, 200);
+}
+
+.hr {
+	background-color: var(--unity-colors-default-text);
+	height: 1px;
+	margin-top: 8px;
+	margin-bottom: 8px;
+}
+
+.h1 {
+    font-size: 24px;
+}
+
+.h2 {
+    font-size: 20px;
+}
+
+.h3 {
+    font-size: 16px;
+}
