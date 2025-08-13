@@ -20,14 +20,14 @@ namespace Slothsoft.TestRunner.Editor {
         readonly AssetPathList dependingAssetView = new("Upstream Assets", "List of all assets that reference 'Target Asset'.");
         readonly AssetPathList dependentAssetView = new("Downstream Assets", "List of all assets that 'Target Asset' references.");
 
-        UnityObject TargetAsset {
+        internal UnityObject targetAsset {
             get => assetField.value;
-            set => assetField.value = value;
+            private set => assetField.value = value;
         }
 
-        string AssetLocation {
+        internal string targetAssetLocation {
             get => pathField.value;
-            set {
+            private set {
                 pathField.value = value;
 
                 if (string.IsNullOrEmpty(value)) {
@@ -41,23 +41,15 @@ namespace Slothsoft.TestRunner.Editor {
         }
 
         internal void SetTargetAsset(UnityObject asset) {
-            if (asset) {
-                AssetLocation = AssetDatabase.GetAssetPath(asset);
-                TargetAsset = asset;
-            } else {
-                AssetLocation = string.Empty;
-                TargetAsset = default;
-            }
+            (targetAsset, targetAssetLocation) = asset
+                ? (asset, AssetDatabase.GetAssetPath(asset))
+                : (default, string.Empty);
         }
 
-        void SetAssetPath(string assetPath) {
-            if (string.IsNullOrEmpty(assetPath)) {
-                AssetLocation = string.Empty;
-                TargetAsset = default;
-            } else {
-                AssetLocation = assetPath;
-                TargetAsset = AssetDatabase.LoadMainAssetAtPath(assetPath);
-            }
+        internal void SetTargetAssetLocation(string assetPath) {
+            (targetAsset, targetAssetLocation) = string.IsNullOrEmpty(assetPath)
+                ? (default, string.Empty)
+                : (AssetDatabase.LoadMainAssetAtPath(assetPath), assetPath);
         }
 
         void SelectAssetPaths(IReadOnlyList<string> assetPaths) {
@@ -74,13 +66,14 @@ namespace Slothsoft.TestRunner.Editor {
 
         public AssetReferenceElement() {
             assetField.RegisterValueChangedCallback(OnChange);
+            style.flexGrow = 1;
 
-            dependingAssetView.onAssetSubmitted += SetAssetPath;
+            dependingAssetView.onAssetSubmitted += SetTargetAssetLocation;
             dependingAssetView.onAssetSubmitted += _ => ClearSelections();
             dependingAssetView.onAssetsSelected += SelectAssetPaths;
             dependingAssetView.onAssetsSelected += _ => dependentAssetView.ClearSelection();
 
-            dependentAssetView.onAssetSubmitted += SetAssetPath;
+            dependentAssetView.onAssetSubmitted += SetTargetAssetLocation;
             dependentAssetView.onAssetSubmitted += _ => ClearSelections();
             dependentAssetView.onAssetsSelected += SelectAssetPaths;
             dependentAssetView.onAssetsSelected += _ => dependingAssetView.ClearSelection();
