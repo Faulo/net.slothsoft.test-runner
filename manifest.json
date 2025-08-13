@@ -9,31 +9,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.AssemblyValidationBase-1.html",
-          "hash": "VFmC/mA8UC29nY3hqtZ8kQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.AssetSourceBase.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.AssetSourceBase.html",
-          "hash": "+0SU6xtiikQesM77OtLgaw=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.AssetUtils.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.AssetUtils.html",
-          "hash": "IcolvDHU30EtdHwXgSVH+w=="
+          "hash": "VlBkpP+JGAArloEBoZ8WAQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.IAssemblySource.html",
-          "hash": "4GgWMIyRep7sNyOmF7hCGQ=="
+          "hash": "NKcjsiP2WoNvYlRoLniAjg=="
         }
       },
       "is_incremental": false,
@@ -113,35 +89,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.ReflectionUtils.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.ReflectionUtils.html",
-          "hash": "n8NU1+tNrIDJGNnYBWufhQ=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
       "source_relative_path": "api/Slothsoft.TestRunner.Editor.ValidateAttribute.yml",
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.ValidateAttribute.html",
-          "hash": "OGJ5t3Foz+9ylt0eTwl20w=="
-        }
-      },
-      "is_incremental": false,
-      "version": ""
-    },
-    {
-      "type": "ManagedReference",
-      "source_relative_path": "api/Slothsoft.TestRunner.Editor.ValidateWithNameAttribute.yml",
-      "output": {
-        ".html": {
-          "relative_path": "api/Slothsoft.TestRunner.Editor.ValidateWithNameAttribute.html",
-          "hash": "FEFJXP0AOTmJL8AXP5D7eg=="
+          "hash": "rD7P/ItvAR0+/qQk0wn4EQ=="
         }
       },
       "is_incremental": false,
@@ -153,7 +105,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.html",
-          "hash": "CVTJdWfpl9za3YFg8iFWoQ=="
+          "hash": "TWN/LiJfhTJm+mHLUNJczg=="
         }
       },
       "is_incremental": false,
@@ -249,7 +201,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "1fRmULdKatKXUJ1qmBrCSA=="
+          "hash": "C0UJu3aiNdkfVkxp4Z6K+w=="
         }
       },
       "is_incremental": false,
@@ -300,7 +252,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 19,
+          "total_file_count": 15,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
