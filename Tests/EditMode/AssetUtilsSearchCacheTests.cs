@@ -7,30 +7,30 @@ namespace Slothsoft.TestRunner.Tests.EditMode {
     [TestFixture]
     [TestOf(typeof(AssetUtils))]
     [TestMustExpectAllLogs(true)]
-    internal sealed class AssetUtilsSearchCacheTests {
-        private interface IA {
+    sealed class AssetUtilsSearchCacheTests {
+        interface IA {
         }
-        private interface IB {
+        interface IB {
         }
-        private interface IC {
-        }
-
-        private class UA : UnityObject, IA {
+        interface IC {
         }
 
-        private class UB : UA, IB {
+        class UA : UnityObject, IA {
         }
 
-        private class UC : UB, IC {
+        class UB : UA, IB {
         }
 
-        private class A : IA {
+        class UC : UB, IC {
         }
 
-        private class B : A, IB {
+        class A : IA {
         }
 
-        private class C : B, IC {
+        class B : A, IB {
+        }
+
+        class C : B, IC {
         }
 
         [Test]

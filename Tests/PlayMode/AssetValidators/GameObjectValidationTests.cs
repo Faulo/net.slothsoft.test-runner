@@ -7,14 +7,14 @@ using UnityEngine;
 namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidators {
     [TestFixture]
     [TestOf(typeof(GameObjectValidation))]
-    internal sealed class GameObjectValidationTests {
+    sealed class GameObjectValidationTests {
         [TestCase(typeof(Transform))]
         [TestCase(typeof(SkinnedMeshRenderer))]
         public void GivenSingleGameObject_WhenValidateGameObjectHierarchy_ThenValidateComponents(Type type) {
-            IAssetValidator validator = Substitute.For<IAssetValidator>();
+            var validator = Substitute.For<IAssetValidator>();
 
             GameObject obj = new();
-            Component component = GetOrAdd(obj, type);
+            var component = GetOrAdd(obj, type);
 
             GameObjectValidation.ValidateGameObjectHierarchy(obj, validator);
 
@@ -24,20 +24,20 @@ namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidators {
         [TestCase(typeof(Transform))]
         [TestCase(typeof(SkinnedMeshRenderer))]
         public void GivenGameObjectWithChild_WhenValidateGameObjectHierarchy_ThenValidateChildren(Type type) {
-            IAssetValidator validator = Substitute.For<IAssetValidator>();
+            var validator = Substitute.For<IAssetValidator>();
 
             GameObject parent = new();
             GameObject child = new();
             child.transform.parent = parent.transform;
-            Component component = GetOrAdd(child, type);
+            var component = GetOrAdd(child, type);
 
             GameObjectValidation.ValidateGameObjectHierarchy(parent, validator);
 
             validator.Received(1).ValidateAsset(component);
         }
 
-        private Component GetOrAdd(GameObject obj, Type type) {
-            return obj.TryGetComponent(type, out Component component)
+        Component GetOrAdd(GameObject obj, Type type) {
+            return obj.TryGetComponent(type, out var component)
                 ? component
                 : obj.AddComponent(type);
         }

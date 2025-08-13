@@ -104,11 +104,11 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         }
 
         [TestCase(
-            "Packages/de.ulisses-spiele.core.utilities/Tests/Assets/Test_PrefabWithBrokenRenderer.prefab",
+            "Packages/" + AssemblyInfo.ID + "/Tests/Assets/Test_PrefabWithBrokenRenderer.prefab",
             "SkinnedMeshRenderer 'Test_PrefabWithBrokenRenderer' references a missing Material in property 'm_Materials.Array.data[0]'!"
         )]
         [TestCase(
-            "Packages/de.ulisses-spiele.core.utilities/Tests/Assets/Test_PrefabWithBrokenRenderer.prefab",
+            "Packages/" + AssemblyInfo.ID + "/Tests/Assets/Test_PrefabWithBrokenRenderer.prefab",
             "SkinnedMeshRenderer 'Test_PrefabWithBrokenRenderer' references a missing Mesh in property 'm_Mesh'!"
         )]
         public void GivenBrokenAssetWhenValidate_ThenExpectError(string assetPath, string message) {

@@ -13,7 +13,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode {
     [TestFixture]
     [TestOf(typeof(AssetUtils))]
     [TestMustExpectAllLogs(false)]
-    internal sealed class AssetUtilsTests {
+    sealed class AssetUtilsTests {
         [SetUp]
         public void ClearCache() {
             AssetUtils.ClearCache(Enumerable.Empty<string>());
@@ -26,7 +26,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode {
         [TestCase("Library/PackageCache")]
         [TestCase("Library/PackageCache")]
         public void GivenDirectory_WhenAssetsInDirectory_ThenReturn(string directory) {
-            IEnumerable<string> actual = directory.AssetsInDirectory();
+            var actual = directory.AssetsInDirectory();
 
             Assert.That(actual, Is.InstanceOf<List<string>>());
         }
@@ -48,10 +48,10 @@ namespace Slothsoft.TestRunner.Tests.EditMode {
             Assert.That(actual, Is.InstanceOf<List<string>>());
         }
 
-        private interface INotImplementedAnywhere {
+        interface INotImplementedAnywhere {
         }
 
-        private interface INotImplementedAnywhereGeneric<T> {
+        interface INotImplementedAnywhereGeneric<T> {
         }
 
         [Test]
@@ -95,7 +95,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode {
 
         [Test]
         public void GiveMonoScript_WhenFindAndLoadAssetsOfType_ThenReturnMainAsset() {
-            UnityObject expected = AssetDatabase.LoadMainAssetAtPath($"Packages/{AssemblyInfo.ID}/Tests/EditMode/AssetUtilsTests.cs");
+            var expected = AssetDatabase.LoadMainAssetAtPath($"Packages/{AssemblyInfo.ID}/Tests/EditMode/AssetUtilsTests.cs");
 
             Assert.That(expected, Is.Not.Null);
 
@@ -106,7 +106,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode {
 
         [Test]
         public void GiveMaterial_WhenFindAndLoadAssetsOfType_ThenReturnSubAsset() {
-            Material expected = AssetDatabase.LoadAssetAtPath<Material>($"Packages/{AssemblyInfo.ID}/TextMesh Pro/Fonts/LiberationSans SDF - Fallback.asset");
+            var expected = AssetDatabase.LoadAssetAtPath<Material>($"Packages/{AssemblyInfo.ID}/TextMesh Pro/Fonts/LiberationSans SDF - Fallback.asset");
 
             Assert.That(expected, Is.Not.Null);
 

@@ -10,7 +10,7 @@ namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
     [TestMustExpectAllLogs(false)]
-    internal class AssetValidationBaseTests {
+    class AssetValidationBaseTests {
         internal sealed class StubAsset : ScriptableObject {
             [SerializeField]
             internal StubAsset AssetField;
@@ -18,7 +18,7 @@ namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
             internal Material[] MaterialField;
         }
 
-        private AssetValidator sut;
+        AssetValidator sut;
 
         [SetUp]
         public void SetUpSuT() {
@@ -30,11 +30,11 @@ namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
             sut.Dispose();
         }
 
-        private readonly List<UnityObject> runtimeObjects = new();
+        readonly List<UnityObject> runtimeObjects = new();
 
         [TearDown]
         public void TearDownRuntimeObjects() {
-            foreach (UnityObject obj in runtimeObjects) {
+            foreach (var obj in runtimeObjects) {
                 if (obj) {
                     UnityObject.Destroy(obj);
 
@@ -44,8 +44,8 @@ namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
             runtimeObjects.Clear();
         }
 
-        private static StubAsset CreateAsset(string name) {
-            StubAsset asset = ScriptableObject.CreateInstance<StubAsset>();
+        static StubAsset CreateAsset(string name) {
+            var asset = ScriptableObject.CreateInstance<StubAsset>();
             asset.name = name;
             return asset;
         }

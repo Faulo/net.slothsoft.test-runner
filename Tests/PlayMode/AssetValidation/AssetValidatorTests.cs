@@ -8,17 +8,17 @@ using UnityObject = UnityEngine.Object;
 namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
-    internal class AssetValidatorTests {
+    class AssetValidatorTests {
         [TestCase(0, "A", "GameObject 'A'")]
         [TestCase(1, "B", "GameObject 'BB' > 'B'")]
         [TestCase(2, "C", "GameObject 'CCCC' > 'CC' > 'C'")]
         public void GivenGameObject_WhenGetName_ThenReturnName(int parentCount, string name, string expected) {
-            GameObject obj = CreateGameObject(name);
+            var obj = CreateGameObject(name);
 
-            GameObject current = obj;
+            var current = obj;
             for (int i = 0; i < parentCount; i++) {
                 name += name;
-                GameObject parent = CreateGameObject(name);
+                var parent = CreateGameObject(name);
                 current.transform.parent = parent.transform;
                 current = parent;
             }
@@ -34,12 +34,12 @@ namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
         [TestCase(1, "B", "Transform 'BB' > 'B'")]
         [TestCase(2, "C", "Transform 'CCCC' > 'CC' > 'C'")]
         public void GivenComponent_WhenGetName_ThenReturnName(int parentCount, string name, string expected) {
-            GameObject obj = CreateGameObject(name);
+            var obj = CreateGameObject(name);
 
-            GameObject current = obj;
+            var current = obj;
             for (int i = 0; i < parentCount; i++) {
                 name += name;
-                GameObject parent = CreateGameObject(name);
+                var parent = CreateGameObject(name);
                 current.transform.parent = parent.transform;
                 current = parent;
             }
@@ -51,9 +51,9 @@ namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
             Assert.That(actual, Is.EqualTo(expected));
         }
 
-        private readonly List<GameObject> _objects = new();
+        readonly List<GameObject> _objects = new();
 
-        private GameObject CreateGameObject(string name) {
+        GameObject CreateGameObject(string name) {
             GameObject obj = new(name);
             _objects.Add(obj);
             return obj;
@@ -61,7 +61,7 @@ namespace Slothsoft.TestRunner.Tests.PlayMode.AssetValidation {
 
         [TearDown]
         public void TearDownObjects() {
-            foreach (GameObject obj in _objects) {
+            foreach (var obj in _objects) {
                 if (obj) {
                     UnityObject.Destroy(obj);
                 }

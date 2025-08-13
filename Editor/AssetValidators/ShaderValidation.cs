@@ -1,7 +1,6 @@
 using System;
 using System.Linq;
 using System.Reflection;
-using Slothsoft.TestRunner.Editor;
 using UnityEditor;
 using UnityEditor.Rendering;
 using UnityEngine;

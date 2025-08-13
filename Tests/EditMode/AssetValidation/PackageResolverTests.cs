@@ -1,14 +1,12 @@
-using System.Collections.Generic;
 using System.Linq;
 using NUnit.Framework;
 using Slothsoft.TestRunner.Editor;
-using UnityEditor.PackageManager;
 
 namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
     [TestFixture]
     [TestOf(typeof(PackageResolver))]
-    internal sealed class PackageResolverTests {
-        private const string UTILITIES_CHANGELOG = "Packages/" + AssemblyInfo.ID + "/CHANGELOG.md";
+    sealed class PackageResolverTests {
+        const string UTILITIES_CHANGELOG = "Packages/" + AssemblyInfo.ID + "/CHANGELOG.md";
 
         public static readonly string[] UtilitiesDirectDependencies = new[] {
             "Library",
@@ -20,14 +18,14 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         };
 
         public static readonly string[] UtilitiesIndirectDependencies = new[] {
-            "com.unity.ide.visualstudio",
+            "Packages/com.unity.ide.visualstudio",
         };
 
         [TestCase(AssemblyInfo.ID)]
         public void GivenPackageId_WhenGetPackageInfo_ThenReturn(string packageId) {
             PackageResolver sut = new();
 
-            PackageInfo actual = sut.GetPackageInfo(packageId);
+            var actual = sut.GetPackageInfo(packageId);
 
             Assert.That(actual, Is.Not.Null);
             Assert.That(actual.name, Is.EqualTo(packageId));
@@ -37,7 +35,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         public void GivenUtilitiesPath_WhenGetDirectDependentPackagePaths_ThenListHasCount() {
             PackageResolver sut = new(true);
 
-            IReadOnlyList<string> actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
+            var actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
 
             Assert.That(actual, Is.EqualTo(UtilitiesDirectDependencies));
         }
@@ -48,7 +46,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
             PackageResolver sut = new(true);
 
-            IReadOnlyList<string> actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
+            var actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
 
             Assert.That(actual, Does.Contain(expected));
         }
@@ -57,7 +55,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
         public void GivenUtilitiesPath_WhenGetAllDependentPackagePaths_ThenListHasCount() {
             PackageResolver sut = new();
 
-            IReadOnlyList<string> actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
+            var actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
 
             Assert.That(actual, Is.SupersetOf(UtilitiesDirectDependencies.Concat(UtilitiesIndirectDependencies)));
         }
@@ -68,7 +66,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
             PackageResolver sut = new();
 
-            IReadOnlyList<string> actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
+            var actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
 
             Assert.That(actual, Does.Contain(expected));
         }

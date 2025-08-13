@@ -11,7 +11,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
     [TestMustExpectAllLogs(false)]
-    internal class AssetValidationBaseTests {
+    class AssetValidationBaseTests {
         internal sealed class StubAsset : ScriptableObject {
             [SerializeField]
             internal StubAsset AssetField;
@@ -19,7 +19,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
             internal Material[] MaterialField;
         }
 
-        private AssetValidator sut;
+        AssetValidator sut;
 
         [SetUp]
         public void SetUpSuT() {
@@ -31,11 +31,11 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
             sut.Dispose();
         }
 
-        private readonly List<UnityObject> runtimeObjects = new();
+        readonly List<UnityObject> runtimeObjects = new();
 
         [TearDown]
         public void TearDownRuntimeObjects() {
-            foreach (UnityObject obj in runtimeObjects) {
+            foreach (var obj in runtimeObjects) {
                 if (obj) {
                     UnityObject.Destroy(obj);
 
@@ -45,15 +45,15 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
             runtimeObjects.Clear();
         }
 
-        private static StubAsset CreateAsset(string name) {
-            StubAsset asset = ScriptableObject.CreateInstance<StubAsset>();
+        static StubAsset CreateAsset(string name) {
+            var asset = ScriptableObject.CreateInstance<StubAsset>();
             asset.name = name;
             return asset;
         }
 
         [Test]
         public void GivenAssetWithoutReference_WhenAssert_ThenPass() {
-            StubAsset asset = CreateAsset("test");
+            var asset = CreateAsset("test");
 
             SerializedAssetValidation.ValidateSerializedProperties(asset, sut);
             sut.AssertFailNow();
@@ -61,7 +61,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenAssetWithReference_WhenAssert_ThenPass() {
-            StubAsset asset = CreateAsset("test");
+            var asset = CreateAsset("test");
             asset.AssetField = CreateAsset("child");
 
             SerializedAssetValidation.ValidateSerializedProperties(asset, sut);
@@ -71,7 +71,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenAssetWithMissingReference_WhenAssert_ThenFail() {
-            StubAsset asset = CreateAsset("test");
+            var asset = CreateAsset("test");
             asset.AssetField = CreateAsset("child");
             UnityObject.DestroyImmediate(asset.AssetField);
 
@@ -88,7 +88,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenAssetWithMissingMaterial_WhenAssert_ThenFail() {
-            StubAsset asset = CreateAsset("test");
+            var asset = CreateAsset("test");
             asset.MaterialField = new[] { new Material(Shader.Find("Diffuse")) };
             UnityObject.DestroyImmediate(asset.MaterialField[0]);
 
@@ -105,9 +105,9 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenSerializedPropertyWithoutReference_WhenAssert_ThenPass() {
-            StubAsset asset = CreateAsset("test");
+            var asset = CreateAsset("test");
 
-            SerializedProperty property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
+            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
 
             SerializedAssetValidation.ValidateSerializedProperty(property, sut);
             sut.AssertFailNow();
@@ -115,10 +115,10 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenSerializedPropertyWithReference_WhenAssert_ThenPass() {
-            StubAsset asset = CreateAsset("test");
+            var asset = CreateAsset("test");
             asset.AssetField = CreateAsset("child");
 
-            SerializedProperty property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
+            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
 
             SerializedAssetValidation.ValidateSerializedProperty(property, sut);
 
@@ -127,11 +127,11 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenSerializedPropertyWithMissingReference_WhenAssert_ThenFail() {
-            StubAsset asset = CreateAsset("test");
+            var asset = CreateAsset("test");
             asset.AssetField = CreateAsset("child");
             UnityObject.DestroyImmediate(asset.AssetField);
 
-            SerializedProperty property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
+            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.AssetField));
 
             SerializedAssetValidation.ValidateSerializedProperty(property, sut);
 
@@ -146,11 +146,11 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenSerializedPropertyWithMissingMaterial_WhenAssert_ThenFail() {
-            StubAsset asset = CreateAsset("test");
+            var asset = CreateAsset("test");
             asset.MaterialField = new[] { new Material(Shader.Find("Diffuse")) };
             UnityObject.DestroyImmediate(asset.MaterialField[0]);
 
-            SerializedProperty property = new SerializedObject(asset).FindProperty(nameof(StubAsset.MaterialField)).GetArrayElementAtIndex(0);
+            var property = new SerializedObject(asset).FindProperty(nameof(StubAsset.MaterialField)).GetArrayElementAtIndex(0);
 
             SerializedAssetValidation.ValidateSerializedProperty(property, sut);
 
