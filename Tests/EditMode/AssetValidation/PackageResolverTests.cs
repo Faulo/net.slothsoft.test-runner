@@ -8,16 +8,17 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
     sealed class PackageResolverTests {
         const string UTILITIES_CHANGELOG = "Packages/" + AssemblyInfo.ID + "/CHANGELOG.md";
 
-        public static readonly string[] UtilitiesDirectDependencies = new[] {
+        public static readonly string[] directDependencies = new[] {
             "Library",
-            "Packages/net.slothsoft.unity-extensions",
-            "Packages/com.unity.test-framework",
-            "Packages/net.tnrd.nsubstitute",
             "Packages/com.unity.editorcoroutines",
+            "Packages/com.unity.test-framework",
+            "Packages/net.slothsoft.test-runner",
+            "Packages/net.slothsoft.unity-extensions",
+            "Packages/net.tnrd.nsubstitute",
             "Resources",
         };
 
-        public static readonly string[] UtilitiesIndirectDependencies = new[] {
+        public static readonly string[] indirectDependencies = new[] {
             "Packages/com.unity.ide.visualstudio",
         };
 
@@ -37,12 +38,12 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
             var actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
 
-            Assert.That(actual, Is.EqualTo(UtilitiesDirectDependencies));
+            Assert.That(actual, Is.EqualTo(directDependencies));
         }
 
         [Test]
         public void GivenUtilitiesPath_WhenGetDirectDependentPackagePaths_ThenListContainsPath(
-            [ValueSource(nameof(UtilitiesDirectDependencies))] string expected) {
+            [ValueSource(nameof(directDependencies))] string expected) {
 
             PackageResolver sut = new(true);
 
@@ -57,12 +58,12 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
             var actual = sut.GetDependentPackagePaths(UTILITIES_CHANGELOG);
 
-            Assert.That(actual, Is.SupersetOf(UtilitiesDirectDependencies.Concat(UtilitiesIndirectDependencies)));
+            Assert.That(actual, Is.SupersetOf(directDependencies.Concat(indirectDependencies)));
         }
 
         [Test]
         public void GivenUtilitiesPath_WhenGetAllDependentPackagePaths_ThenListContainsPath(
-            [ValueSource(nameof(UtilitiesIndirectDependencies))] string expected) {
+            [ValueSource(nameof(indirectDependencies))] string expected) {
 
             PackageResolver sut = new();
 

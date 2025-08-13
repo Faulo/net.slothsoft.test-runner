@@ -11,7 +11,7 @@ using UnityObject = UnityEngine.Object;
 namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
-    internal class AssetValidatorTests {
+    class AssetValidatorTests {
         [Test]
         public void GivenNewMaterial_WhenValidate_ThenPass() {
             using AssetValidator sut = new();
@@ -20,7 +20,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenBrokenPrefabAsset_WhenValidateThenAssert_ThenFail() {
-            BrokenPrefabAsset asset = Activator.CreateInstance(typeof(BrokenPrefabAsset), true) as BrokenPrefabAsset;
+            var asset = Activator.CreateInstance(typeof(BrokenPrefabAsset), true) as BrokenPrefabAsset;
 
             using AssetValidator sut = new();
             sut.ValidateAsset(asset);
@@ -36,7 +36,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [Test]
         public void GivenBrokenPrefabAsset_WhenFailImmediately_ThenFail() {
-            BrokenPrefabAsset asset = Activator.CreateInstance(typeof(BrokenPrefabAsset), true) as BrokenPrefabAsset;
+            var asset = Activator.CreateInstance(typeof(BrokenPrefabAsset), true) as BrokenPrefabAsset;
 
             using AssetValidator sut = new() {
                 FailImmediately = true
@@ -125,13 +125,13 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
             );
         }
 
-        private sealed class StubObject : ScriptableObject { }
-        private sealed class SomeObject : ScriptableObject { }
+        sealed class StubObject : ScriptableObject { }
+        sealed class SomeObject : ScriptableObject { }
 
         [TestCase(typeof(StubObject), "A", "StubObject 'A'")]
         [TestCase(typeof(SomeObject), "B", "SomeObject 'B'")]
         public void GivenScriptableObject_WhenGetName_ThenReturnName(Type type, string name, string expected) {
-            ScriptableObject obj = ScriptableObject.CreateInstance(type);
+            var obj = ScriptableObject.CreateInstance(type);
             obj.name = name;
 
             using AssetValidator sut = new();
@@ -158,9 +158,9 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
             Assert.That(actual, Is.EqualTo(expected));
         }
 
-        private readonly List<GameObject> _objects = new();
+        readonly List<GameObject> _objects = new();
 
-        private GameObject CreateGameObject(string name) {
+        GameObject CreateGameObject(string name) {
             GameObject obj = new(name);
             _objects.Add(obj);
             return obj;
@@ -168,7 +168,7 @@ namespace Slothsoft.TestRunner.Tests.EditMode.AssetValidation {
 
         [TearDown]
         public void TearDownObjects() {
-            foreach (GameObject obj in _objects) {
+            foreach (var obj in _objects) {
                 if (obj) {
                     UnityObject.Destroy(obj);
                 }

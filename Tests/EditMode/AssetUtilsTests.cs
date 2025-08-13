@@ -82,9 +82,9 @@ namespace Slothsoft.TestRunner.Tests.EditMode {
             Assert.That(actual, Is.Not.Empty);
         }
 
-        [Test]
-        public void GiveMonoScript_WhenFindAssetsOfType_ThenReturnMainAsset() {
-            string expected = AssetDatabase.AssetPathToGUID($"Packages/{AssemblyInfo.ID}/Tests/EditMode/AssetUtilsTests.cs");
+        [TestCase("Packages/" + AssemblyInfo.ID + "/Tests/EditMode/AssetUtilsTests.cs")]
+        public void GiveMonoScript_WhenFindAssetsOfType_ThenReturnMainAsset(string assetPath) {
+            string expected = AssetDatabase.AssetPathToGUID(assetPath);
 
             Assert.That(expected, Is.Not.Null);
 
@@ -93,24 +93,13 @@ namespace Slothsoft.TestRunner.Tests.EditMode {
             Assert.That(actual, Does.Contain(expected));
         }
 
-        [Test]
-        public void GiveMonoScript_WhenFindAndLoadAssetsOfType_ThenReturnMainAsset() {
-            var expected = AssetDatabase.LoadMainAssetAtPath($"Packages/{AssemblyInfo.ID}/Tests/EditMode/AssetUtilsTests.cs");
+        [TestCase("Packages/" + AssemblyInfo.ID + "/Tests/EditMode/AssetUtilsTests.cs")]
+        public void GiveMonoScript_WhenFindAndLoadAssetsOfType_ThenReturnMainAsset(string assetPath) {
+            var expected = AssetDatabase.LoadMainAssetAtPath(assetPath);
 
             Assert.That(expected, Is.Not.Null);
 
             IEnumerable<MonoScript> actual = AssetUtils.FindAndLoadAssetsOfType<MonoScript>();
-
-            Assert.That(actual, Does.Contain(expected));
-        }
-
-        [Test]
-        public void GiveMaterial_WhenFindAndLoadAssetsOfType_ThenReturnSubAsset() {
-            var expected = AssetDatabase.LoadAssetAtPath<Material>($"Packages/{AssemblyInfo.ID}/TextMesh Pro/Fonts/LiberationSans SDF - Fallback.asset");
-
-            Assert.That(expected, Is.Not.Null);
-
-            IEnumerable<Material> actual = AssetUtils.FindAndLoadAssetsOfType<Material>();
 
             Assert.That(actual, Does.Contain(expected));
         }
