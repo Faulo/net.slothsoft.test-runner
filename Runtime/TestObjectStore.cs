@@ -32,6 +32,12 @@ namespace Slothsoft.TestRunner {
             return instance;
         }
 
+        public Material CreateMaterial(string shader = "Diffuse") {
+            var instance = new Material(Shader.Find(shader));
+            instances.Add(instance);
+            return instance;
+        }
+
         public T CreateScriptableObject<T>(string name = default) where T : ScriptableObject {
             var instance = ScriptableObject.CreateInstance<T>();
             instance.name = string.IsNullOrEmpty(name) ? "New " + ObjectNames.NicifyVariableName(typeof(T).Name) : name;

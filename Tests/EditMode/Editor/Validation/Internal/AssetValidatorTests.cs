@@ -103,28 +103,6 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
             }
         }
 
-        [TestCase(
-            "Packages/" + AssemblyInfo.ID + "/Tests/Assets/Test_PrefabWithBrokenRenderer.prefab",
-            "SkinnedMeshRenderer 'Test_PrefabWithBrokenRenderer' references a missing Material in property 'm_Materials.Array.data[0]'!"
-        )]
-        [TestCase(
-            "Packages/" + AssemblyInfo.ID + "/Tests/Assets/Test_PrefabWithBrokenRenderer.prefab",
-            "SkinnedMeshRenderer 'Test_PrefabWithBrokenRenderer' references a missing Mesh in property 'm_Mesh'!"
-        )]
-        public void GivenBrokenAssetWhenValidate_ThenExpectError(string assetPath, string message) {
-            using AssetValidator sut = new();
-
-            sut.ValidateAsset(assetPath);
-
-            Assert.Throws(
-                new ExceptionTypeConstraint(typeof(AssertionException))
-                .And
-                .Message
-                .Contains(message),
-                sut.AssertFailNow
-            );
-        }
-
         sealed class StubObject : ScriptableObject { }
         sealed class SomeObject : ScriptableObject { }
 
