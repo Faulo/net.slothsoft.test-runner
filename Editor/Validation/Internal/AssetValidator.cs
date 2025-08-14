@@ -1,7 +1,3 @@
-using Slothsoft.TestRunner.Editor;
-using Slothsoft.TestRunner.Editor.DependencyExplorer;
-using Slothsoft.TestRunner.Editor.Validation;
-using Slothsoft.TestRunner.Editor.Validation.Validators;
 using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;

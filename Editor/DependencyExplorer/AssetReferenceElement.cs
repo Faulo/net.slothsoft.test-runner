@@ -1,9 +1,6 @@
-using Slothsoft.TestRunner.Editor;
-using Slothsoft.TestRunner.Editor.Validation;
-using Slothsoft.TestRunner.Editor.Validation.Internal;
-using Slothsoft.TestRunner.Editor.Validation.Validators;
 using System.Collections.Generic;
 using System.Linq;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
 using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine.UIElements;
