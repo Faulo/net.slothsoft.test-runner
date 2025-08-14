@@ -3,7 +3,7 @@ using System.Linq;
 using UnityEditor.PackageManager;
 
 namespace Slothsoft.TestRunner.Editor.Validation.Internal {
-    class PackageResolver : IPackageResolver {
+    sealed class PackageResolver : IPackageResolver {
         readonly Dictionary<string, List<string>> pathsCache = new();
         readonly bool onlyRetrieveDirectDependencies;
 

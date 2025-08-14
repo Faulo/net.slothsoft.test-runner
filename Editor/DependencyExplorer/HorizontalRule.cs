@@ -1,7 +1,7 @@
 using UnityEngine.UIElements;
 
 namespace Slothsoft.TestRunner.Editor.DependencyExplorer {
-    class HorizontalRule : VisualElement {
+    sealed class HorizontalRule : VisualElement {
         internal HorizontalRule() {
             AddToClassList("hr");
         }

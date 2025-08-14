@@ -12,7 +12,7 @@ using UnityObject = UnityEngine.Object;
 namespace Slothsoft.TestRunner.Editor.Validation.Internal {
 #if UNITY_INCLUDE_TESTS
     static class TestRunnerAddOn {
-        class AddOn {
+        sealed class AddOn {
             const string GUI_CLASS = "TestListGUI";
             static readonly Type t_TestListGUI = typeof(TestRunnerWindow)
                 .Assembly

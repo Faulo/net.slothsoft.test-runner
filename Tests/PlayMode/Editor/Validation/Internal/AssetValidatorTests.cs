@@ -8,7 +8,7 @@ using UnityObject = UnityEngine.Object;
 namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
-    class AssetValidatorTests {
+    sealed class AssetValidatorTests {
         [TestCase(0, "A", "GameObject 'A'")]
         [TestCase(1, "B", "GameObject 'BB' > 'B'")]
         [TestCase(2, "C", "GameObject 'CCCC' > 'CC' > 'C'")]

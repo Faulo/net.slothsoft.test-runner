@@ -8,7 +8,7 @@ using UnityEngine;
 namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     static class AssemblyDefinitionValidation {
         [Serializable]
-        class AssemblyDefinitionData {
+        sealed class AssemblyDefinitionData {
             [SerializeField]
             internal string[] references;
             [SerializeField]
@@ -16,7 +16,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Validators {
         }
 
         [Serializable]
-        class VersionDefineData {
+        sealed class VersionDefineData {
             [SerializeField]
             internal string name;
         }

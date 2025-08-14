@@ -8,7 +8,7 @@ namespace Slothsoft.TestRunner.Runtime {
         public abstract void Print(string message);
     }
 
-    class ConcreteTestBehaviour : MonoBehaviour, ITestInterface {
+    sealed class ConcreteTestBehaviour : MonoBehaviour, ITestInterface {
         public void Print(string message) {
         }
     }

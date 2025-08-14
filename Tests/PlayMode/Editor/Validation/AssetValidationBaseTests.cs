@@ -11,12 +11,12 @@ namespace Slothsoft.TestRunner.Editor.Validation {
     [TestFixture]
     [TestOf(typeof(SerializedAssetValidation))]
     [TestMustExpectAllLogs(false)]
-    class AssetValidationBaseTests {
+    sealed class AssetValidationBaseTests {
         internal sealed class StubAsset : ScriptableObject {
             [SerializeField]
-            internal StubAsset AssetField;
+            internal StubAsset assetField;
             [SerializeField]
-            internal Material[] MaterialField;
+            internal Material[] materialField;
         }
 
         AssetValidator sut;
@@ -43,12 +43,6 @@ namespace Slothsoft.TestRunner.Editor.Validation {
             }
 
             runtimeObjects.Clear();
-        }
-
-        static StubAsset CreateAsset(string name) {
-            var asset = ScriptableObject.CreateInstance<StubAsset>();
-            asset.name = name;
-            return asset;
         }
 
         [TestCase("SM_Dagger_Bandit_02", true)]
