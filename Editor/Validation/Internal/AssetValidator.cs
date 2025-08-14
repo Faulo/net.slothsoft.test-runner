@@ -34,9 +34,6 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
         /// <inheritdoc/>
         public string currentAssetPath => CurrentAssetInfos.assetPath;
 
-        /// <inheritdoc/>
-        public bool CurrentAssetIsTestAsset => CurrentAssetInfos.isTestAsset;
-
         AssetInfo CurrentAssetInfos => currentAssetInfos.Peek();
 
         readonly Stack<AssetInfo> currentAssetInfos = new(new AssetInfo[] { new() });
