@@ -6,7 +6,7 @@ using UnityEngine.TestTools;
 
 namespace Slothsoft.TestRunner.Editor.Validation {
     [TestMustExpectAllLogs(false)]
-    public abstract class DependencyValidationBase<T> where T : IPackageSource, new() {
+    public abstract class PackageValidationBase<T> where T : IPackageSource, new() {
         public static IEnumerable<string> allPackageIds => AssetUtils.SortAndAddEmpty(new T().GetPackageIds());
 
         readonly IPackageResolver resolver = new PackageResolver(false);
