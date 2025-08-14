@@ -207,10 +207,13 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
             AssetInfo info = new() {
                 asset = asset,
                 assetPath = assetPath,
-                isTestAsset = IsTestAsset(assetPath),
-                isWIPAsset = IsWIPAsset(assetPath),
-                isDeprecatedAsset = IsDeprecatedAsset(assetPath),
             };
+
+            if (!string.IsNullOrEmpty(assetPath)) {
+                info.isTestAsset = AssetUtils.IsTestAsset(assetPath);
+                info.isWIPAsset = AssetUtils.IsWIPAsset(assetPath);
+                info.isDeprecatedAsset = AssetUtils.IsDeprecatedAsset(assetPath);
+            }
 
             currentAssetInfos.Push(info);
             InvokeValidators(info);
@@ -358,9 +361,5 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
                 AssertFail($"[{type}] {condition}{Environment.NewLine}{stackTrace}");
             }
         }
-
-        public bool IsWIPAsset(string assetPath) => AssetUtils.IsWIPAsset(assetPath);
-        public bool IsTestAsset(string assetPath) => AssetUtils.IsTestAsset(assetPath);
-        public bool IsDeprecatedAsset(string assetPath) => AssetUtils.IsDeprecatedAsset(assetPath);
     }
 }

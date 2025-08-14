@@ -120,9 +120,5 @@ namespace Slothsoft.TestRunner.Editor.Validation {
         /// Close <see cref="currentScene"/>.
         /// </summary>
         public void CloseScene();
-
-        public bool IsWIPAsset(string assetPath);
-        public bool IsTestAsset(string assetPath);
-        public bool IsDeprecatedAsset(string assetPath);
     }
 }
