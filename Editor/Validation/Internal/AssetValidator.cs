@@ -29,10 +29,10 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
         MethodInfo lastContext = default;
 
         /// <inheritdoc/>
-        public UnityObject CurrentAsset => CurrentAssetInfos.asset;
+        public UnityObject currentAsset => CurrentAssetInfos.asset;
 
         /// <inheritdoc/>
-        public string CurrentAssetPath => CurrentAssetInfos.assetPath;
+        public string currentAssetPath => CurrentAssetInfos.assetPath;
 
         /// <inheritdoc/>
         public bool CurrentAssetIsTestAsset => CurrentAssetInfos.isTestAsset;
@@ -221,7 +221,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
         }
 
         /// <inheritdoc/>
-        public Scene CurrentScene => currentScenes.Peek();
+        public Scene currentScene => currentScenes.Peek();
 
         readonly Stack<Scene> currentScenes = new(new[] { default(Scene) });
 

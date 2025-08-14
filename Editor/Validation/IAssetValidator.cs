@@ -85,17 +85,17 @@ namespace Slothsoft.TestRunner.Editor.Validation {
         /// <summary>
         /// The asset currently processed by <see cref="ValidateAsset(UnityObject)"/>.
         /// </summary>
-        public UnityObject CurrentAsset { get; }
+        public UnityObject currentAsset { get; }
 
         /// <summary>
         /// The asset path of the asset currently processed by <see cref="ValidateAsset(UnityObject)"/>, or null if the current asset has not been saved to disk.
         /// </summary>
-        public string CurrentAssetPath { get; }
+        public string currentAssetPath { get; }
 
         /// <summary>
-        /// Whether or not the asset currently processed by <see cref="ValidateAsset(UnityObject)"/> resides in a "Tests" folder.
+        /// The latest scene loaded via <see cref="OpenScene(string)"/>.
         /// </summary>
-        public bool CurrentAssetIsTestAsset { get; }
+        public Scene currentScene { get; }
 
         /// <summary>
         /// Create a human-readable name for <paramref name="target"/>.
@@ -105,24 +105,19 @@ namespace Slothsoft.TestRunner.Editor.Validation {
         public string GetName(UnityObject target);
 
         /// <summary>
-        /// The latest scene loaded via <see cref="OpenScene(string)"/>.
-        /// </summary>
-        public Scene CurrentScene { get; }
-
-        /// <summary>
         /// Determine whether or not <see cref="OpenScene(string)"/> will succeed.
         /// </summary>
         /// <param name="scenePath"></param>
         public bool CanOpenScene(string scenePath);
 
         /// <summary>
-        /// Load the scene at <paramref name="scenePath"/> and set <see cref="CurrentScene"/>.
+        /// Load the scene at <paramref name="scenePath"/> and set <see cref="currentScene"/>.
         /// </summary>
         /// <param name="scenePath"></param>
         public void OpenScene(string scenePath);
 
         /// <summary>
-        /// Close <see cref="CurrentScene"/>.
+        /// Close <see cref="currentScene"/>.
         /// </summary>
         public void CloseScene();
 

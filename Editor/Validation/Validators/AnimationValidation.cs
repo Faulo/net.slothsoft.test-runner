@@ -7,12 +7,12 @@ namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     static class AnimationValidation {
         [Validate]
         public static void ValidateFBX(GameObject _, IAssetValidator validator) {
-            if (string.IsNullOrEmpty(validator.CurrentAssetPath)) {
+            if (string.IsNullOrEmpty(validator.currentAssetPath)) {
                 return;
             }
 
-            if (validator.CurrentAssetPath.EndsWith(".fbx", StringComparison.InvariantCultureIgnoreCase)) {
-                foreach (var subAsset in AssetDatabase.LoadAllAssetRepresentationsAtPath(validator.CurrentAssetPath)) {
+            if (validator.currentAssetPath.EndsWith(".fbx", StringComparison.InvariantCultureIgnoreCase)) {
+                foreach (var subAsset in AssetDatabase.LoadAllAssetRepresentationsAtPath(validator.currentAssetPath)) {
                     if (subAsset is AnimationClip or Avatar) {
                         validator.ValidateAsset(subAsset);
                     }

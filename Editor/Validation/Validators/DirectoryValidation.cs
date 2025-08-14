@@ -5,8 +5,8 @@ using UnityEditor;
 namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     static class DirectoryValidation {
         [Validate(includeTestAssets = true)]
-        public static void PreventEmptyDirectories(DefaultAsset asset, IAssetValidator validator) {
-            if (validator.CurrentAssetPath is not string assetPath) {
+        public static void PreventEmptyDirectories(DefaultAsset _, IAssetValidator validator) {
+            if (validator.currentAssetPath is not string assetPath) {
                 return;
             }
 
