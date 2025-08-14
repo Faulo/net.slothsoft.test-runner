@@ -142,49 +142,6 @@ references:
   fullName.vb: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase(Of T).UploadShadersToCacheServer
   nameWithType: CacheServerSyncBase<T>.UploadShadersToCacheServer
   nameWithType.vb: CacheServerSyncBase(Of T).UploadShadersToCacheServer
-- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1
-  name: DependencyValidationBase<T>
-  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html
-  commentId: T:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1
-  name.vb: DependencyValidationBase(Of T)
-  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T)
-  nameWithType: DependencyValidationBase<T>
-  nameWithType.vb: DependencyValidationBase(Of T)
-- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.allPackageIds
-  name: allPackageIds
-  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_allPackageIds
-  commentId: P:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.allPackageIds
-  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>.allPackageIds
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T).allPackageIds
-  nameWithType: DependencyValidationBase<T>.allPackageIds
-  nameWithType.vb: DependencyValidationBase(Of T).allPackageIds
-- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.allPackageIds*
-  name: allPackageIds
-  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_allPackageIds_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.allPackageIds
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>.allPackageIds
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T).allPackageIds
-  nameWithType: DependencyValidationBase<T>.allPackageIds
-  nameWithType.vb: DependencyValidationBase(Of T).allPackageIds
-- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.CheckForCircularDependencies(System.String)
-  name: CheckForCircularDependencies(String)
-  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_CheckForCircularDependencies_System_String_
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.CheckForCircularDependencies(System.String)
-  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>.CheckForCircularDependencies(System.String)
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T).CheckForCircularDependencies(System.String)
-  nameWithType: DependencyValidationBase<T>.CheckForCircularDependencies(String)
-  nameWithType.vb: DependencyValidationBase(Of T).CheckForCircularDependencies(String)
-- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.CheckForCircularDependencies*
-  name: CheckForCircularDependencies
-  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_CheckForCircularDependencies_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.CheckForCircularDependencies
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>.CheckForCircularDependencies
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T).CheckForCircularDependencies
-  nameWithType: DependencyValidationBase<T>.CheckForCircularDependencies
-  nameWithType.vb: DependencyValidationBase(Of T).CheckForCircularDependencies
 - uid: Slothsoft.TestRunner.Editor.Validation.IAssemblySource
   name: IAssemblySource
   href: api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html
@@ -470,6 +427,49 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.Editor.Validation.IPackageSource.GetPackageIds
   nameWithType: IPackageSource.GetPackageIds
+- uid: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1
+  name: PackageValidationBase<T>
+  href: api/Slothsoft.TestRunner.Editor.Validation.PackageValidationBase-1.html
+  commentId: T:Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1
+  name.vb: PackageValidationBase(Of T)
+  fullName: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase<T>
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase(Of T)
+  nameWithType: PackageValidationBase<T>
+  nameWithType.vb: PackageValidationBase(Of T)
+- uid: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1.allPackageIds
+  name: allPackageIds
+  href: api/Slothsoft.TestRunner.Editor.Validation.PackageValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_PackageValidationBase_1_allPackageIds
+  commentId: P:Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1.allPackageIds
+  fullName: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase<T>.allPackageIds
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase(Of T).allPackageIds
+  nameWithType: PackageValidationBase<T>.allPackageIds
+  nameWithType.vb: PackageValidationBase(Of T).allPackageIds
+- uid: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1.allPackageIds*
+  name: allPackageIds
+  href: api/Slothsoft.TestRunner.Editor.Validation.PackageValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_PackageValidationBase_1_allPackageIds_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1.allPackageIds
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase<T>.allPackageIds
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase(Of T).allPackageIds
+  nameWithType: PackageValidationBase<T>.allPackageIds
+  nameWithType.vb: PackageValidationBase(Of T).allPackageIds
+- uid: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1.CheckForCircularDependencies(System.String)
+  name: CheckForCircularDependencies(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.PackageValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_PackageValidationBase_1_CheckForCircularDependencies_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1.CheckForCircularDependencies(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase<T>.CheckForCircularDependencies(System.String)
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase(Of T).CheckForCircularDependencies(System.String)
+  nameWithType: PackageValidationBase<T>.CheckForCircularDependencies(String)
+  nameWithType.vb: PackageValidationBase(Of T).CheckForCircularDependencies(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1.CheckForCircularDependencies*
+  name: CheckForCircularDependencies
+  href: api/Slothsoft.TestRunner.Editor.Validation.PackageValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_PackageValidationBase_1_CheckForCircularDependencies_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.PackageValidationBase`1.CheckForCircularDependencies
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase<T>.CheckForCircularDependencies
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.PackageValidationBase(Of T).CheckForCircularDependencies
+  nameWithType: PackageValidationBase<T>.CheckForCircularDependencies
+  nameWithType.vb: PackageValidationBase(Of T).CheckForCircularDependencies
 - uid: Slothsoft.TestRunner.Editor.Validation.ValidateAttribute
   name: ValidateAttribute
   href: api/Slothsoft.TestRunner.Editor.Validation.ValidateAttribute.html
