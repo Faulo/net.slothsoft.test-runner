@@ -39,7 +39,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
             var asset = Activator.CreateInstance(typeof(BrokenPrefabAsset), true) as BrokenPrefabAsset;
 
             using AssetValidator sut = new() {
-                FailImmediately = true
+                failImmediately = true
             };
 
             Assert.Throws(

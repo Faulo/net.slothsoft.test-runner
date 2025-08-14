@@ -10,18 +10,15 @@ namespace Slothsoft.TestRunner.Editor.Validation.Validators {
         [Serializable]
         class AssemblyDefinitionData {
             [SerializeField]
-            string[] references;
-            internal string[] References => references;
+            internal string[] references;
             [SerializeField]
-            VersionDefineData[] versionDefines;
-            internal VersionDefineData[] VersionDefines => versionDefines;
+            internal VersionDefineData[] versionDefines;
         }
 
         [Serializable]
         class VersionDefineData {
             [SerializeField]
-            string name;
-            internal string Name => name;
+            internal string name;
         }
 
         [Validate]
@@ -41,7 +38,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Validators {
 
         internal static IEnumerable<string> GetReferencesAssemblies(this AssemblyDefinitionAsset asset) {
             var data = JsonUtility.FromJson<AssemblyDefinitionData>(asset.text);
-            if (data is { References: string[] references }) {
+            if (data is { references: string[] references }) {
                 foreach (string reference in references) {
                     if (!string.IsNullOrEmpty(reference)) {
                         if (IsGuid(reference)) {
@@ -67,9 +64,9 @@ namespace Slothsoft.TestRunner.Editor.Validation.Validators {
 
         internal static IEnumerable<string> GetReferencesPackagePaths(this AssemblyDefinitionAsset asset) {
             var data = JsonUtility.FromJson<AssemblyDefinitionData>(asset.text);
-            if (data is { VersionDefines: VersionDefineData[] versions }) {
+            if (data is { versionDefines: VersionDefineData[] versions }) {
                 return versions
-                    .Select(v => v.Name)
+                    .Select(v => v.name)
                     .Where(n => !string.IsNullOrEmpty(n))
                     .Select(n => $"Packages/{n}");
             }

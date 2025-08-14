@@ -1,22 +1,12 @@
-using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using NUnit.Framework;
+using Slothsoft.TestRunner.Editor.Validation.Internal;
 
 namespace Slothsoft.TestRunner.Editor.Validation {
     public abstract class AssemblyValidationBase<T> where T : IAssemblySource, new() {
-        public static IEnumerable<string> allAssemblyNames {
-            get {
-                SortedSet<string> allAssemblyNames = new(new T().GetAssemblyNames(), StringComparer.InvariantCultureIgnoreCase);
-
-                if (allAssemblyNames.Count == 0) {
-                    allAssemblyNames.Add(string.Empty);
-                }
-
-                return allAssemblyNames;
-            }
-        }
+        public static IEnumerable<string> allAssemblyNames => AssetUtils.SortAndAddEmpty(new T().GetAssemblyNames());
 
         [Test]
         public void VerifyFormatting([ValueSource(nameof(allAssemblyNames))] string assemblyName) {

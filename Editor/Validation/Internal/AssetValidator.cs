@@ -18,11 +18,9 @@ using UnityObject = UnityEngine.Object;
 
 namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     sealed class AssetValidator : IAssetValidator, IDisposable {
-        internal IReadOnlyList<string> ValidAssetPaths = Array.Empty<string>();
+        internal IReadOnlyList<string> validAssetPaths = Array.Empty<string>();
 
-        internal bool FailImmediately = false;
-
-        internal bool IsInTests = false;
+        internal bool failImmediately = false;
 
         MethodInfo CurrentContext => currentContexts.Peek();
 
@@ -65,7 +63,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
 
             message = message.TrimEnd() + Environment.NewLine;
 
-            if (FailImmediately) {
+            if (failImmediately) {
                 StopLogging();
                 Assert.Fail(message);
             }
@@ -130,12 +128,12 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
 
         /// <inheritdoc/>
         public void AssertAssetPath(string assetPath, string message) {
-            AssertThat(assetPath, AssetUtils.IsNotDeprecatedAssetConstraint, $"Found a reference to a deprecated asset. Deprecated assets will get deleted soon, so references to them need to be removed or updated.{Environment.NewLine}  The offending asset is: {assetPath}");
+            AssertThat(assetPath, AssetUtils.isNotDeprecatedAssetConstraint, $"Found a reference to a deprecated asset. Deprecated assets will get deleted soon, so references to them need to be removed or updated.{Environment.NewLine}  The offending asset is: {assetPath}");
 
-            if (ValidAssetPaths is { Count: > 0 }) {
-                var constraint = Is.SamePathOrUnder(ValidAssetPaths[0]);
-                for (int i = 1; i < ValidAssetPaths.Count; i++) {
-                    constraint = constraint.Or.SamePathOrUnder(ValidAssetPaths[i]);
+            if (validAssetPaths is { Count: > 0 }) {
+                var constraint = Is.SamePathOrUnder(validAssetPaths[0]);
+                for (int i = 1; i < validAssetPaths.Count; i++) {
+                    constraint = constraint.Or.SamePathOrUnder(validAssetPaths[i]);
                 }
 
                 int failureCount = failures.Count;
@@ -155,7 +153,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
             if (failures.Count > 0) {
                 if (printPackagePaths) {
                     failures.Enqueue("Valid package paths are:");
-                    foreach (string path in ValidAssetPaths) {
+                    foreach (string path in validAssetPaths) {
                         failures.Enqueue($" - {path}");
                     }
                 }
@@ -212,7 +210,9 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
             AssetInfo info = new() {
                 asset = asset,
                 assetPath = assetPath,
-                isTestAsset = IsInTests
+                isTestAsset = IsTestAsset(assetPath),
+                isWIPAsset = IsWIPAsset(assetPath),
+                isDeprecatedAsset = IsDeprecatedAsset(assetPath),
             };
 
             currentAssetInfos.Push(info);
@@ -252,7 +252,9 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
         /// <inheritdoc/>
         public string GetName(UnityObject asset) {
             return asset switch {
+#pragma warning disable UNT0029 // Pattern matching with null on Unity objects
                 _ when asset is null => "NULL REFERENCE",
+#pragma warning restore UNT0029 // Pattern matching with null on Unity objects
                 _ when !asset => $"MISSING {asset.GetType().Name} REFERENCE",
                 Component component => $"{asset.GetType().Name} {GetNameByHierarchy(component.transform)}",
                 GameObject obj => $"{asset.GetType().Name} {GetNameByHierarchy(obj.transform)}",
@@ -359,5 +361,9 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
                 AssertFail($"[{type}] {condition}{Environment.NewLine}{stackTrace}");
             }
         }
+
+        public bool IsWIPAsset(string assetPath) => AssetUtils.IsWIPAsset(assetPath);
+        public bool IsTestAsset(string assetPath) => AssetUtils.IsTestAsset(assetPath);
+        public bool IsDeprecatedAsset(string assetPath) => AssetUtils.IsDeprecatedAsset(assetPath);
     }
 }

@@ -46,7 +46,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
         public static bool IsDeprecatedAsset(string assetPath) {
             return assetPath.Contains(ASSET_IS_DEPRECATED, StringComparison.Ordinal);
         }
-        internal static ContainsConstraint IsNotDeprecatedAssetConstraint => Does.Not.Contain(ASSET_IS_DEPRECATED);
+        internal static ContainsConstraint isNotDeprecatedAssetConstraint => Does.Not.Contain(ASSET_IS_DEPRECATED);
 
         static bool ShouldIncludeAssetInDirectory(string assetPath) {
             if (assetPath.Contains("/.")) {
@@ -282,6 +282,16 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
                 .SelectMany(prefab => prefab.GetComponents<T>().Select(component => (prefab, component)))
                 .ToList();
 #pragma warning restore UNT0014 // Invalid type for call to GetComponent
+        }
+
+        internal static SortedSet<string> SortAndAddEmpty(IEnumerable<string> items) {
+            SortedSet<string> allAssetPaths = new(items, StringComparer.InvariantCultureIgnoreCase);
+
+            if (allAssetPaths.Count == 0) {
+                allAssetPaths.Add(string.Empty);
+            }
+
+            return allAssetPaths;
         }
     }
 }

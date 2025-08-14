@@ -6,7 +6,7 @@ using UnityEngine;
 namespace Slothsoft.TestRunner.Editor.Validation.Validators {
     static class AnimationValidation {
         [Validate]
-        public static void ValidateFBX(GameObject prefab, IAssetValidator validator) {
+        public static void ValidateFBX(GameObject _, IAssetValidator validator) {
             if (string.IsNullOrEmpty(validator.CurrentAssetPath)) {
                 return;
             }
