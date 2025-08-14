@@ -367,58 +367,45 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CloseScene
   nameWithType: IAssetValidator.CloseScene
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAsset
-  name: CurrentAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_CurrentAsset
-  commentId: P:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAsset
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAsset
-  nameWithType: IAssetValidator.CurrentAsset
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAsset*
-  name: CurrentAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_CurrentAsset_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAsset
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAsset
+  name: currentAsset
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_currentAsset
+  commentId: P:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAsset
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAsset
+  nameWithType: IAssetValidator.currentAsset
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAsset*
+  name: currentAsset
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_currentAsset_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAsset
   isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAsset
-  nameWithType: IAssetValidator.CurrentAsset
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetIsTestAsset
-  name: CurrentAssetIsTestAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_CurrentAssetIsTestAsset
-  commentId: P:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetIsTestAsset
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetIsTestAsset
-  nameWithType: IAssetValidator.CurrentAssetIsTestAsset
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetIsTestAsset*
-  name: CurrentAssetIsTestAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_CurrentAssetIsTestAsset_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetIsTestAsset
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAsset
+  nameWithType: IAssetValidator.currentAsset
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAssetPath
+  name: currentAssetPath
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_currentAssetPath
+  commentId: P:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAssetPath
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAssetPath
+  nameWithType: IAssetValidator.currentAssetPath
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAssetPath*
+  name: currentAssetPath
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_currentAssetPath_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAssetPath
   isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetIsTestAsset
-  nameWithType: IAssetValidator.CurrentAssetIsTestAsset
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetPath
-  name: CurrentAssetPath
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_CurrentAssetPath
-  commentId: P:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetPath
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetPath
-  nameWithType: IAssetValidator.CurrentAssetPath
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetPath*
-  name: CurrentAssetPath
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_CurrentAssetPath_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetPath
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentAssetPath
+  nameWithType: IAssetValidator.currentAssetPath
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentScene
+  name: currentScene
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_currentScene
+  commentId: P:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentScene
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentScene
+  nameWithType: IAssetValidator.currentScene
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentScene*
+  name: currentScene
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_currentScene_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentScene
   isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentAssetPath
-  nameWithType: IAssetValidator.CurrentAssetPath
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentScene
-  name: CurrentScene
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_CurrentScene
-  commentId: P:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentScene
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentScene
-  nameWithType: IAssetValidator.CurrentScene
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentScene*
-  name: CurrentScene
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_CurrentScene_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentScene
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.CurrentScene
-  nameWithType: IAssetValidator.CurrentScene
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.currentScene
+  nameWithType: IAssetValidator.currentScene
 - uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.GetName(UnityObject)
   name: GetName(UnityObject)
   href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_GetName_UnityObject_
