@@ -53,7 +53,3 @@
     font-size: 16px;
 	padding: 8px 2px 6px 4px;
 }
-
-#unity-content-container {
-	flex-grow: 0;
-}
