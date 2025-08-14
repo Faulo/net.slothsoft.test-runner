@@ -2,8 +2,6 @@
     "name": "Slothsoft.TestRunner.Editor",
     "rootNamespace": "",
     "references": [
-        "UnityEditor.UI",
-        "UnityEngine.UI",
         "Slothsoft.TestRunner",
         "Unity.EditorCoroutines.Editor"
     ],
