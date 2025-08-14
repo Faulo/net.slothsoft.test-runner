@@ -21,7 +21,19 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html",
-          "hash": "YNTFEbckvRfa2jTUIadQ7g=="
+          "hash": "AnBxE4GEFAWJlTsrRKYbsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase-1.html",
+          "hash": "NcOqo2HKOglLYSyjo8M1Yw=="
         }
       },
       "is_incremental": false,
@@ -33,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html",
-          "hash": "pA6F08fD7+nBUtMYGNXZmw=="
+          "hash": "31O1bN/KmzraxIC6Ad9PYA=="
         }
       },
       "is_incremental": false,
@@ -45,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html",
-          "hash": "j4XbvLnVe5NZkptzoj4rUw=="
+          "hash": "hho+yhnKQNdCoGqJbdnOrQ=="
         }
       },
       "is_incremental": false,
@@ -69,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html",
-          "hash": "ipAmJQSkfhuQQFLGcmRqsQ=="
+          "hash": "pgoYyAl1Jwq3VbqT4cIr2A=="
         }
       },
       "is_incremental": false,
@@ -105,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.Editor.Validation.html",
-          "hash": "wwlz9YjHYK8uImUSMH/8WQ=="
+          "hash": "qpaQlF2znUE0uH0WhuC95A=="
         }
       },
       "is_incremental": false,
@@ -201,7 +213,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "wc7VObtWKhyilnTMn9SBrg=="
+          "hash": "urgKHWuWj/hlyXKf15BuWg=="
         }
       },
       "is_incremental": false,
@@ -252,7 +264,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 15,
+          "total_file_count": 16,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {

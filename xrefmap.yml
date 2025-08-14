@@ -65,73 +65,23 @@ references:
   fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T)
   nameWithType: AssetValidationBase<T>
   nameWithType.vb: AssetValidationBase(Of T)
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.AllAssetPaths
-  name: AllAssetPaths
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_AllAssetPaths
-  commentId: P:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.AllAssetPaths
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.AllAssetPaths
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).AllAssetPaths
-  nameWithType: AssetValidationBase<T>.AllAssetPaths
-  nameWithType.vb: AssetValidationBase(Of T).AllAssetPaths
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.AllAssetPaths*
-  name: AllAssetPaths
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_AllAssetPaths_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.AllAssetPaths
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.allAssetPaths
+  name: allAssetPaths
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_allAssetPaths
+  commentId: P:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.allAssetPaths
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.allAssetPaths
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).allAssetPaths
+  nameWithType: AssetValidationBase<T>.allAssetPaths
+  nameWithType.vb: AssetValidationBase(Of T).allAssetPaths
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.allAssetPaths*
+  name: allAssetPaths
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_allAssetPaths_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.allAssetPaths
   isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.AllAssetPaths
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).AllAssetPaths
-  nameWithType: AssetValidationBase<T>.AllAssetPaths
-  nameWithType.vb: AssetValidationBase(Of T).AllAssetPaths
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.FailImmediately
-  name: FailImmediately
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_FailImmediately
-  commentId: F:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.FailImmediately
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.FailImmediately
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).FailImmediately
-  nameWithType: AssetValidationBase<T>.FailImmediately
-  nameWithType.vb: AssetValidationBase(Of T).FailImmediately
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UnloadUnusedAssets
-  name: UnloadUnusedAssets
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_UnloadUnusedAssets
-  commentId: F:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UnloadUnusedAssets
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.UnloadUnusedAssets
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).UnloadUnusedAssets
-  nameWithType: AssetValidationBase<T>.UnloadUnusedAssets
-  nameWithType.vb: AssetValidationBase(Of T).UnloadUnusedAssets
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UploadAssetsToCacheServer
-  name: UploadAssetsToCacheServer()
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_UploadAssetsToCacheServer
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UploadAssetsToCacheServer
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.UploadAssetsToCacheServer()
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).UploadAssetsToCacheServer()
-  nameWithType: AssetValidationBase<T>.UploadAssetsToCacheServer()
-  nameWithType.vb: AssetValidationBase(Of T).UploadAssetsToCacheServer()
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UploadAssetsToCacheServer*
-  name: UploadAssetsToCacheServer
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_UploadAssetsToCacheServer_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UploadAssetsToCacheServer
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.UploadAssetsToCacheServer
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).UploadAssetsToCacheServer
-  nameWithType: AssetValidationBase<T>.UploadAssetsToCacheServer
-  nameWithType.vb: AssetValidationBase(Of T).UploadAssetsToCacheServer
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UploadShadersToCacheServer
-  name: UploadShadersToCacheServer()
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_UploadShadersToCacheServer
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UploadShadersToCacheServer
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.UploadShadersToCacheServer()
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).UploadShadersToCacheServer()
-  nameWithType: AssetValidationBase<T>.UploadShadersToCacheServer()
-  nameWithType.vb: AssetValidationBase(Of T).UploadShadersToCacheServer()
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UploadShadersToCacheServer*
-  name: UploadShadersToCacheServer
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_UploadShadersToCacheServer_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.UploadShadersToCacheServer
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.UploadShadersToCacheServer
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).UploadShadersToCacheServer
-  nameWithType: AssetValidationBase<T>.UploadShadersToCacheServer
-  nameWithType.vb: AssetValidationBase(Of T).UploadShadersToCacheServer
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.allAssetPaths
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).allAssetPaths
+  nameWithType: AssetValidationBase<T>.allAssetPaths
+  nameWithType.vb: AssetValidationBase(Of T).allAssetPaths
 - uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.Validate(System.String)
   name: Validate(String)
   href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_Validate_System_String_
@@ -149,23 +99,49 @@ references:
   fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).Validate
   nameWithType: AssetValidationBase<T>.Validate
   nameWithType.vb: AssetValidationBase(Of T).Validate
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.WaitForUnloadUnusedAssets
-  name: WaitForUnloadUnusedAssets()
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_WaitForUnloadUnusedAssets
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.WaitForUnloadUnusedAssets
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.WaitForUnloadUnusedAssets()
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).WaitForUnloadUnusedAssets()
-  nameWithType: AssetValidationBase<T>.WaitForUnloadUnusedAssets()
-  nameWithType.vb: AssetValidationBase(Of T).WaitForUnloadUnusedAssets()
-- uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.WaitForUnloadUnusedAssets*
-  name: WaitForUnloadUnusedAssets
-  href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_AssetValidationBase_1_WaitForUnloadUnusedAssets_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1.WaitForUnloadUnusedAssets
+- uid: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1
+  name: CacheServerSyncBase<T>
+  href: api/Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase-1.html
+  commentId: T:Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1
+  name.vb: CacheServerSyncBase(Of T)
+  fullName: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase<T>
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase(Of T)
+  nameWithType: CacheServerSyncBase<T>
+  nameWithType.vb: CacheServerSyncBase(Of T)
+- uid: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1.UploadAssetsToCacheServer
+  name: UploadAssetsToCacheServer()
+  href: api/Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase-1.html#Slothsoft_TestRunner_Editor_Validation_CacheServerSyncBase_1_UploadAssetsToCacheServer
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1.UploadAssetsToCacheServer
+  fullName: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase<T>.UploadAssetsToCacheServer()
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase(Of T).UploadAssetsToCacheServer()
+  nameWithType: CacheServerSyncBase<T>.UploadAssetsToCacheServer()
+  nameWithType.vb: CacheServerSyncBase(Of T).UploadAssetsToCacheServer()
+- uid: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1.UploadAssetsToCacheServer*
+  name: UploadAssetsToCacheServer
+  href: api/Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase-1.html#Slothsoft_TestRunner_Editor_Validation_CacheServerSyncBase_1_UploadAssetsToCacheServer_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1.UploadAssetsToCacheServer
   isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase<T>.WaitForUnloadUnusedAssets
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase(Of T).WaitForUnloadUnusedAssets
-  nameWithType: AssetValidationBase<T>.WaitForUnloadUnusedAssets
-  nameWithType.vb: AssetValidationBase(Of T).WaitForUnloadUnusedAssets
+  fullName: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase<T>.UploadAssetsToCacheServer
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase(Of T).UploadAssetsToCacheServer
+  nameWithType: CacheServerSyncBase<T>.UploadAssetsToCacheServer
+  nameWithType.vb: CacheServerSyncBase(Of T).UploadAssetsToCacheServer
+- uid: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1.UploadShadersToCacheServer
+  name: UploadShadersToCacheServer()
+  href: api/Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase-1.html#Slothsoft_TestRunner_Editor_Validation_CacheServerSyncBase_1_UploadShadersToCacheServer
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1.UploadShadersToCacheServer
+  fullName: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase<T>.UploadShadersToCacheServer()
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase(Of T).UploadShadersToCacheServer()
+  nameWithType: CacheServerSyncBase<T>.UploadShadersToCacheServer()
+  nameWithType.vb: CacheServerSyncBase(Of T).UploadShadersToCacheServer()
+- uid: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1.UploadShadersToCacheServer*
+  name: UploadShadersToCacheServer
+  href: api/Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase-1.html#Slothsoft_TestRunner_Editor_Validation_CacheServerSyncBase_1_UploadShadersToCacheServer_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase`1.UploadShadersToCacheServer
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase<T>.UploadShadersToCacheServer
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.CacheServerSyncBase(Of T).UploadShadersToCacheServer
+  nameWithType: CacheServerSyncBase<T>.UploadShadersToCacheServer
+  nameWithType.vb: CacheServerSyncBase(Of T).UploadShadersToCacheServer
 - uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1
   name: DependencyValidationBase<T>
   href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html
@@ -175,23 +151,23 @@ references:
   fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T)
   nameWithType: DependencyValidationBase<T>
   nameWithType.vb: DependencyValidationBase(Of T)
-- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.AllPackageIds
-  name: AllPackageIds
-  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_AllPackageIds
-  commentId: P:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.AllPackageIds
-  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>.AllPackageIds
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T).AllPackageIds
-  nameWithType: DependencyValidationBase<T>.AllPackageIds
-  nameWithType.vb: DependencyValidationBase(Of T).AllPackageIds
-- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.AllPackageIds*
-  name: AllPackageIds
-  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_AllPackageIds_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.AllPackageIds
+- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.allPackageIds
+  name: allPackageIds
+  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_allPackageIds
+  commentId: P:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.allPackageIds
+  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>.allPackageIds
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T).allPackageIds
+  nameWithType: DependencyValidationBase<T>.allPackageIds
+  nameWithType.vb: DependencyValidationBase(Of T).allPackageIds
+- uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.allPackageIds*
+  name: allPackageIds
+  href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_allPackageIds_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.allPackageIds
   isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>.AllPackageIds
-  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T).AllPackageIds
-  nameWithType: DependencyValidationBase<T>.AllPackageIds
-  nameWithType.vb: DependencyValidationBase(Of T).AllPackageIds
+  fullName: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase<T>.allPackageIds
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase(Of T).allPackageIds
+  nameWithType: DependencyValidationBase<T>.allPackageIds
+  nameWithType.vb: DependencyValidationBase(Of T).allPackageIds
 - uid: Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase`1.CheckForCircularDependencies(System.String)
   name: CheckForCircularDependencies(String)
   href: api/Slothsoft.TestRunner.Editor.Validation.DependencyValidationBase-1.html#Slothsoft_TestRunner_Editor_Validation_DependencyValidationBase_1_CheckForCircularDependencies_System_String_
@@ -228,45 +204,6 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.GetAssemblyNames
   nameWithType: IAssemblySource.GetAssemblyNames
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsDeprecatedAsset(System.String)
-  name: IsDeprecatedAsset(String)
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html#Slothsoft_TestRunner_Editor_Validation_IAssemblySource_IsDeprecatedAsset_System_String_
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsDeprecatedAsset(System.String)
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsDeprecatedAsset(System.String)
-  nameWithType: IAssemblySource.IsDeprecatedAsset(String)
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsDeprecatedAsset*
-  name: IsDeprecatedAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html#Slothsoft_TestRunner_Editor_Validation_IAssemblySource_IsDeprecatedAsset_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsDeprecatedAsset
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsDeprecatedAsset
-  nameWithType: IAssemblySource.IsDeprecatedAsset
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsTestAsset(System.String)
-  name: IsTestAsset(String)
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html#Slothsoft_TestRunner_Editor_Validation_IAssemblySource_IsTestAsset_System_String_
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsTestAsset(System.String)
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsTestAsset(System.String)
-  nameWithType: IAssemblySource.IsTestAsset(String)
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsTestAsset*
-  name: IsTestAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html#Slothsoft_TestRunner_Editor_Validation_IAssemblySource_IsTestAsset_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsTestAsset
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsTestAsset
-  nameWithType: IAssemblySource.IsTestAsset
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsWIPAsset(System.String)
-  name: IsWIPAsset(String)
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html#Slothsoft_TestRunner_Editor_Validation_IAssemblySource_IsWIPAsset_System_String_
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsWIPAsset(System.String)
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsWIPAsset(System.String)
-  nameWithType: IAssemblySource.IsWIPAsset(String)
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsWIPAsset*
-  name: IsWIPAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssemblySource.html#Slothsoft_TestRunner_Editor_Validation_IAssemblySource_IsWIPAsset_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsWIPAsset
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssemblySource.IsWIPAsset
-  nameWithType: IAssemblySource.IsWIPAsset
 - uid: Slothsoft.TestRunner.Editor.Validation.IAssetSource
   name: IAssetSource
   href: api/Slothsoft.TestRunner.Editor.Validation.IAssetSource.html
@@ -495,6 +432,45 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.GetName
   nameWithType: IAssetValidator.GetName
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset(System.String)
+  name: IsDeprecatedAsset(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsDeprecatedAsset_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset(System.String)
+  nameWithType: IAssetValidator.IsDeprecatedAsset(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset*
+  name: IsDeprecatedAsset
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsDeprecatedAsset_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset
+  nameWithType: IAssetValidator.IsDeprecatedAsset
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset(System.String)
+  name: IsTestAsset(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsTestAsset_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset(System.String)
+  nameWithType: IAssetValidator.IsTestAsset(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset*
+  name: IsTestAsset
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsTestAsset_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset
+  nameWithType: IAssetValidator.IsTestAsset
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset(System.String)
+  name: IsWIPAsset(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsWIPAsset_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset(System.String)
+  nameWithType: IAssetValidator.IsWIPAsset(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset*
+  name: IsWIPAsset
+  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsWIPAsset_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset
+  nameWithType: IAssetValidator.IsWIPAsset
 - uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.OpenScene(System.String)
   name: OpenScene(String)
   href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_OpenScene_System_String_
