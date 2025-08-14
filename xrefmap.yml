@@ -56,6 +56,220 @@ references:
   fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssemblyValidationBase(Of T).VerifyFormatting
   nameWithType: AssemblyValidationBase<T>.VerifyFormatting
   nameWithType.vb: AssemblyValidationBase(Of T).VerifyFormatting
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils
+  name: AssetUtils
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html
+  commentId: T:Slothsoft.TestRunner.Editor.Validation.AssetUtils
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils
+  nameWithType: AssetUtils
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.AssetsInDirectory(System.String)
+  name: AssetsInDirectory(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_AssetsInDirectory_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.AssetsInDirectory(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.AssetsInDirectory(System.String)
+  nameWithType: AssetUtils.AssetsInDirectory(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.AssetsInDirectory*
+  name: AssetsInDirectory
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_AssetsInDirectory_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.AssetsInDirectory
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.AssetsInDirectory
+  nameWithType: AssetUtils.AssetsInDirectory
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets(IEnumerable{System.String},System.Boolean,System.Boolean)
+  name: DependentAssets(IEnumerable<String>, Boolean, Boolean)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_DependentAssets_IEnumerable_System_String__System_Boolean_System_Boolean_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets(IEnumerable{System.String},System.Boolean,System.Boolean)
+  name.vb: DependentAssets(IEnumerable(Of String), Boolean, Boolean)
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets(IEnumerable<System.String>, System.Boolean, System.Boolean)
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets(IEnumerable(Of System.String), System.Boolean, System.Boolean)
+  nameWithType: AssetUtils.DependentAssets(IEnumerable<String>, Boolean, Boolean)
+  nameWithType.vb: AssetUtils.DependentAssets(IEnumerable(Of String), Boolean, Boolean)
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets(System.String,System.Boolean)
+  name: DependentAssets(String, Boolean)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_DependentAssets_System_String_System_Boolean_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets(System.String,System.Boolean)
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets(System.String, System.Boolean)
+  nameWithType: AssetUtils.DependentAssets(String, Boolean)
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets*
+  name: DependentAssets
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_DependentAssets_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependentAssets
+  nameWithType: AssetUtils.DependentAssets
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets(IEnumerable{System.String})
+  name: DependingAssets(IEnumerable<String>)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_DependingAssets_IEnumerable_System_String__
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets(IEnumerable{System.String})
+  name.vb: DependingAssets(IEnumerable(Of String))
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets(IEnumerable<System.String>)
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets(IEnumerable(Of System.String))
+  nameWithType: AssetUtils.DependingAssets(IEnumerable<String>)
+  nameWithType.vb: AssetUtils.DependingAssets(IEnumerable(Of String))
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets(System.String)
+  name: DependingAssets(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_DependingAssets_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets(System.String)
+  nameWithType: AssetUtils.DependingAssets(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets*
+  name: DependingAssets
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_DependingAssets_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.DependingAssets
+  nameWithType: AssetUtils.DependingAssets
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeDeprecatedAssets(IEnumerable{System.String})
+  name: ExcludeDeprecatedAssets(IEnumerable<String>)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_ExcludeDeprecatedAssets_IEnumerable_System_String__
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeDeprecatedAssets(IEnumerable{System.String})
+  name.vb: ExcludeDeprecatedAssets(IEnumerable(Of String))
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeDeprecatedAssets(IEnumerable<System.String>)
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeDeprecatedAssets(IEnumerable(Of System.String))
+  nameWithType: AssetUtils.ExcludeDeprecatedAssets(IEnumerable<String>)
+  nameWithType.vb: AssetUtils.ExcludeDeprecatedAssets(IEnumerable(Of String))
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeDeprecatedAssets*
+  name: ExcludeDeprecatedAssets
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_ExcludeDeprecatedAssets_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeDeprecatedAssets
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeDeprecatedAssets
+  nameWithType: AssetUtils.ExcludeDeprecatedAssets
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeTestAssets(IEnumerable{System.String})
+  name: ExcludeTestAssets(IEnumerable<String>)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_ExcludeTestAssets_IEnumerable_System_String__
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeTestAssets(IEnumerable{System.String})
+  name.vb: ExcludeTestAssets(IEnumerable(Of String))
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeTestAssets(IEnumerable<System.String>)
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeTestAssets(IEnumerable(Of System.String))
+  nameWithType: AssetUtils.ExcludeTestAssets(IEnumerable<String>)
+  nameWithType.vb: AssetUtils.ExcludeTestAssets(IEnumerable(Of String))
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeTestAssets*
+  name: ExcludeTestAssets
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_ExcludeTestAssets_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeTestAssets
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeTestAssets
+  nameWithType: AssetUtils.ExcludeTestAssets
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeWIPAssets(IEnumerable{System.String})
+  name: ExcludeWIPAssets(IEnumerable<String>)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_ExcludeWIPAssets_IEnumerable_System_String__
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeWIPAssets(IEnumerable{System.String})
+  name.vb: ExcludeWIPAssets(IEnumerable(Of String))
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeWIPAssets(IEnumerable<System.String>)
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeWIPAssets(IEnumerable(Of System.String))
+  nameWithType: AssetUtils.ExcludeWIPAssets(IEnumerable<String>)
+  nameWithType.vb: AssetUtils.ExcludeWIPAssets(IEnumerable(Of String))
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeWIPAssets*
+  name: ExcludeWIPAssets
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_ExcludeWIPAssets_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeWIPAssets
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.ExcludeWIPAssets
+  nameWithType: AssetUtils.ExcludeWIPAssets
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadAssetsOfType*
+  name: FindAndLoadAssetsOfType
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_FindAndLoadAssetsOfType_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadAssetsOfType
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadAssetsOfType
+  nameWithType: AssetUtils.FindAndLoadAssetsOfType
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadAssetsOfType``1
+  name: FindAndLoadAssetsOfType<T>()
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_FindAndLoadAssetsOfType__1
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadAssetsOfType``1
+  name.vb: FindAndLoadAssetsOfType(Of T)()
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadAssetsOfType<T>()
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadAssetsOfType(Of T)()
+  nameWithType: AssetUtils.FindAndLoadAssetsOfType<T>()
+  nameWithType.vb: AssetUtils.FindAndLoadAssetsOfType(Of T)()
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadPrefabsWithComponent*
+  name: FindAndLoadPrefabsWithComponent
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_FindAndLoadPrefabsWithComponent_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadPrefabsWithComponent
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadPrefabsWithComponent
+  nameWithType: AssetUtils.FindAndLoadPrefabsWithComponent
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadPrefabsWithComponent``1
+  name: FindAndLoadPrefabsWithComponent<T>()
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_FindAndLoadPrefabsWithComponent__1
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadPrefabsWithComponent``1
+  name.vb: FindAndLoadPrefabsWithComponent(Of T)()
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadPrefabsWithComponent<T>()
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAndLoadPrefabsWithComponent(Of T)()
+  nameWithType: AssetUtils.FindAndLoadPrefabsWithComponent<T>()
+  nameWithType.vb: AssetUtils.FindAndLoadPrefabsWithComponent(Of T)()
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAssetsOfType*
+  name: FindAssetsOfType
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_FindAssetsOfType_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAssetsOfType
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAssetsOfType
+  nameWithType: AssetUtils.FindAssetsOfType
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAssetsOfType``1
+  name: FindAssetsOfType<T>()
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_FindAssetsOfType__1
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAssetsOfType``1
+  name.vb: FindAssetsOfType(Of T)()
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAssetsOfType<T>()
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.FindAssetsOfType(Of T)()
+  nameWithType: AssetUtils.FindAssetsOfType<T>()
+  nameWithType.vb: AssetUtils.FindAssetsOfType(Of T)()
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsDeprecatedAsset(System.String)
+  name: IsDeprecatedAsset(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_IsDeprecatedAsset_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsDeprecatedAsset(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsDeprecatedAsset(System.String)
+  nameWithType: AssetUtils.IsDeprecatedAsset(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsDeprecatedAsset*
+  name: IsDeprecatedAsset
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_IsDeprecatedAsset_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsDeprecatedAsset
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsDeprecatedAsset
+  nameWithType: AssetUtils.IsDeprecatedAsset
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsTestAsset(System.String)
+  name: IsTestAsset(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_IsTestAsset_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsTestAsset(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsTestAsset(System.String)
+  nameWithType: AssetUtils.IsTestAsset(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsTestAsset*
+  name: IsTestAsset
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_IsTestAsset_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsTestAsset
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsTestAsset
+  nameWithType: AssetUtils.IsTestAsset
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsWIPAsset(System.String)
+  name: IsWIPAsset(String)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_IsWIPAsset_System_String_
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsWIPAsset(System.String)
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsWIPAsset(System.String)
+  nameWithType: AssetUtils.IsWIPAsset(String)
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsWIPAsset*
+  name: IsWIPAsset
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_IsWIPAsset_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsWIPAsset
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.IsWIPAsset
+  nameWithType: AssetUtils.IsWIPAsset
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.OnlyWIPAssets(IEnumerable{System.String})
+  name: OnlyWIPAssets(IEnumerable<String>)
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_OnlyWIPAssets_IEnumerable_System_String__
+  commentId: M:Slothsoft.TestRunner.Editor.Validation.AssetUtils.OnlyWIPAssets(IEnumerable{System.String})
+  name.vb: OnlyWIPAssets(IEnumerable(Of String))
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.OnlyWIPAssets(IEnumerable<System.String>)
+  fullName.vb: Slothsoft.TestRunner.Editor.Validation.AssetUtils.OnlyWIPAssets(IEnumerable(Of System.String))
+  nameWithType: AssetUtils.OnlyWIPAssets(IEnumerable<String>)
+  nameWithType.vb: AssetUtils.OnlyWIPAssets(IEnumerable(Of String))
+- uid: Slothsoft.TestRunner.Editor.Validation.AssetUtils.OnlyWIPAssets*
+  name: OnlyWIPAssets
+  href: api/Slothsoft.TestRunner.Editor.Validation.AssetUtils.html#Slothsoft_TestRunner_Editor_Validation_AssetUtils_OnlyWIPAssets_
+  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.AssetUtils.OnlyWIPAssets
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.Editor.Validation.AssetUtils.OnlyWIPAssets
+  nameWithType: AssetUtils.OnlyWIPAssets
 - uid: Slothsoft.TestRunner.Editor.Validation.AssetValidationBase`1
   name: AssetValidationBase<T>
   href: api/Slothsoft.TestRunner.Editor.Validation.AssetValidationBase-1.html
