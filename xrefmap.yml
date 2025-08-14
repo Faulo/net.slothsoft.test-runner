@@ -419,45 +419,6 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.GetName
   nameWithType: IAssetValidator.GetName
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset(System.String)
-  name: IsDeprecatedAsset(String)
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsDeprecatedAsset_System_String_
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset(System.String)
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset(System.String)
-  nameWithType: IAssetValidator.IsDeprecatedAsset(String)
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset*
-  name: IsDeprecatedAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsDeprecatedAsset_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsDeprecatedAsset
-  nameWithType: IAssetValidator.IsDeprecatedAsset
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset(System.String)
-  name: IsTestAsset(String)
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsTestAsset_System_String_
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset(System.String)
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset(System.String)
-  nameWithType: IAssetValidator.IsTestAsset(String)
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset*
-  name: IsTestAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsTestAsset_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsTestAsset
-  nameWithType: IAssetValidator.IsTestAsset
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset(System.String)
-  name: IsWIPAsset(String)
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsWIPAsset_System_String_
-  commentId: M:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset(System.String)
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset(System.String)
-  nameWithType: IAssetValidator.IsWIPAsset(String)
-- uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset*
-  name: IsWIPAsset
-  href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_IsWIPAsset_
-  commentId: Overload:Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset
-  isSpec: "True"
-  fullName: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.IsWIPAsset
-  nameWithType: IAssetValidator.IsWIPAsset
 - uid: Slothsoft.TestRunner.Editor.Validation.IAssetValidator.OpenScene(System.String)
   name: OpenScene(String)
   href: api/Slothsoft.TestRunner.Editor.Validation.IAssetValidator.html#Slothsoft_TestRunner_Editor_Validation_IAssetValidator_OpenScene_System_String_
