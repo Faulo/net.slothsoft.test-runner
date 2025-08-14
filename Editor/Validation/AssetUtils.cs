@@ -10,10 +10,11 @@ using UnityEditor;
 using UnityEngine;
 using UnityObject = UnityEngine.Object;
 
-namespace Slothsoft.TestRunner.Editor.Validation.Internal {
-    static class AssetUtils {
+namespace Slothsoft.TestRunner.Editor.Validation {
+    public static class AssetUtils {
         const string ASSET_IS_WIP = "WIP";
         const string ASSET_IS_DEPRECATED = "DEPRECATED";
+        const string ASSET_IS_TEST = "/Tests/";
 
         internal static bool hasUploadedShadersRecently = false;
 
@@ -34,7 +35,7 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
         /// <param name="assetPath"></param>
         /// <returns></returns>
         public static bool IsTestAsset(string assetPath) {
-            return assetPath.Contains("/Tests/", StringComparison.Ordinal);
+            return assetPath.Contains(ASSET_IS_TEST, StringComparison.Ordinal);
         }
 
         /// <summary>

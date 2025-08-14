@@ -2,7 +2,6 @@ using System;
 using System.Collections;
 using System.Linq;
 using NUnit.Framework;
-using Slothsoft.TestRunner.Editor.Validation.Internal;
 using UnityEditor;
 using UnityEngine.TestTools;
 

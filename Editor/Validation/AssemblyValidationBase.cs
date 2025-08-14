@@ -2,7 +2,6 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
 using NUnit.Framework;
-using Slothsoft.TestRunner.Editor.Validation.Internal;
 
 namespace Slothsoft.TestRunner.Editor.Validation {
     public abstract class AssemblyValidationBase<T> where T : IAssemblySource, new() {
