@@ -680,6 +680,19 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.TestObjectStore.CreateGameObjectFromPrefab
   nameWithType: TestObjectStore.CreateGameObjectFromPrefab
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateMaterial(System.String)
+  name: CreateMaterial(String)
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateMaterial_System_String_
+  commentId: M:Slothsoft.TestRunner.TestObjectStore.CreateMaterial(System.String)
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateMaterial(System.String)
+  nameWithType: TestObjectStore.CreateMaterial(String)
+- uid: Slothsoft.TestRunner.TestObjectStore.CreateMaterial*
+  name: CreateMaterial
+  href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreateMaterial_
+  commentId: Overload:Slothsoft.TestRunner.TestObjectStore.CreateMaterial
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestObjectStore.CreateMaterial
+  nameWithType: TestObjectStore.CreateMaterial
 - uid: Slothsoft.TestRunner.TestObjectStore.CreatePrimitive(PrimitiveType,System.Nullable{Vector3},System.Nullable{Quaternion})
   name: CreatePrimitive(PrimitiveType, Nullable<Vector3>, Nullable<Quaternion>)
   href: api/Slothsoft.TestRunner.TestObjectStore.html#Slothsoft_TestRunner_TestObjectStore_CreatePrimitive_PrimitiveType_System_Nullable_Vector3__System_Nullable_Quaternion__
