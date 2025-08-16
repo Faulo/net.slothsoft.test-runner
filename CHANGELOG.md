@@ -8,6 +8,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## [Unreleased]
 
 
+## [1.0.0-pre.4] - 2025-08-15
+
+### Removed
+- Removed ScriptValidation.
+
+
 ## [1.0.0-pre.3] - 2025-08-13
 
 ### Added
