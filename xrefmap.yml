@@ -736,13 +736,13 @@ references:
   commentId: T:Slothsoft.TestRunner.TestGameObject
   fullName: Slothsoft.TestRunner.TestGameObject
   nameWithType: TestGameObject
-- uid: Slothsoft.TestRunner.TestGameObject.#ctor(System.Action{GameObject})
+- uid: Slothsoft.TestRunner.TestGameObject.#ctor(Action{GameObject})
   name: TestGameObject(Action<GameObject>)
-  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject__ctor_System_Action_GameObject__
-  commentId: M:Slothsoft.TestRunner.TestGameObject.#ctor(System.Action{GameObject})
+  href: api/Slothsoft.TestRunner.TestGameObject.html#Slothsoft_TestRunner_TestGameObject__ctor_Action_GameObject__
+  commentId: M:Slothsoft.TestRunner.TestGameObject.#ctor(Action{GameObject})
   name.vb: TestGameObject(Action(Of GameObject))
-  fullName: Slothsoft.TestRunner.TestGameObject.TestGameObject(System.Action<GameObject>)
-  fullName.vb: Slothsoft.TestRunner.TestGameObject.TestGameObject(System.Action(Of GameObject))
+  fullName: Slothsoft.TestRunner.TestGameObject.TestGameObject(Action<GameObject>)
+  fullName.vb: Slothsoft.TestRunner.TestGameObject.TestGameObject(Action(Of GameObject))
   nameWithType: TestGameObject.TestGameObject(Action<GameObject>)
   nameWithType.vb: TestGameObject.TestGameObject(Action(Of GameObject))
 - uid: Slothsoft.TestRunner.TestGameObject.#ctor(System.String)
@@ -811,13 +811,13 @@ references:
   fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT)
   nameWithType: TestGameObject<TSuT>
   nameWithType.vb: TestGameObject(Of TSuT)
-- uid: Slothsoft.TestRunner.TestGameObject`1.#ctor(System.Action{GameObject})
+- uid: Slothsoft.TestRunner.TestGameObject`1.#ctor(Action{GameObject})
   name: TestGameObject(Action<GameObject>)
-  href: api/Slothsoft.TestRunner.TestGameObject-1.html#Slothsoft_TestRunner_TestGameObject_1__ctor_System_Action_GameObject__
-  commentId: M:Slothsoft.TestRunner.TestGameObject`1.#ctor(System.Action{GameObject})
+  href: api/Slothsoft.TestRunner.TestGameObject-1.html#Slothsoft_TestRunner_TestGameObject_1__ctor_Action_GameObject__
+  commentId: M:Slothsoft.TestRunner.TestGameObject`1.#ctor(Action{GameObject})
   name.vb: TestGameObject(Action(Of GameObject))
-  fullName: Slothsoft.TestRunner.TestGameObject<TSuT>.TestGameObject(System.Action<GameObject>)
-  fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT).TestGameObject(System.Action(Of GameObject))
+  fullName: Slothsoft.TestRunner.TestGameObject<TSuT>.TestGameObject(Action<GameObject>)
+  fullName.vb: Slothsoft.TestRunner.TestGameObject(Of TSuT).TestGameObject(Action(Of GameObject))
   nameWithType: TestGameObject<TSuT>.TestGameObject(Action<GameObject>)
   nameWithType.vb: TestGameObject(Of TSuT).TestGameObject(Action(Of GameObject))
 - uid: Slothsoft.TestRunner.TestGameObject`1.#ctor*
@@ -1016,13 +1016,13 @@ references:
   commentId: T:Slothsoft.TestRunner.WaitUtils
   fullName: Slothsoft.TestRunner.WaitUtils
   nameWithType: WaitUtils
-- uid: Slothsoft.TestRunner.WaitUtils.WaitFor(System.Func{System.Boolean},System.String,System.Single)
+- uid: Slothsoft.TestRunner.WaitUtils.WaitFor(Func{System.Boolean},System.String,System.Single)
   name: WaitFor(Func<Boolean>, String, Single)
-  href: api/Slothsoft.TestRunner.WaitUtils.html#Slothsoft_TestRunner_WaitUtils_WaitFor_System_Func_System_Boolean__System_String_System_Single_
-  commentId: M:Slothsoft.TestRunner.WaitUtils.WaitFor(System.Func{System.Boolean},System.String,System.Single)
+  href: api/Slothsoft.TestRunner.WaitUtils.html#Slothsoft_TestRunner_WaitUtils_WaitFor_Func_System_Boolean__System_String_System_Single_
+  commentId: M:Slothsoft.TestRunner.WaitUtils.WaitFor(Func{System.Boolean},System.String,System.Single)
   name.vb: WaitFor(Func(Of Boolean), String, Single)
-  fullName: Slothsoft.TestRunner.WaitUtils.WaitFor(System.Func<System.Boolean>, System.String, System.Single)
-  fullName.vb: Slothsoft.TestRunner.WaitUtils.WaitFor(System.Func(Of System.Boolean), System.String, System.Single)
+  fullName: Slothsoft.TestRunner.WaitUtils.WaitFor(Func<System.Boolean>, System.String, System.Single)
+  fullName.vb: Slothsoft.TestRunner.WaitUtils.WaitFor(Func(Of System.Boolean), System.String, System.Single)
   nameWithType: WaitUtils.WaitFor(Func<Boolean>, String, Single)
   nameWithType.vb: WaitUtils.WaitFor(Func(Of Boolean), String, Single)
 - uid: Slothsoft.TestRunner.WaitUtils.WaitFor*
