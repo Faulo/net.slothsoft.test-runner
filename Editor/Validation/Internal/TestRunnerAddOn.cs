@@ -20,7 +20,11 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
                 .First(t => t.Name == GUI_CLASS);
 
             const string TREE_CLASS = "TreeViewController";
+#if UNITY_6000_2_OR_NEWER
+            static readonly Type t_TreeViewController = typeof(TreeView<int>)
+#else
             static readonly Type t_TreeViewController = typeof(TreeView)
+#endif
                 .Assembly
                 .GetTypes()
                 .First(t => t.Name == TREE_CLASS);
@@ -50,11 +54,19 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
                 .GetMethod(nameof(FindItem), BindingFlags.Instance | BindingFlags.Public | BindingFlags.NonPublic)
                 ?? throw new EntryPointNotFoundException(nameof(itemSingleClickedCallback));
 
+#if UNITY_6000_2_OR_NEWER
+            TreeViewItem<int> FindItem(int id) {
+                return i_FindItem.Invoke(m_TestListTree, new object[] { id }) as TreeViewItem<int>;
+            }
+
+            static UnityObject FindAsset(TreeViewItem<int> item) {
+#else
             TreeViewItem FindItem(int id) {
                 return i_FindItem.Invoke(m_TestListTree, new object[] { id }) as TreeViewItem;
             }
 
             static UnityObject FindAsset(TreeViewItem item) {
+#endif
                 var match = Regex.Match(item.displayName, "\\(\"(.+)\"\\)");
 
                 if (match.Success) {

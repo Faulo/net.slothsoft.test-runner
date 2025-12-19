@@ -30,7 +30,11 @@ namespace Slothsoft.TestRunner.Editor.Validation.Validators {
                     if (!property.objectReferenceValue) {
                         validator.AssertFail($"{validator.GetName(target)} references a missing {GetType(property)} in property '{property.propertyPath}'!");
                     } else {
+#if UNITY_6000_2_OR_NEWER
+                        string path = AssetDatabase.GetAssetPath(property.entityIdValue);
+#else
                         string path = AssetDatabase.GetAssetPath(property.objectReferenceInstanceIDValue);
+#endif
                         if (string.IsNullOrEmpty(path)) {
                             // references to assets without path are dubious, but could mean that we're inside a scene, or that the asset we're validating was created at runtime. Skip!
                         } else {
