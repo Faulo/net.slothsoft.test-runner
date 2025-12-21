@@ -1,7 +1,6 @@
 #nullable enable
 using System;
 using System.Collections;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -16,10 +15,21 @@ namespace Slothsoft.TestRunner {
 
         public event Action<float>? onUpdate;
 
+#if UNITY_EDITOR
         const string PANEL_SETTINGS = "Packages/net.slothsoft.test-runner/USS/TestUIHarness_PanelSettings.asset";
+        static PanelSettings settings => UnityEditor.AssetDatabase.LoadAssetAtPath<PanelSettings>(PANEL_SETTINGS);
+#else
+        static PanelSettings settings {
+            get {
+                var settings = ScriptableObject.CreateInstance<PanelSettings>();
+                settings.themeStyleSheet = ScriptableObject.CreateInstance<ThemeStyleSheet>();
+                return settings;
+            }
+        }
+#endif
 
         public TestUIHarness() {
-            document.panelSettings = AssetDatabase.LoadAssetAtPath<PanelSettings>(PANEL_SETTINGS);
+            document.panelSettings = settings;
 
             _ = document.StartCoroutine(Update());
         }
