@@ -730,6 +730,102 @@ references:
   fullName.vb: Slothsoft.TestRunner.GameObjectExtensions.AddSubstitute(Of T)(GameObject)
   nameWithType: GameObjectExtensions.AddSubstitute<T>(GameObject)
   nameWithType.vb: GameObjectExtensions.AddSubstitute(Of T)(GameObject)
+- uid: Slothsoft.TestRunner.MemoryMeasurement
+  name: MemoryMeasurement
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html
+  commentId: T:Slothsoft.TestRunner.MemoryMeasurement
+  fullName: Slothsoft.TestRunner.MemoryMeasurement
+  nameWithType: MemoryMeasurement
+- uid: Slothsoft.TestRunner.MemoryMeasurement.#ctor(System.String)
+  name: MemoryMeasurement(String)
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement__ctor_System_String_
+  commentId: M:Slothsoft.TestRunner.MemoryMeasurement.#ctor(System.String)
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.MemoryMeasurement(System.String)
+  nameWithType: MemoryMeasurement.MemoryMeasurement(String)
+- uid: Slothsoft.TestRunner.MemoryMeasurement.#ctor(System.String,ProfilerCategory)
+  name: MemoryMeasurement(String, ProfilerCategory)
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement__ctor_System_String_ProfilerCategory_
+  commentId: M:Slothsoft.TestRunner.MemoryMeasurement.#ctor(System.String,ProfilerCategory)
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.MemoryMeasurement(System.String, ProfilerCategory)
+  nameWithType: MemoryMeasurement.MemoryMeasurement(String, ProfilerCategory)
+- uid: Slothsoft.TestRunner.MemoryMeasurement.#ctor*
+  name: MemoryMeasurement
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement__ctor_
+  commentId: Overload:Slothsoft.TestRunner.MemoryMeasurement.#ctor
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.MemoryMeasurement
+  nameWithType: MemoryMeasurement.MemoryMeasurement
+- uid: Slothsoft.TestRunner.MemoryMeasurement.DisplayUnit(System.Nullable{SampleUnit})
+  name: DisplayUnit(Nullable<SampleUnit>)
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_DisplayUnit_System_Nullable_SampleUnit__
+  commentId: M:Slothsoft.TestRunner.MemoryMeasurement.DisplayUnit(System.Nullable{SampleUnit})
+  name.vb: DisplayUnit(Nullable(Of SampleUnit))
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.DisplayUnit(System.Nullable<SampleUnit>)
+  fullName.vb: Slothsoft.TestRunner.MemoryMeasurement.DisplayUnit(System.Nullable(Of SampleUnit))
+  nameWithType: MemoryMeasurement.DisplayUnit(Nullable<SampleUnit>)
+  nameWithType.vb: MemoryMeasurement.DisplayUnit(Nullable(Of SampleUnit))
+- uid: Slothsoft.TestRunner.MemoryMeasurement.DisplayUnit*
+  name: DisplayUnit
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_DisplayUnit_
+  commentId: Overload:Slothsoft.TestRunner.MemoryMeasurement.DisplayUnit
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.DisplayUnit
+  nameWithType: MemoryMeasurement.DisplayUnit
+- uid: Slothsoft.TestRunner.MemoryMeasurement.MeasurementCount(System.Int32)
+  name: MeasurementCount(Int32)
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_MeasurementCount_System_Int32_
+  commentId: M:Slothsoft.TestRunner.MemoryMeasurement.MeasurementCount(System.Int32)
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.MeasurementCount(System.Int32)
+  nameWithType: MemoryMeasurement.MeasurementCount(Int32)
+- uid: Slothsoft.TestRunner.MemoryMeasurement.MeasurementCount*
+  name: MeasurementCount
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_MeasurementCount_
+  commentId: Overload:Slothsoft.TestRunner.MemoryMeasurement.MeasurementCount
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.MeasurementCount
+  nameWithType: MemoryMeasurement.MeasurementCount
+- uid: Slothsoft.TestRunner.MemoryMeasurement.RecordFrameTime(System.Boolean)
+  name: RecordFrameTime(Boolean)
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_RecordFrameTime_System_Boolean_
+  commentId: M:Slothsoft.TestRunner.MemoryMeasurement.RecordFrameTime(System.Boolean)
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.RecordFrameTime(System.Boolean)
+  nameWithType: MemoryMeasurement.RecordFrameTime(Boolean)
+- uid: Slothsoft.TestRunner.MemoryMeasurement.RecordFrameTime*
+  name: RecordFrameTime
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_RecordFrameTime_
+  commentId: Overload:Slothsoft.TestRunner.MemoryMeasurement.RecordFrameTime
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.RecordFrameTime
+  nameWithType: MemoryMeasurement.RecordFrameTime
+- uid: Slothsoft.TestRunner.MemoryMeasurement.Run(System.Nullable{Action})
+  name: Run(Nullable<Action>)
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_Run_System_Nullable_Action__
+  commentId: M:Slothsoft.TestRunner.MemoryMeasurement.Run(System.Nullable{Action})
+  name.vb: Run(Nullable(Of Action))
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.Run(System.Nullable<Action>)
+  fullName.vb: Slothsoft.TestRunner.MemoryMeasurement.Run(System.Nullable(Of Action))
+  nameWithType: MemoryMeasurement.Run(Nullable<Action>)
+  nameWithType.vb: MemoryMeasurement.Run(Nullable(Of Action))
+- uid: Slothsoft.TestRunner.MemoryMeasurement.Run*
+  name: Run
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_Run_
+  commentId: Overload:Slothsoft.TestRunner.MemoryMeasurement.Run
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.Run
+  nameWithType: MemoryMeasurement.Run
+- uid: Slothsoft.TestRunner.MemoryMeasurement.WarmupCount(System.Int32)
+  name: WarmupCount(Int32)
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_WarmupCount_System_Int32_
+  commentId: M:Slothsoft.TestRunner.MemoryMeasurement.WarmupCount(System.Int32)
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.WarmupCount(System.Int32)
+  nameWithType: MemoryMeasurement.WarmupCount(Int32)
+- uid: Slothsoft.TestRunner.MemoryMeasurement.WarmupCount*
+  name: WarmupCount
+  href: api/Slothsoft.TestRunner.MemoryMeasurement.html#Slothsoft_TestRunner_MemoryMeasurement_WarmupCount_
+  commentId: Overload:Slothsoft.TestRunner.MemoryMeasurement.WarmupCount
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.MemoryMeasurement.WarmupCount
+  nameWithType: MemoryMeasurement.WarmupCount
 - uid: Slothsoft.TestRunner.TestGameObject
   name: TestGameObject
   href: api/Slothsoft.TestRunner.TestGameObject.html
@@ -1010,6 +1106,121 @@ references:
   isSpec: "True"
   fullName: Slothsoft.TestRunner.TestObjectStore.Register
   nameWithType: TestObjectStore.Register
+- uid: Slothsoft.TestRunner.TestUIHarness`1
+  name: TestUIHarness<T>
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html
+  commentId: T:Slothsoft.TestRunner.TestUIHarness`1
+  name.vb: TestUIHarness(Of T)
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T)
+  nameWithType: TestUIHarness<T>
+  nameWithType.vb: TestUIHarness(Of T)
+- uid: Slothsoft.TestRunner.TestUIHarness`1.#ctor
+  name: TestUIHarness()
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1__ctor
+  commentId: M:Slothsoft.TestRunner.TestUIHarness`1.#ctor
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.TestUIHarness()
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).TestUIHarness()
+  nameWithType: TestUIHarness<T>.TestUIHarness()
+  nameWithType.vb: TestUIHarness(Of T).TestUIHarness()
+- uid: Slothsoft.TestRunner.TestUIHarness`1.#ctor*
+  name: TestUIHarness
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1__ctor_
+  commentId: Overload:Slothsoft.TestRunner.TestUIHarness`1.#ctor
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.TestUIHarness
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).TestUIHarness
+  nameWithType: TestUIHarness<T>.TestUIHarness
+  nameWithType.vb: TestUIHarness(Of T).TestUIHarness
+- uid: Slothsoft.TestRunner.TestUIHarness`1.camera
+  name: camera
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1_camera
+  commentId: P:Slothsoft.TestRunner.TestUIHarness`1.camera
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.camera
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).camera
+  nameWithType: TestUIHarness<T>.camera
+  nameWithType.vb: TestUIHarness(Of T).camera
+- uid: Slothsoft.TestRunner.TestUIHarness`1.camera*
+  name: camera
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1_camera_
+  commentId: Overload:Slothsoft.TestRunner.TestUIHarness`1.camera
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.camera
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).camera
+  nameWithType: TestUIHarness<T>.camera
+  nameWithType.vb: TestUIHarness(Of T).camera
+- uid: Slothsoft.TestRunner.TestUIHarness`1.Dispose
+  name: Dispose()
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1_Dispose
+  commentId: M:Slothsoft.TestRunner.TestUIHarness`1.Dispose
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.Dispose()
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).Dispose()
+  nameWithType: TestUIHarness<T>.Dispose()
+  nameWithType.vb: TestUIHarness(Of T).Dispose()
+- uid: Slothsoft.TestRunner.TestUIHarness`1.Dispose*
+  name: Dispose
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1_Dispose_
+  commentId: Overload:Slothsoft.TestRunner.TestUIHarness`1.Dispose
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.Dispose
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).Dispose
+  nameWithType: TestUIHarness<T>.Dispose
+  nameWithType.vb: TestUIHarness(Of T).Dispose
+- uid: Slothsoft.TestRunner.TestUIHarness`1.document
+  name: document
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1_document
+  commentId: P:Slothsoft.TestRunner.TestUIHarness`1.document
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.document
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).document
+  nameWithType: TestUIHarness<T>.document
+  nameWithType.vb: TestUIHarness(Of T).document
+- uid: Slothsoft.TestRunner.TestUIHarness`1.document*
+  name: document
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1_document_
+  commentId: Overload:Slothsoft.TestRunner.TestUIHarness`1.document
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.document
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).document
+  nameWithType: TestUIHarness<T>.document
+  nameWithType.vb: TestUIHarness(Of T).document
+- uid: Slothsoft.TestRunner.TestUIHarness`1.onUpdate
+  name: onUpdate
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1_onUpdate
+  commentId: E:Slothsoft.TestRunner.TestUIHarness`1.onUpdate
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.onUpdate
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).onUpdate
+  nameWithType: TestUIHarness<T>.onUpdate
+  nameWithType.vb: TestUIHarness(Of T).onUpdate
+- uid: Slothsoft.TestRunner.TestUIHarness`1.sut
+  name: sut
+  href: api/Slothsoft.TestRunner.TestUIHarness-1.html#Slothsoft_TestRunner_TestUIHarness_1_sut
+  commentId: F:Slothsoft.TestRunner.TestUIHarness`1.sut
+  fullName: Slothsoft.TestRunner.TestUIHarness<T>.sut
+  fullName.vb: Slothsoft.TestRunner.TestUIHarness(Of T).sut
+  nameWithType: TestUIHarness<T>.sut
+  nameWithType.vb: TestUIHarness(Of T).sut
+- uid: Slothsoft.TestRunner.UnityTestCaseAttribute
+  name: UnityTestCaseAttribute
+  href: api/Slothsoft.TestRunner.UnityTestCaseAttribute.html
+  commentId: T:Slothsoft.TestRunner.UnityTestCaseAttribute
+  fullName: Slothsoft.TestRunner.UnityTestCaseAttribute
+  nameWithType: UnityTestCaseAttribute
+- uid: Slothsoft.TestRunner.UnityTestCaseAttribute.#ctor(System.Object[])
+  name: UnityTestCaseAttribute(Object[])
+  href: api/Slothsoft.TestRunner.UnityTestCaseAttribute.html#Slothsoft_TestRunner_UnityTestCaseAttribute__ctor_System_Object___
+  commentId: M:Slothsoft.TestRunner.UnityTestCaseAttribute.#ctor(System.Object[])
+  name.vb: UnityTestCaseAttribute(Object())
+  fullName: Slothsoft.TestRunner.UnityTestCaseAttribute.UnityTestCaseAttribute(System.Object[])
+  fullName.vb: Slothsoft.TestRunner.UnityTestCaseAttribute.UnityTestCaseAttribute(System.Object())
+  nameWithType: UnityTestCaseAttribute.UnityTestCaseAttribute(Object[])
+  nameWithType.vb: UnityTestCaseAttribute.UnityTestCaseAttribute(Object())
+- uid: Slothsoft.TestRunner.UnityTestCaseAttribute.#ctor*
+  name: UnityTestCaseAttribute
+  href: api/Slothsoft.TestRunner.UnityTestCaseAttribute.html#Slothsoft_TestRunner_UnityTestCaseAttribute__ctor_
+  commentId: Overload:Slothsoft.TestRunner.UnityTestCaseAttribute.#ctor
+  isSpec: "True"
+  fullName: Slothsoft.TestRunner.UnityTestCaseAttribute.UnityTestCaseAttribute
+  nameWithType: UnityTestCaseAttribute.UnityTestCaseAttribute
 - uid: Slothsoft.TestRunner.WaitUtils
   name: WaitUtils
   href: api/Slothsoft.TestRunner.WaitUtils.html

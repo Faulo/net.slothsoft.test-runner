@@ -149,6 +149,18 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.MemoryMeasurement.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.MemoryMeasurement.html",
+          "hash": "PC34MG59tALiWKMx8t2o3g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Slothsoft.TestRunner.TestGameObject-1.yml",
       "output": {
         ".html": {
@@ -185,6 +197,30 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.TestUIHarness-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.TestUIHarness-1.html",
+          "hash": "qhLBRVtCL8/gDT0AE15svA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Slothsoft.TestRunner.UnityTestCaseAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Slothsoft.TestRunner.UnityTestCaseAttribute.html",
+          "hash": "5yM0eDi7lLs29jNlnW7DjA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "api/Slothsoft.TestRunner.WaitUtils.yml",
       "output": {
         ".html": {
@@ -201,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "api/Slothsoft.TestRunner.html",
-          "hash": "N1uhABudM8mv1DxzH+QSYw=="
+          "hash": "dWQFd0HnkBxZMpM5OqRHcg=="
         }
       },
       "is_incremental": false,
@@ -225,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "api/toc.html",
-          "hash": "lZvtBVaSsxyZYPT3hGUFGQ=="
+          "hash": "j476FDK1OYKUUKtG/MxfTA=="
         }
       },
       "is_incremental": false,
@@ -276,7 +312,7 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": false,
           "incrementalPhase": "build",
-          "total_file_count": 17,
+          "total_file_count": 20,
           "skipped_file_count": 0
         },
         "TocDocumentProcessor": {
