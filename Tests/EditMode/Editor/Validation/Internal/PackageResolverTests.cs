@@ -10,7 +10,9 @@ namespace Slothsoft.TestRunner.Editor.Validation.Internal {
         public static readonly string[] directDependencies = new[] {
             "Library",
             "Packages/com.unity.editorcoroutines",
+            "Packages/com.unity.modules.uielements",
             "Packages/com.unity.test-framework",
+            "Packages/com.unity.test-framework.performance",
             "Packages/net.slothsoft.test-runner",
             "Packages/net.slothsoft.unity-extensions",
             "Packages/net.tnrd.nsubstitute",
