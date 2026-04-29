@@ -275,14 +275,12 @@ namespace Slothsoft.TestRunner.Editor.Validation {
         static readonly Dictionary<Type, ICollection> loadedPrefabsCache = new();
 
         static ICollection LoadPrefabsWithComponent<T>() where T : class {
-#pragma warning disable UNT0014 // Invalid type for call to GetComponent
             return loadedPrefabsCache[typeof(T)] = AssetDatabase
                 .FindAssets("t:GameObject")
                 .Select(AssetDatabase.GUIDToAssetPath)
                 .Select(AssetDatabase.LoadAssetAtPath<GameObject>)
                 .SelectMany(prefab => prefab.GetComponents<T>().Select(component => (prefab, component)))
                 .ToList();
-#pragma warning restore UNT0014 // Invalid type for call to GetComponent
         }
 
         internal static SortedSet<string> SortAndAddEmpty(IEnumerable<string> items) {

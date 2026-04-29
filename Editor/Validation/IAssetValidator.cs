@@ -11,42 +11,42 @@ namespace Slothsoft.TestRunner.Editor.Validation {
         /// </summary>
         /// <param name="assertion"></param>
         /// <param name="message"></param>
-        public void AssertFail(string message);
+        void AssertFail(string message);
 
         /// <summary>
         /// Same as <see cref="Assert.IsTrue(bool, string)"/>, but appends the message to the list of errors instead of aborting immediately.
         /// </summary>
         /// <param name="assertion"></param>
         /// <param name="message"></param>
-        public void AssertTrue(bool assertion, string message);
+        void AssertTrue(bool assertion, string message);
 
         /// <summary>
         /// Same as <see cref="Assert.IsFalse(bool, string)"/>, but appends the message to the list of errors instead of aborting immediately.
         /// </summary>
         /// <param name="assertion"></param>
         /// <param name="message"></param>
-        public void AssertFalse(bool assertion, string message);
+        void AssertFalse(bool assertion, string message);
 
         /// <summary>
         /// Same as <see cref="Assert.That{TActual}(TActual, IResolveConstraint)"/>, but appends the message to the list of errors instead of aborting immediately.
         /// </summary>
         /// <param name="actual"></param>
         /// <param name="constraint"></param>
-        public void AssertThat(object actual, IResolveConstraint constraint);
+        void AssertThat(object actual, IResolveConstraint constraint);
 
         /// <summary>
         /// Same as <see cref="Assert.That{TActual}(TActual, IResolveConstraint, string, object[])"/>, but appends the message to the list of errors instead of aborting immediately.
         /// </summary>
         /// <param name="actual"></param>
         /// <param name="constraint"></param>
-        public void AssertThat(object actual, IResolveConstraint constraint, string message);
+        void AssertThat(object actual, IResolveConstraint constraint, string message);
 
         /// <summary>
         /// Attempt to retrieve a component of type <typeparamref name="T"/> from <paramref name="obj"/>, and fail on success.
         /// </summary>
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
-        public void AssertDoesNotHaveComponent<T>(GameObject obj) where T : class;
+        void AssertDoesNotHaveComponent<T>(GameObject obj) where T : class;
 
         /// <summary>
         /// Attempt to retrieve a component of type <typeparamref name="T"/> from <paramref name="obj"/>, and fail on failure.
@@ -54,7 +54,7 @@ namespace Slothsoft.TestRunner.Editor.Validation {
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
         /// <returns>True if the component was found.</returns>
-        public bool AssertHasComponent<T>(GameObject obj) where T : class;
+        bool AssertHasComponent<T>(GameObject obj) where T : class;
 
         /// <summary>
         /// Attempt to retrieve a component of type <typeparamref name="T"/> from <paramref name="obj"/>, and fail on failure.
@@ -62,63 +62,63 @@ namespace Slothsoft.TestRunner.Editor.Validation {
         /// <typeparam name="T"></typeparam>
         /// <param name="obj"></param>
         /// <returns>True if the component was found and written to <paramref name="component"/>.</returns>
-        public bool AssertHasComponent<T>(GameObject obj, out T component) where T : class;
+        bool AssertHasComponent<T>(GameObject obj, out T component) where T : class;
 
         /// <summary>
         /// Verify that <paramref name="assetPath"/> is part of the dependency hierarchy of the current package. Print <paramref name="message"/> if not.
         /// </summary>
         /// <param name="asset"></param>
-        public void AssertAssetPath(string assetPath, string message);
+        void AssertAssetPath(string assetPath, string message);
 
         /// <summary>
         /// Perform a full validation of <paramref name="asset"/>, using all applicable <see cref="ValidateAttribute"/>.
         /// </summary>
         /// <param name="asset"></param>
-        public void ValidateAsset(UnityObject asset);
+        void ValidateAsset(UnityObject asset);
 
         /// <summary>
         /// Perform a full validation of the asset at <paramref name="assetPath"/>, using all applicable <see cref="ValidateAttribute"/>.
         /// </summary>
         /// <param name="asset"></param>
-        public void ValidateAsset(string assetPath);
+        void ValidateAsset(string assetPath);
 
         /// <summary>
         /// The asset currently processed by <see cref="ValidateAsset(UnityObject)"/>.
         /// </summary>
-        public UnityObject currentAsset { get; }
+        UnityObject currentAsset { get; }
 
         /// <summary>
         /// The asset path of the asset currently processed by <see cref="ValidateAsset(UnityObject)"/>, or null if the current asset has not been saved to disk.
         /// </summary>
-        public string currentAssetPath { get; }
+        string currentAssetPath { get; }
 
         /// <summary>
         /// The latest scene loaded via <see cref="OpenScene(string)"/>.
         /// </summary>
-        public Scene currentScene { get; }
+        Scene currentScene { get; }
 
         /// <summary>
         /// Create a human-readable name for <paramref name="target"/>.
         /// </summary>
         /// <param name="target"></param>
         /// <returns></returns>
-        public string GetName(UnityObject target);
+        string GetName(UnityObject target);
 
         /// <summary>
         /// Determine whether or not <see cref="OpenScene(string)"/> will succeed.
         /// </summary>
         /// <param name="scenePath"></param>
-        public bool CanOpenScene(string scenePath);
+        bool CanOpenScene(string scenePath);
 
         /// <summary>
         /// Load the scene at <paramref name="scenePath"/> and set <see cref="currentScene"/>.
         /// </summary>
         /// <param name="scenePath"></param>
-        public void OpenScene(string scenePath);
+        void OpenScene(string scenePath);
 
         /// <summary>
         /// Close <see cref="currentScene"/>.
         /// </summary>
-        public void CloseScene();
+        void CloseScene();
     }
 }

@@ -3,8 +3,8 @@ using UnityEditor.PackageManager;
 
 namespace Slothsoft.TestRunner.Editor.Validation.Internal {
     interface IPackageResolver {
-        public PackageInfo GetPackageInfo(string packageId);
-        public PackageInfo GetPackageInfoForAsset(string assetPath);
-        public IReadOnlyList<string> GetDependentPackagePaths(string assetPath);
+        PackageInfo GetPackageInfo(string packageId);
+        PackageInfo GetPackageInfoForAsset(string assetPath);
+        IReadOnlyList<string> GetDependentPackagePaths(string assetPath);
     }
 }
